@@ -152,11 +152,7 @@ const submitForm = async () => {
           class="flex items-center justify-center bg-colored text-white px-6 py-3 rounded-full text-xs md:text-sm lg:text-base hover:bg-coloblue transition-colors duration-500"
         >
           BACK TO HOME
-          <img
-            src="../assets/svg/ArrowWhite.svg"
-            alt="Arrow"
-            class="ml-2 w-5 md:w-6 lg:w-7"
-          />
+          <IconWhite class="ml-2 w-5 md:w-6 lg:w-7" />
         </router-link>
       </div>
     </div>
