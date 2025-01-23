@@ -5,6 +5,7 @@ import FleurBleu from "@/components/icons/FleurBleu.vue";
 import FleurRouge from "@/components/icons/FleurRouge.vue";
 import FleurPleineRouge from "@/components/icons/FleurPleineRouge.vue";
 import FleurPleineYellow from "@/components/icons/FleurPleineYellow.vue";
+import IconWhite from "@/components/icons/IconWhite.vue";
 
 const whatDoYouNeedOptions = ['BRANDING', 'WEB SITE', 'GRAPHIC DESIGN', 'OTHER'];
 const whereDidYouHearOptions = ['SOCIAL MEDIA', 'FRIEND', 'GOOGLE', 'OTHER'];
@@ -97,18 +98,18 @@ const submitForm = async () => {
   <section class="relative bg-colowhite pb-32 overflow-hidden">
     <div>
     <!-- Fleurs avec animation -->
-     <FleurRouge 
+     <FleurRouge
       alt="FleurRouge"
       class="absolute top-24 left-2 w-[16vw] z-0 md:top-32 md:left-10 md:w-[14vw] lg:left-20 animate-spin-slow-20"/>
-    
+
       <FleurPleineYellow alt="FleurYellow"
       class="absolute top-0 right-8 w-[18vw] z-0 md:right-20 md:w-[16vw] lg:right-32 animate-spin-reverse-slow"/>
-    
+
     <transition name="fade">
        <FleurBleu v-if="!formSubmitted"
           alt="FleurBleu"
           class="absolute top-[25rem] right-0 w-[16vw] z-0 md:-right-10 md:w-[14vw] lg:-right-20 lg:top-[40rem] animate-spin-reverse"/>
-        
+
       </transition>
     <!-- Fleur Jaune -->
       <transition name="fade">
@@ -120,7 +121,7 @@ const submitForm = async () => {
 
       <!-- Fleur Rouge -->
       <transition name="fade">
-        <FleurPleineRouge 
+        <FleurPleineRouge
         v-if="!formSubmitted"
           alt="FleurRouge"
           class="absolute bottom-10 -right-10 w-[16vw] z-0 md:w-[14vw] lg:right-32 animate-spin-slow-20"/>
@@ -128,8 +129,8 @@ const submitForm = async () => {
       <FleurBleu
       alt="FleurBleu"
           class="absolute bottom-[15rem] -left-10 w-[18vw] z-0 md:w-[16vw] md:bottom-[10rem] md:-left-20 lg:right-32 animate-spin-reverse-slow"/>
-        
-    
+
+
   </div>
 
     <!-- Texte au-dessus -->
@@ -174,7 +175,7 @@ const submitForm = async () => {
                 v-for="option in whatDoYouNeedOptions"
                 :key="option"
                 @click="toggleSelection('whatDoYouNeed', option)"
-                :class="[ 
+                :class="[
                   'border border-white p-1.5 px-4 text-center rounded-full cursor-pointer text-xs md:text-sm lg:text-base flex-shrink-0 transition-colors duration-500',
                   selected.whatDoYouNeed.includes(option) ? 'bg-colored text-white' : 'hover:text-colored'
                 ]"
@@ -274,11 +275,10 @@ const submitForm = async () => {
               class="flex items-center bg-colored text-white p-2 px-4 rounded-full hover:bg-coloblue text-xs md:text-sm lg:text-base transition-colors duration-500"
             >
               SEND
-              <img
-                src="../assets/svg/ArrowWhite.svg"
-                alt="Arrow"
+              <IconWhite alt="Arrow"
                 class="ml-2 w-5 md:w-6 lg:w-7"
-              />
+                />
+
             </button>
           </div>
         </form>
