@@ -6,7 +6,7 @@
     ]"
   >
     <!-- Logo -->
-    <img class="w-32" src="../assets/img/Logo.png" alt="logo" />
+    <img class="w-32" src="/img/Logo.png" alt="logo" />
 
     <!-- Menu / Cross Button -->
     <button

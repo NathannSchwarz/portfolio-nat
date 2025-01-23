@@ -15,7 +15,7 @@ const projects = ref([
   {
     title: "EYE ON ME",
     subtitle: "VIEW PROJECT >",
-    imageSrc: "src/assets/img/Accueilimg1.webp",
+    imageSrc: "/img/Accueilimg1.webp",
     imageAlt: "Example Project",
     category: "GRAPHIC DESIGN",
     gridClass: "lg:col-span-3",
@@ -23,7 +23,7 @@ const projects = ref([
   {
     title: "BRANDING PROJECT",
     subtitle: "VIEW PROJECT >",
-    imageSrc: "src/assets/img/Accueilimg2.webp",
+    imageSrc: "/img/Accueilimg2.webp",
     imageAlt: "Example Project",
     category: "BRANDING",
     gridClass: "lg:col-span-2",
@@ -31,7 +31,7 @@ const projects = ref([
   {
     title: "WEB PROJECT",
     subtitle: "VIEW PROJECT >",
-    imageSrc: "src/assets/img/Accueilimg3.webp",
+    imageSrc: "/img/Accueilimg3.webp",
     imageAlt: "Example Project",
     category: "WEB SITE",
     gridClass: "lg:col-span-3",
@@ -39,7 +39,7 @@ const projects = ref([
   {
     title: "FULL DESIGN",
     subtitle: "VIEW PROJECT >",
-    imageSrc: "src/assets/img/Accueilimg2.webp",
+    imageSrc: "/img/Accueilimg2.webp",
     imageAlt: "Example Project",
     category: "GRAPHIC DESIGN",
     gridClass: "lg:col-span-4",
@@ -47,7 +47,7 @@ const projects = ref([
   {
     title: "FULL DESIGN",
     subtitle: "VIEW PROJECT >",
-    imageSrc: "src/assets/img/Accueilimg2.webp",
+    imageSrc: "/img/Accueilimg2.webp",
     imageAlt: "Example Project",
     category: "GRAPHIC DESIGN",
     gridClass: "lg:col-span-4",
@@ -112,11 +112,11 @@ const countProjects = (filter: string) => {
     </p>
 
     <!-- Decorative Images -->
-     <FleurPleineRouge 
+     <FleurPleineRouge
      alt="FleurPleineRouge"
       class="absolute top-[19rem] left-2 w-[18vw] z-0 md:top-[21rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[26rem] animate-spin-slow-20"
       />
-      
+
      <FleurPleineYellow
       alt="FleurPleineYellow"
       class="absolute top-0 -right-6 w-[24vw] z-0 md:right-20 md:w-[16vw] lg:right-32 lg:top-2 animate-spin-slow"
@@ -126,7 +126,7 @@ const countProjects = (filter: string) => {
       alt="FleurPleineBleu"
       class="absolute top-[17rem] right-10 w-[20vw] z-0 md:w-[24vw] md:top-[15rem] md:right-20 lg:right-32 animate-spin-reverse-slow"
       />
-   
+
 
     <!-- Filter Buttons -->
     <ul class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-3xl lg:gap-10 lg:mt-96">
@@ -143,7 +143,7 @@ const countProjects = (filter: string) => {
     {{ filter }}
     <sup
       class="absolute -top-3 -right-4 text-sm"
-      :class="activeFilters.includes(filter) ? 'text-colored' : 'text-black'" 
+      :class="activeFilters.includes(filter) ? 'text-colored' : 'text-black'"
     >
       {{ countProjects(filter) }}
     </sup>
