@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+        font-family: 'Unbounded';
+        font-weight: 100 900;
+        font-style: normal;
+        src: url('./fonts/Unbounded-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DxLactos';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./fonts/DxLactos-Regular-free-personal-use.otf') format('opentype');
+}
