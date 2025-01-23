@@ -58,7 +58,7 @@
             <li class="break-words">NATHAN.SCHWARZ04@GMAIL.COM</li>
             <li class="break-words">
               <a
-                href="/public/Nathan SCHWARZ CV V2.pdf"
+                href="/Nathan SCHWARZ CV V2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="hover:text-colowhite transition-colors duration-500 underline"
