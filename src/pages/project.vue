@@ -18,7 +18,7 @@ const projects = ref([
     imageSrc: "/img/Accueilimg1.webp",
     imageAlt: "Example Project",
     category: "GRAPHIC DESIGN",
-    gridClass: "lg:col-span-3",
+    gridClass: "lg:col-span-3 ",
   },
   {
     title: "BRANDING PROJECT",
