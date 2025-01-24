@@ -9,7 +9,7 @@
         <!-- Cercle pour tablet/desktop -->
         <div class="hidden md:flex md:justify-end">
           <router-link to="/contact">
-            <p class="bg-coloblue text-xl text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[7rem] md:h-[7rem] md:p-8 lg:text-3xl lg:w-[9rem] lg:h-[9rem] lg:p-12 hover:text-colowhite transition-colors duration-500">
+            <p class="bg-coloblue text-xl text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[7rem] md:h-[7rem] md:p-8 lg:text-3xl lg:w-[9rem] lg:h-[9rem] lg:p-12 hover:text-colowhite transition-colors duration-500" @click="scrollToTop">
               LET'S WORK
             </p>
           </router-link>
@@ -23,13 +23,13 @@
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl lg:text-3xl">PAGES</h3>
           <ul class="font-unbounded text-sm text-black font-medium md:text-lg lg:text-xl">
             <li>
-              <router-link to="/" class="hover:text-colowhite transition-colors duration-500">INDEX</router-link>
+              <router-link to="/" class="hover:text-colowhite transition-colors duration-500" @click="scrollToTop">INDEX</router-link>
             </li>
             <li>
-              <router-link to="/project" class="hover:text-colowhite transition-colors duration-500">PROJECT</router-link>
+              <router-link to="/project" class="hover:text-colowhite transition-colors duration-500" @click="scrollToTop">PROJECT</router-link>
             </li>
             <li>
-              <router-link to="/contact" class="hover:text-colowhite transition-colors duration-500">CONTACT</router-link>
+              <router-link to="/contact" class="hover:text-colowhite transition-colors duration-500" @click="scrollToTop">CONTACT</router-link>
             </li>
           </ul>
         </div>
@@ -72,7 +72,7 @@
         <!-- Cercle pour mobile (grid-cols-2 row-2) -->
         <div class="ml-16 md:hidden md:ml-0">
           <router-link to="/contact">
-            <p class="bg-coloblue text-lg text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[8rem] md:h-[8rem] md:p-8 lg:text-4xl lg:w-[11rem] lg:h-[11rem] lg:p-12">
+            <p class="bg-coloblue text-lg text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[8rem] md:h-[8rem] md:p-8 lg:text-4xl lg:w-[11rem] lg:h-[11rem] lg:p-12" @click="scrollToTop">
               LET'S WORK
             </p>
           </router-link>
@@ -85,3 +85,10 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "auto" });
+};
+</script>

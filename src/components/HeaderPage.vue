@@ -55,56 +55,54 @@
     >
       <ul class="space-y-8 lg:space-y-12">
         <li class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloyellow transition-colors duration-500 cursor-pointer">
-          <router-link to="/" class="block" @click="closeMenu">INDEX</router-link>
+          <router-link to="/" class="block" @click="scrollToTop">INDEX</router-link>
         </li>
         <li class="text-right font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-colored transition-colors duration-500 cursor-pointer">
-          <router-link to="/project" class="block" @click="closeMenu">PROJECT</router-link>
+          <router-link to="/project" class="block" @click="scrollToTop">PROJECT</router-link>
         </li>
         <li class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloblue transition-colors duration-500 cursor-pointer">
-          <router-link to="/contact" class="block" @click="closeMenu">CONTACT</router-link>
+          <router-link to="/contact" class="block" @click="scrollToTop">CONTACT</router-link>
         </li>
       </ul>
     </div>
   </header>
 </template>
 
-<script lang="ts">
-import { ref, onMounted } from "vue";
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
 
-export default {
-  name: "Header",
-  setup() {
-    const isMenuOpen = ref(false);
-    const isHeaderVisible = ref(true);
-    let lastScrollY = window.scrollY;
+const isMenuOpen = ref(false);
+const isHeaderVisible = ref(true);
+let lastScrollY = window.scrollY;
 
-    const toggleMenu = () => {
-      isMenuOpen.value = !isMenuOpen.value;
-    };
-
-    const closeMenu = () => {
-      isMenuOpen.value = false;
-    };
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      isHeaderVisible.value = currentScrollY < lastScrollY;
-      lastScrollY = currentScrollY;
-    };
-
-    onMounted(() => {
-      window.addEventListener("scroll", handleScroll);
-    });
-
-    return {
-      isMenuOpen,
-      toggleMenu,
-      isHeaderVisible,
-      closeMenu,
-    };
-  },
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
 };
+
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
+const handleScroll = () => {
+  const currentScrollY = window.scrollY;
+  isHeaderVisible.value = currentScrollY < lastScrollY;
+  lastScrollY = currentScrollY;
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "auto" });
+  closeMenu();
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
+
 
 <style scoped>
 /* Styles identiques */
@@ -121,5 +119,4 @@ export default {
 .bottom-fade {
   transform: scaleX(0);
 }
-
 </style>
