@@ -1,8 +1,8 @@
 <template>
   <header
     :class="[
-      'sticky flex items-center justify-between  p-8  top-0 z-50 w-full bg-colowhite transition-transform duration-500',
-      isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+      'sticky flex items-center justify-between p-8 top-0 z-50 w-full bg-colowhite',
+      isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
     <!-- Logo -->
@@ -54,13 +54,19 @@
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
       <ul class="space-y-8 lg:space-y-12">
-        <li class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloyellow transition-colors duration-500 cursor-pointer">
+        <li
+          class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloyellow transition-colors duration-500 cursor-pointer"
+        >
           <router-link to="/" class="block" @click="scrollToTop">INDEX</router-link>
         </li>
-        <li class="text-right font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-colored transition-colors duration-500 cursor-pointer">
+        <li
+          class="text-right font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-colored transition-colors duration-500 cursor-pointer"
+        >
           <router-link to="/project" class="block" @click="scrollToTop">PROJECT</router-link>
         </li>
-        <li class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloblue transition-colors duration-500 cursor-pointer">
+        <li
+          class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloblue transition-colors duration-500 cursor-pointer"
+        >
           <router-link to="/contact" class="block" @click="scrollToTop">CONTACT</router-link>
         </li>
       </ul>
@@ -69,40 +75,46 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from 'vue'
 
-const isMenuOpen = ref(false);
-const isHeaderVisible = ref(true);
-let lastScrollY = window.scrollY;
+const isMenuOpen = ref(false)
+const isHeaderVisible = ref(true)
+let lastScrollY = window.scrollY
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
+  isMenuOpen.value = !isMenuOpen.value
+}
 
 const closeMenu = () => {
-  isMenuOpen.value = false;
-};
+  isMenuOpen.value = false
+}
 
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
-  isHeaderVisible.value = currentScrollY < lastScrollY;
+
+  // Si on remonte ou si on est proche du haut de la page, le header apparaît
+  if (currentScrollY < lastScrollY || currentScrollY <= 0) {
+    isHeaderVisible.value = true;
+  } else {
+    isHeaderVisible.value = false;
+  }
+
   lastScrollY = currentScrollY;
 };
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "auto" });
-  closeMenu();
-};
+  window.scrollTo({ top: 0, behavior: 'auto' })
+  closeMenu()
+}
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
+  window.addEventListener('scroll', handleScroll)
+})
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
-
 
 <style scoped>
 /* Styles identiques */
@@ -118,5 +130,21 @@ onUnmounted(() => {
 }
 .bottom-fade {
   transform: scaleX(0);
+}
+
+.header-visible {
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.5s ease;
+}
+
+.header-hidden {
+  transform: translateY(-150%);
+  opacity: 0;
+  transition:
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.5s ease;
 }
 </style>

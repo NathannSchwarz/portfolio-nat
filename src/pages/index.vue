@@ -5,6 +5,13 @@ import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
 import FleurPleineYellow from '@/components/icons/FleurPleineYellow.vue'
 import ProjectCompIndex from '@/components/ProjectCompIndex.vue'
 
+// Imports de GSAP et enregistrement des plugins
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ref, onMounted } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
 // Fonction pour gérer le défilement dynamique avec des valeurs différentes suivant les écrans
 const scrollDown = () => {
   const screenWidth = window.innerWidth
@@ -23,6 +30,42 @@ const scrollDown = () => {
 
   const scrollValue = screenHeight * scrollMultiplier
   window.scrollBy({ top: scrollValue, behavior: 'smooth' })
+}
+
+const horizontalPinSection = ref<HTMLElement | null>(null)
+const horizontalScrollSection = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  const pinSection = horizontalPinSection.value
+  const scrollSection = horizontalScrollSection.value
+  if (!pinSection || !scrollSection) return
+
+  // matchMedia va créer l’animation UNIQUEMENT si la condition est vérifiée
+  ScrollTrigger.matchMedia({
+    // "(min-width: 768px)" signifie "à partir de 768px de large"
+    '(min-width: 768px)': function () {
+      // Largeur totale du container horizontal
+      const totalWidth = scrollSection.scrollWidth
+      const windowWidth = window.innerWidth
+
+      // Animation GSAP
+      gsap.to(scrollSection, {
+        x: -(totalWidth - windowWidth),
+        ease: 'none',
+        scrollTrigger: {
+          trigger: pinSection,
+          pin: true,
+          scrub: 0,
+          start: 'top top',
+          end: () => '+=' + (totalWidth - windowWidth),
+        },
+      })
+    },
+  })
+})
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
 }
 </script>
 
@@ -142,51 +185,80 @@ const scrollDown = () => {
         </div>
       </section>
     </section>
+  </section>
 
-    <!-- Section WHO AM I -->
-    <section class="bg-coloyellow -mx-5">
-      <div class="py-24 md:py-28 lg:py-36">
-        <div class="relative mx-5 mb-10 md:mb-16 lg:mb-28 ">
-        <img src="/public/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-1/3" />
-        <h3
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10.5vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue w-full"
-        >
-          BUT WHO AM I ?
-        </h3>
-      </div>
+  <section ref="horizontalPinSection" class="relative overflow-hidden">
+    <!--
+      Sur mobile :
+        - on n’applique PAS w-[200vw] ni flex
+        - on garde w-screen, h-auto (affichage normal en pile)
+      Sur desktop (lg:...) :
+        - on applique flex et w-[200vw]
+        - on fixe h-screen (hauteur pleine page)
+    -->
+    <div
+      ref="horizontalScrollSection"
+      class="w-screen h-auto /* Fallback pour mobile, vertical */ md:flex md:w-[200vw] md:h-screen /* Layout horizontal à partir de md */"
+    >
+      <!-- SECTION 1 : WHO AM I -->
+      <section
+        class="w-full h-auto /* Mobile : occupe toute la largeur, hauteur auto */ md:w-screen md:h-screen /* Desktop : occupe un écran en largeur/hauteur */ flex-none bg-coloyellow flex flex-col justify-center items-center"
+      >
+        <div class="relative mx-5 mb-10 md:mb-16">
+          <img src="/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-5/12" />
+          <h3
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10.5vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue w-full"
+          >
+            BUT WHO AM I ?
+          </h3>
+        </div>
 
-      <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center mb-2 lg:mb-4 md:text-left md:pl-20 lg:pl-40">
-        UNIQUE WEB DESIGNER
-      </h4>
+        <div class="text-center flex flex-col gap-4 md:gap-6 items-center">
+          <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right md:pr-40 lg:pr-72">
+            UNIQUE WEB DESIGNER
+          </h4>
+          <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left md:pl-40 lg:pl-72">
+            PASSIONATED BY DESIGN
+          </h4>
+          <p
+            class="mx-9 font-unbounded font-light text-sm md:text-base md:w-3/5 md:m-auto lg:text-2xl text-center"
+          >
+            In my designs and worldview, <span class="font-medium">freedom</span> is one of my most
+            cherished values. After my studies, I aspire to embrace independence
+            <span class="font-medium">as my ideal professional path</span>. While I’m aware of its
+            uncertainties, it offers the priceless opportunity to fully control
+          </p>
+        </div>
+      </section>
 
-      <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center mb-3 lg:mb-6 md:text-right md:pr-20 lg:pr-40">
-        PASSIONATED BY DESIGN
-      </h4>
-
-      <p class="mx-9 font-unbounded font-light text-sm md:text-base md:w-3/5 md:m-auto lg:text-2xl text-center">In my designs and worldview, <span class="font-medium">freedom</span> is one of my most cherished values. After my studies, I aspire to embrace independence <span class="font-medium">as my ideal professional path</span>. While I’m aware of its uncertainties, it offers the priceless opportunity to fully control <span class="font-medium">my choices and future</span> .</p>
-      </div>
-
-    </section>
-
-    <!-- Section Contact me -->
-     <section class="bg-coloyellow -mx-5">
-      <div class="py-24 md:py-28 lg:py-36">
-          <div class="relative mx-5 flex flex-col items-center justify-center md:flex-row md:mr-20">
-            <img
-              src="/public/img/Accueilimg2.webp"
-              alt="Accueilimg2"
-              class="mx-auto md:w-1/3 mb-10 md:mb-0 "
-            />
-            <div class="text-center ">
-              <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow mb-2 lg:mb-4">
-                IF YOU INTERESTED <br> TO WORK WITH ME
-              </h4>
-              <h5 class="font-lactos text-[7.8vw] md:text-[3.5vw] text-coloblue underline">CONTACT ME</h5>
-            </div>
+      <!-- SECTION 2 : CONTACT ME -->
+      <section
+        class="w-full h-auto md:w-screen md:h-screen flex-none bg-coloyellow flex items-center justify-center"
+      >
+        <div class="relative mx-5 flex flex-col items-center justify-center md:flex-row md:mr-20">
+          <img
+            src="/img/Accueilimg2.webp"
+            alt="Accueilimg2"
+            class="mx-auto md:w-1/3 mb-10 md:mb-0"
+          />
+          <div class="text-center">
+            <h4
+              class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow mb-2 lg:mb-4"
+            >
+              IF YOU INTERESTED <br />
+              TO WORK WITH ME
+            </h4>
+            <router-link
+              to="/contact"
+              class="font-lactos text-[7.8vw] md:text-[3.5vw] text-coloblue relative before:content-[''] before:absolute before:bottom-0 before:right-0 before:h-[8px] before:w-full before:bg-coloblue before:transition-transform before:duration-500 before:origin-left hover:before:scale-x-0 inline-block"
+            @click="scrollToTop"
+            >
+              CONTACT ME
+            </router-link>
           </div>
-      </div>
-
-    </section>
+        </div>
+      </section>
+    </div>
   </section>
 </template>
 
