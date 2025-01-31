@@ -4,6 +4,7 @@ import FleurBleu from '@/components/icons/FleurBleu.vue'
 import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
 import FleurPleineYellow from '@/components/icons/FleurPleineYellow.vue'
 import ProjectCompIndex from '@/components/ProjectCompIndex.vue'
+import ScrollE from '@/components/scrollElement.vue'
 
 // Imports de GSAP et enregistrement des plugins
 import { gsap } from 'gsap'
@@ -64,6 +65,20 @@ onMounted(() => {
   })
 })
 
+// Configuration du pin
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.to('.pinned-heading-container', {
+    scrollTrigger: {
+      trigger: '.pinned-section', // la section qui déclenche le pin
+      start: 'top center', // début du pin : quand le haut de la section atteint le centre de l'écran
+      end: 'bottom center', // fin du pin : quand le bas de la section atteint le centre de l'écran
+      pin: true, // on épingle l'élément
+      scrub: false, // pas de scrub progressif (on/off)
+      markers: false, // passer à true pour voir les repères de debug
+    },
+  })
+})
+
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
 }
@@ -109,6 +124,7 @@ const scrollToTop = () => {
       />
     </section>
 
+
     <!-- Images responsives -->
     <img
       src="/public/img/GreatDesignMobile.webp"
@@ -126,65 +142,12 @@ const scrollToTop = () => {
       class="hidden lg:block mt-64"
     />
 
-    <!-- Section avec les projets -->
-    <section class="my-[28rem] md:my-[32rem] lg:my-[40rem]">
-      <h3 class="text-[12vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue">
-        YOUNG
-        <span class="text-colored">
-          <br />
-          WEB DESIGNER</span
-        >
-      </h3>
-      <p
-        class="font-unbounded font-light text-sm md:text-base md:w-2/3 md:m-auto lg:text-2xl text-center"
-      >
-        I bring a unique perspective to every project, blending expertise in
-        <span class="font-medium">web design</span>,
-        <span class="font-medium">motion design</span> with a passion for creativity. I’m committed
-        to creating meaningful, impactful designs. <br />
-        Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
-      </p>
 
-      <!-- Grille des projets -->
-      <section class="mt-10 md:mt-14 lg:mt-20">
-        <div>
-          <ProjectCompIndex
-            imageSrc="/img/Accueilimg1.webp"
-            imageAlt="Example Project"
-            title="EYE ON ME"
-            subtitle="VIEW PROJECT >"
-            class="w-2/4 md:w-1/4 lg:w-1/4 text-sm cursor-pointer"
-          />
-        </div>
-        <div>
-          <ProjectCompIndex
-            imageSrc="/img/Accueilimg2.webp"
-            imageAlt="Example Project"
-            title="BRANDING PROJECT"
-            subtitle="VIEW PROJECT >"
-            class="w-2/4 md:w-1/4 lg:w-1/4 cursor-pointer"
-          />
-        </div>
-        <div>
-          <ProjectCompIndex
-            imageSrc="/img/Accueilimg3.webp"
-            imageAlt="Example Project"
-            title="WEB PROJECT"
-            subtitle="VIEW PROJECT >"
-            class="w-2/4 md:w-1/4 lg:w-1/4 cursor-pointer"
-          />
-        </div>
-        <div>
-          <ProjectCompIndex
-            imageSrc="/img/Accueilimg2.webp"
-            imageAlt="Example Project"
-            title="FULL DESIGN"
-            subtitle="VIEW PROJECT >"
-            class="w-2/4 md:w-1/4 lg:w-1/4 cursor-pointer"
-          />
-        </div>
-      </section>
-    </section>
+    <!-- Section avec les projets -->
+    <ScrollE/>
+
+
+    
   </section>
 
   <section ref="horizontalPinSection" class="relative overflow-hidden">
@@ -214,10 +177,14 @@ const scrollToTop = () => {
         </div>
 
         <div class="text-center flex flex-col gap-4 md:gap-6 items-center">
-          <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right md:pr-40 lg:pr-72">
+          <h4
+            class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right md:pr-40 lg:pr-72"
+          >
             UNIQUE WEB DESIGNER
           </h4>
-          <h4 class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left md:pl-40 lg:pl-72">
+          <h4
+            class="text-[7.8vw] md:text-[5.5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left md:pl-40 lg:pl-72"
+          >
             PASSIONATED BY DESIGN
           </h4>
           <p
@@ -251,7 +218,7 @@ const scrollToTop = () => {
             <router-link
               to="/contact"
               class="font-lactos text-[7.8vw] md:text-[3.5vw] text-coloblue relative before:content-[''] before:absolute before:bottom-0 before:right-0 before:h-[8px] before:w-full before:bg-coloblue before:transition-transform before:duration-500 before:origin-left hover:before:scale-x-0 inline-block"
-            @click="scrollToTop"
+              @click="scrollToTop"
             >
               CONTACT ME
             </router-link>
