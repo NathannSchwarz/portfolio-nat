@@ -83,7 +83,7 @@ onMounted(() => {
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
     start: 'top 30%',
-    end: '+=1400px',
+    end: '+=2100px',
     pin: true,
     pinSpacing: false,
     scrub: true,
@@ -95,9 +95,6 @@ onMounted(() => {
     onEnterBack: () => textPin.enable(),
     onLeave: () => textPin.disable(),
   })
-
-
-
 
   // 🎯 Réapparition du titre lorsqu'on remonte la page
   gsap.to('.text', {
@@ -129,16 +126,19 @@ onMounted(() => {
       >
         I bring a unique perspective to every project, blending expertise in
         <span class="font-medium">web design</span>,
-        <span class="font-medium">motion design</span> with a passion for creativity.
-        I’m committed to creating meaningful, impactful designs. <br />
+        <span class="font-medium">motion design</span> with a passion for creativity. I’m committed
+        to creating meaningful, impactful designs. <br />
         Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
       </p>
     </div>
 
+    <!-- ✅ Espace supplémentaire pour éviter que le texte soit coupé -->
+    <div class="buffer-space"></div>
+
     <!-- Conteneur des projets -->
     <div class="relative w-full max-w-[1200px] mx-auto min-h-[150vh]">
       <ProjectCompIndex
-        v-for="(project) in projects"
+        v-for="project in projects"
         :key="project.id"
         :imageSrc="project.imageSrc"
         :imageAlt="project.imageAlt"
@@ -156,16 +156,9 @@ onMounted(() => {
   </div>
 </template>
 
-
-
 <style scoped>
-.text {
-  position: relative;
-  font-family: Arial, sans-serif;
-  font-weight: 900;
-  font-size: 8vw;
-  text-align: center;
+.buffer-space {
+  height: 500px; /* Ajuste cette valeur pour tester */
   width: 100%;
-  z-index: 1;
 }
 </style>
