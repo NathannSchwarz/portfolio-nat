@@ -146,7 +146,7 @@ onMounted(() => {
         :imageAlt="project.imageAlt"
         :title="project.title"
         :subtitle="project.subtitle"
-        class="absolute project-item parallax-project cursor-pointer w-2/4 md:w-1/4 lg:w-1/4 text-sm"
+        class="absolute project-item parallax-project  w-2/4 md:w-1/4 lg:w-1/4 text-sm"
         :data-speed="project.speed"
         :style="{
           left: `${project.xPercent}vw`,
