@@ -83,7 +83,7 @@ onMounted(() => {
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
     start: 'top 30%',
-    end: '+=2100px',
+    end: `+=${window.innerHeight * 2}px`,
     pin: true,
     pinSpacing: false,
     scrub: true,
@@ -110,7 +110,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="overflow-hidden mt-[40rem] mb-[50rem]">
+  <div class="overflow-hidden mt-[40rem] pb-[50rem]">
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
       <h3 class="text-[12vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue">
@@ -130,10 +130,12 @@ onMounted(() => {
         to creating meaningful, impactful designs. <br />
         Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
       </p>
+
+      <div class="buffer-space"></div>
     </div>
 
     <!-- ✅ Espace supplémentaire pour éviter que le texte soit coupé -->
-    <div class="buffer-space"></div>
+
 
     <!-- Conteneur des projets -->
     <div class="relative w-full max-w-[1200px] mx-auto min-h-[150vh]">
@@ -158,7 +160,7 @@ onMounted(() => {
 
 <style scoped>
 .buffer-space {
-  height: 500px; /* Ajuste cette valeur pour tester */
+  height: 300px; /* Ajuste cette valeur pour tester */
   width: 100%;
 }
 </style>
