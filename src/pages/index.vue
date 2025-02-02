@@ -3,7 +3,6 @@ import Arrow from '@/components/icons/Arrow.vue'
 import FleurBleu from '@/components/icons/FleurBleu.vue'
 import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
 import FleurPleineYellow from '@/components/icons/FleurPleineYellow.vue'
-import ProjectCompIndex from '@/components/ProjectCompIndex.vue'
 import ScrollE from '@/components/scrollElement.vue'
 
 // Imports de GSAP et enregistrement des plugins
@@ -147,7 +146,7 @@ const scrollToTop = () => {
     <ScrollE/>
 
 
-    
+
   </section>
 
   <section ref="horizontalPinSection" class="relative overflow-hidden">

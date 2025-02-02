@@ -1,30 +1,29 @@
 <template>
-  <div class="flex flex-col">
-    <img :src="imageSrc" :alt="imageAlt" class="w-full object-cover mb-2" />
+  <router-link :to="`/${id}`" class="flex flex-col group" @click="scrollToTop">
+    <img
+      :src="imageSrc"
+      :alt="imageAlt"
+      class="w-full object-cover mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105"
+    />
     <h2 class="text-2xl font-lactos md:text-3xl">{{ title }}</h2>
-    <p class="text-sm font-unbounded font-light text-coloblue hover:text-colored transition-colors duration-500 md:text-base">{{ subtitle }}</p>
-  </div>
+    <p class="text-sm font-unbounded font-light text-coloblue hover:text-colored transition-colors duration-500 md:text-base">
+      {{ subtitle }}
+    </p>
+  </router-link>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from 'vue';
 
-defineProps({
-  imageSrc: {
-    type: String,
-    required: true,
-  },
-  imageAlt: {
-    type: String,
-    default: "Project Image",
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  subtitle: {
-    type: String,
-    required: true,
-  },
-});
+defineProps<{
+  id: number
+  imageSrc: string
+  imageAlt?: string
+  title: string
+  subtitle: string
+}>()
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
+}
 </script>

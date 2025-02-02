@@ -142,6 +142,7 @@ onMounted(() => {
       <ProjectCompIndex
         v-for="project in projects"
         :key="project.id"
+        :id="project.id"
         :imageSrc="project.imageSrc"
         :imageAlt="project.imageAlt"
         :title="project.title"
