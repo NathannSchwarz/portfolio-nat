@@ -1,12 +1,12 @@
 <template>
   <router-link :to="`/${id}`" class="block group" @click="scrollToTop">
     <div
-      class="relative w-full overflow-hidden transition-all duration-500 ease-in-out group-hover:rounded-2xl"
+      class="relative w-full overflow-hidden transition-all duration-700 ease-in-out group-hover:rounded-xl"
     >
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+        class="w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
       />
     </div>
 
