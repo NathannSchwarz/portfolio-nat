@@ -6,8 +6,9 @@
     ]"
   >
     <!-- Logo -->
-    <img class="w-32" src="/img/Logo.png" alt="logo" />
-
+    <router-link to="/" class="block" @click="scrollToTop">
+      <img class="w-32" src="/img/Logo.png" alt="logo" />
+    </router-link>
     <!-- Menu / Cross Button -->
     <button
       @click="toggleMenu"
@@ -90,17 +91,17 @@ const closeMenu = () => {
 }
 
 const handleScroll = () => {
-  const currentScrollY = window.scrollY;
+  const currentScrollY = window.scrollY
 
   // Si on remonte ou si on est proche du haut de la page, le header apparaît
   if (currentScrollY < lastScrollY || currentScrollY <= 0) {
-    isHeaderVisible.value = true;
+    isHeaderVisible.value = true
   } else {
-    isHeaderVisible.value = false;
+    isHeaderVisible.value = false
   }
 
-  lastScrollY = currentScrollY;
-};
+  lastScrollY = currentScrollY
+}
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
