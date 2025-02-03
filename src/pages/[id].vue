@@ -1,46 +1,14 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import projects from '@/data/projectsData' // ✅ Importation des projets centralisés
 
-// 🟢 Liste des projets
-const projects = ref([
-  {
-    id: 1,
-    imageSrc: '/img/Accueilimg1.webp',
-    title: 'EYE ON ME',
-    subtitle: 'VIEW PROJECT >',
-    description: 'This project explores the interaction between modern design and visual storytelling.',
-  },
-  {
-    id: 2,
-    imageSrc: '/img/Accueilimg2.webp',
-    title: 'BRANDING PROJECT',
-    subtitle: 'VIEW PROJECT >',
-    description: 'A deep dive into branding strategies and visual identity design.',
-  },
-  {
-    id: 3,
-    imageSrc: '/img/Accueilimg3.webp',
-    title: 'WEB PROJECT',
-    subtitle: 'VIEW PROJECT >',
-    description: 'A web development project showcasing cutting-edge frontend technologies.',
-  },
-  {
-    id: 4,
-    imageSrc: '/img/Accueilimg2.webp',
-    title: 'FULL DESIGN',
-    subtitle: 'VIEW PROJECT >',
-    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
-  },
-])
-
-// 🟢 Récupérer l'ID du projet dans l'URL
 const route = useRoute()
 const router = useRouter()
 const projectId = computed(() => parseInt(route.params.id as string, 10))
 
 // 🟢 Trouver le projet correspondant
-const project = computed(() => projects.value.find((p) => p.id === projectId.value))
+const project = computed(() => projects.find((p) => p.id === projectId.value))
 
 // 🛑 Si l'ID est invalide, rediriger vers la page d'accueil
 if (!project.value) {
@@ -48,30 +16,95 @@ if (!project.value) {
 }
 </script>
 
+
 <template>
-  <div v-if="project" class="container mx-auto p-6">
-    <!-- Image du projet -->
-    <div class="relative w-full overflow-hidden rounded-lg">
+  <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
+    <div v-if="project">
+      <section class="lg:grid lg:grid-cols-12 mb-14 md:mb-18 lg:mb-24">
+        <div class="lg:w-10/12 lg:col-span-10">
+          <h1
+            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[8rem] pt-8 md:pt-12 lg:pt-16 pb-8"
+          >
+            {{ project.title }}
+          </h1>
+          <h2
+            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-2xl mb-4 md:mb-5 lg:mb-10"
+          >
+            {{ project.subtitle }}
+          </h2>
+          <p
+            class="font-unbounded font-light text-base md:text-lg lg:text-2xl mb-10 md:mb-12 lg:w-4/5"
+          >
+            {{ project.description }}
+          </p>
+        </div>
+
+        <div class="flex lg:flex-col lg:mt-14 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2">
+          <div>
+            <h2
+              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-2xl mb-3 md:mb-4 lg:mb-5"
+            >
+              MY WORK
+            </h2>
+            <ul class="font-unbounded font-light text-sm md:text-base lg:text-2xl">
+              <li v-for="(item, index) in project.myWork" :key="index">{{ item }}</li>
+            </ul>
+          </div>
+          <div class="lg:mt-10">
+            <h2
+              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-2xl mb-3 md:mb-4 lg:mb-5"
+            >
+              LOGICIEL UTILISÉ
+            </h2>
+            <img :src="project.softwareImage" alt="Software Used" class="w-8 md:w-10 lg:w-12" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Images spécifiques pour chaque projet -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:mt-10">
+        <img
+          class="w-full md:h-[45vw] object-cover"
+          :src="project.images.main"
+          alt="Project Main Image"
+        />
+        <img
+          class="w-full md:h-[45vw] object-cover"
+          :src="project.images.secondary1"
+          alt="Project Secondary Image"
+        />
+      </div>
+
+      <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
+        <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
+          <h3
+            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-2xl mb-4 md:mb-5 lg:mb-7"
+          >
+            DESCRIPTION
+          </h3>
+          <p
+            class="font-unbounded font-light text-base md:text-lg lg:text-2xl mb-10 md:mb-12 lg:w-3/4"
+          >
+            {{ project.description2 }}
+          </p>
+        </div>
+      </div>
+
       <img
-        :src="project.imageSrc"
-        :alt="project.title"
-        class="w-full object-cover transition-transform duration-500 ease-in-out"
+        class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40"
+        :src="project.images.secondary2"
+        alt="Project Last Image"
       />
+
+      <h4 class="text-3xl text-black font-lactos md:text-[2.5rem] lg:text-[3.5rem]">
+        RELATED PROJECT
+      </h4>
     </div>
 
-    <!-- Détails du projet -->
-    <h1 class="text-4xl font-lactos mt-6 text-coloblue">{{ project.title }}</h1>
-    <p class="text-lg font-unbounded font-light text-gray-600 mt-4">{{ project.description }}</p>
-
-    <!-- Bouton retour -->
-    <router-link to="/" class="mt-6 inline-block text-coloblue hover:text-colored transition-colors duration-500">
-      ← Back to Home
-    </router-link>
-  </div>
-
-  <!-- Message d'erreur si le projet n'existe pas (au cas où le route.push ne fonctionne pas) -->
-  <div v-else class="text-center py-20">
-    <h2 class="text-2xl font-bold text-red-500">Project not found</h2>
-    <router-link to="/" class="text-blue-500 hover:underline">Return to home</router-link>
-  </div>
+    <!-- Message d'erreur si le projet n'existe pas (au cas où le route.push ne fonctionne pas) -->
+    <div v-else class="text-center py-20">
+      <h2 class="text-2xl font-bold text-red-500">Project not found</h2>
+      <router-link to="/" class="text-blue-500 hover:underline">Return to home</router-link>
+    </div>
+  </section>
 </template>

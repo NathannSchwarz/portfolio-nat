@@ -1,12 +1,12 @@
 <template>
   <router-link :to="`/${id}`" class="flex flex-col group" @click="scrollToTop">
     <div
-      class="relative w-full overflow-hidden transition-all duration-500 ease-in-out group-hover:rounded-2xl"
+      class="relative w-full overflow-hidden transition-all duration-500 ease-in-out "
     >
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover mb-2 transition-transform duration-500 ease-in-out group-hover:scale-110"
+        class="w-full object-cover mb-2 transition-transform duration-500 ease-in-out "
       />
     </div>
 
