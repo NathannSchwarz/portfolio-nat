@@ -87,7 +87,7 @@ const scrollToTop = () => {
   <section class="relative bg-colowhite overflow-hidden px-5 relative ">
     <section>
       <h1
-        class="text-[15vw] mt-32 text-black font-lactos z-10 relative text-stroke md:mt-52  md:text-[12vw] md:ml-12 lg:text-[11vw] lg:ml-[12vw] lg:mt-[7vw]  xl:text-[12rem] xl:mt-[4%] xl:ml-[14vw]"
+        class="text-[15vw] mt-28 text-black font-lactos z-10 relative text-stroke md:mt-52  md:text-[12vw] md:ml-12 lg:text-[11vw] lg:ml-[12vw] lg:mt-[7vw]  xl:text-[12rem] xl:mt-[4%] xl:ml-[14vw]"
       >
         NATHAN
       </h1>
@@ -107,7 +107,7 @@ const scrollToTop = () => {
       <!-- Bouton Arrow -->
       <button
         @click="scrollDown"
-        class="arrow-animation absolute z-50 group top-[45rem]  left-6 w-8 md:w-11 md:top-[60rem]  lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
+        class="arrow-animation absolute z-50 group top-[40rem]  left-6 w-8 md:w-11 md:top-[60rem]  lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
       >
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
       </button>
@@ -129,17 +129,17 @@ const scrollToTop = () => {
     <img
       src="/public/img/GreatDesignMobile.webp"
       alt="GreatDesignMobile"
-      class="block md:hidden mt-52"
+      class="block md:hidden mt-[22rem]"
     />
     <img
       src="/public/img/GreatDesignTablet.webp"
       alt="GreatDesignTablet"
-      class="hidden md:block lg:hidden mt-52"
+      class="hidden md:block lg:hidden mt-[25rem]"
     />
     <img
       src="/public/img/GreatDesignDesktop.webp"
       alt="GreatDesignDesktop"
-      class="hidden lg:block mt-64"
+      class="hidden lg:block mt-[25rem] xl:mt-[30rem]"
     />
 
     <!-- Section avec les projets -->

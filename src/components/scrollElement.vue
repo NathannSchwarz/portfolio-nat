@@ -110,10 +110,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="overflow-hidden mt-[40rem] pb-[50rem]">
+  <div class="overflow-hidden mt-[22rem]  pb-[30rem] md:mt-[30rem] md:mb-[20rem]  xl:mt-[40rem] xlpb-[60rem]">
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
-      <h3 class="text-[12vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue">
+      <h3 class="text-[10vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue">
         YOUNG
         <span class="text-colored">
           <br />
