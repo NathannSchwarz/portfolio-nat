@@ -10,7 +10,7 @@
     >
       <!-- Logo -->
       <router-link to="/" class="block " @click="scrollToTop">
-        <img class="w-32 mx-auto" src="/img/Logo.png" alt="logo" />
+        <img class="w-32 md:w-24 lg:w-28" src="/img/Logo.png" alt="logo" />
       </router-link>
 
       <!-- Navigation Desktop -->
