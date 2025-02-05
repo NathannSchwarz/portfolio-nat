@@ -87,7 +87,7 @@ const scrollToTop = () => {
   <section class="relative bg-colowhite overflow-hidden px-5 relative ">
     <section>
       <h1
-        class="text-[15vw] mt-32 text-black font-lactos z-10 relative md:mt-52  md:text-[10vw] md:ml-16 lg:text-[12rem] lg:ml-[12vw] lg:mt-[8vh] text-stroke"
+        class="text-[15vw] mt-32 text-black font-lactos z-10 relative md:mt-52  md:text-[10vw] md:ml-16 lg:text-[10.5vw] lg:ml-[12vw] lg:mt-[6vw] text-stroke"
       >
         NATHAN
       </h1>
@@ -95,11 +95,11 @@ const scrollToTop = () => {
       <img
         src="/img/Accueilimg3.webp"
         alt="imgaccueil3"
-        class="m-auto -mt-9 object-cover h-[55vh]  md:w-[80vw]  md:-mt-14 lg:-mt-44 md:h-full lg:object-fill lg:md:w-[45vw]"
+        class="m-auto -mt-9 object-cover h-[55vh]  md:w-[80vw]  md:-mt-14 lg:-mt-[6vh] md:h-full lg:object-fill lg:md:w-[45vw]"
       />
 
       <h2
-        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite border-1 text-end md:-mt-6  md:mr-16 md:text-[10vw] lg:text-[12rem]  lg:-mt-24 lg:mr-[12vw] text-stroke"
+        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite border-1 text-end md:-mt-6  md:mr-16 md:text-[10.5vw] lg:text-[10vw]  lg:-mt-24 lg:mr-[12vw] text-stroke"
       >
         SCHWARZ
       </h2>
