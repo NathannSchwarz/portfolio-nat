@@ -117,7 +117,7 @@ const relatedProjects = computed(() => {
       />
 
       <section v-if="relatedProjects.length" class="mt-20">
-        <h4 class="text-3xl text-black font-lactos md:text-[2.5rem] lg:text-[3.5rem] mb-6">
+        <h4 class="text-3xl text-black font-lactos md:text-[2rem] lg:text-[3rem] mb-6">
           RELATED PROJECTS
         </h4>
 

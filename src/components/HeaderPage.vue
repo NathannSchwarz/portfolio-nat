@@ -1,43 +1,67 @@
 <template>
   <header
     :class="[
-      'sticky flex items-center justify-between p-8 top-0 z-50 w-full bg-colowhite',
+      'fixed flex items-center justify-between p-8 top-0 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0',
       isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
-    <!-- Logo -->
-    <router-link to="/" class="block" @click="scrollToTop">
-      <img class="w-32" src="/img/Logo.png" alt="logo" />
-    </router-link>
-    <!-- Menu / Cross Button -->
+    <div
+      class="bg-colowhite md:flex md:justify-between md:items-center md:border md:border-1 md:border-black md:w-11/12  md:mx-auto md:p-4 md:pb-3 md:px-8 md:rounded-xl"
+    >
+      <!-- Logo -->
+      <router-link to="/" class="block " @click="scrollToTop">
+        <img class="w-32 mx-auto" src="/img/Logo.png" alt="logo" />
+      </router-link>
+
+      <!-- Navigation Desktop -->
+      <nav class="hidden md:flex space-x-8 md:text-[2vw] lg:text-[1.4vw] ">
+        <router-link
+          to="/"
+          class="font-lactos hover:text-coloyellow transition-colors duration-500"
+        >
+          INDEX
+        </router-link>
+        <router-link
+          to="/project"
+          class="font-lactos hover:text-colored transition-colors duration-500"
+        >
+          PROJECT
+        </router-link>
+        <router-link
+          to="/contact"
+          class="font-lactos hover:text-coloblue transition-colors duration-500"
+        >
+          CONTACT
+        </router-link>
+      </nav>
+    </div>
+
+    <!-- Menu Mobile -->
     <button
       @click="toggleMenu"
-      class="absolute right-7 w-10 h-12 md:right-8 md:w-12 lg:right-10 lg:w-14 focus:outline-none z-50"
+      class="md:hidden absolute right-7 w-10 h-12 focus:outline-none z-50"
     >
       <svg
         viewBox="0 0 74 50"
         xmlns="http://www.w3.org/2000/svg"
         class="w-full h-full text-black cursor-pointer"
       >
-        <!-- Barre du haut -->
         <path
           class="menu-line top"
           d="M5.04004 5.00659H68.917"
-          :stroke="isMenuOpen ? 'white' : 'currentColor'"
+          :stroke="isMenuOpen ? 'black' : 'currentColor'"
           stroke-width="9"
           stroke-linecap="round"
           :class="{ 'transform top-rotate': isMenuOpen }"
         />
-        <!-- Barre du milieu -->
         <path
           class="menu-line middle"
           d="M21.3408 25.0066L68.9168 25.0066"
-          :stroke="isMenuOpen ? 'white' : 'currentColor'"
+          :stroke="isMenuOpen ? 'black' : 'currentColor'"
           stroke-width="9"
           stroke-linecap="round"
           :class="{ 'transform middle-rotate': isMenuOpen }"
         />
-        <!-- Barre du bas -->
         <path
           class="menu-line bottom"
           d="M38.4629 45.0066L68.917 45.0066"
@@ -49,26 +73,35 @@
       </svg>
     </button>
 
-    <!-- Menu Content -->
+    <!-- Menu Mobile Content -->
     <div
-      class="absolute top-3 right-4 w-44 bg-black text-white pt-16 pb-10 px-6 rounded-[30px] shadow-lg transition-all duration-500 ease-in-out transform md:right-6 md:pt-16 md:pb-10 md:px-9 md:w-60 lg:pt-18 lg:pb-14 lg:px-12 lg:w-80"
+      class="md:hidden absolute top-3 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-6 rounded-[30px] shadow-lg transition-all duration-500 ease-in-out transform"
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
-      <ul class="space-y-8 lg:space-y-12">
-        <li
-          class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloyellow transition-colors duration-500 cursor-pointer"
-        >
-          <router-link to="/" class="block" @click="scrollToTop">INDEX</router-link>
+      <ul class="space-y-8 ">
+        <li @click="scrollToTop">
+          <router-link
+            to="/"
+            class="block text-3xl  font-lactos hover:text-coloyellow transition-colors duration-500"
+          >
+            INDEX
+          </router-link>
         </li>
-        <li
-          class="text-right font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-colored transition-colors duration-500 cursor-pointer"
-        >
-          <router-link to="/project" class="block" @click="scrollToTop">PROJECT</router-link>
+        <li @click="scrollToTop">
+          <router-link
+            to="/project"
+            class="block text-3xl font-lactos text-right  hover:text-colored transition-colors duration-500"
+          >
+            PROJECT
+          </router-link>
         </li>
-        <li
-          class="text-left font-lactos text-3xl text-colowhite md:text-4xl lg:text-5xl hover:text-coloblue transition-colors duration-500 cursor-pointer"
-        >
-          <router-link to="/contact" class="block" @click="scrollToTop">CONTACT</router-link>
+        <li @click="scrollToTop">
+          <router-link
+            to="/contact"
+            class="block text-3xl font-lactos  hover:text-coloblue transition-colors duration-500"
+          >
+            CONTACT
+          </router-link>
         </li>
       </ul>
     </div>
@@ -92,14 +125,11 @@ const closeMenu = () => {
 
 const handleScroll = () => {
   const currentScrollY = window.scrollY
-
-  // Si on remonte ou si on est proche du haut de la page, le header apparaît
   if (currentScrollY < lastScrollY || currentScrollY <= 0) {
     isHeaderVisible.value = true
   } else {
     isHeaderVisible.value = false
   }
-
   lastScrollY = currentScrollY
 }
 
@@ -118,7 +148,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Styles identiques */
 .menu-line {
   transition: transform 0.3s ease-in-out;
   transform-origin: center;

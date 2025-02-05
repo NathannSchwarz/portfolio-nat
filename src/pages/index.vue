@@ -87,7 +87,7 @@ const scrollToTop = () => {
   <section class="relative bg-colowhite overflow-hidden px-5 relative">
     <section>
       <h1
-        class="text-6xl text-black font-lactos z-10 relative mt-2 md:mt-3 md:text-[7rem] lg:text-[13rem] md:ml-20 lg:ml-36"
+        class="text-6xl text-black font-lactos z-10 relative mt-2 md:mt-3 md:text-[7vw] lg:text-[13vw] md:ml-20 lg:ml-36"
       >
         NATHAN
       </h1>
@@ -99,7 +99,7 @@ const scrollToTop = () => {
       />
 
       <h2
-        class="text-6xl text-black font-lactos -mt-2 z-10 relative border-colowhite border-1 text-end md:-mt-6 md:text-[7rem] md:mr-20 lg:text-[13rem] lg:-mt-12 lg:mr-36"
+        class="text-6xl text-black font-lactos -mt-2 z-10 relative border-colowhite border-1 text-end md:-mt-6 md:text-[7vw] md:mr-20 lg:text-[13vw] lg:-mt-12 lg:mr-36"
       >
         SCHWARZ
       </h2>
@@ -123,7 +123,6 @@ const scrollToTop = () => {
       />
     </section>
 
-
     <!-- Images responsives -->
     <img
       src="/public/img/GreatDesignMobile.webp"
@@ -141,12 +140,8 @@ const scrollToTop = () => {
       class="hidden lg:block mt-64"
     />
 
-
     <!-- Section avec les projets -->
-    <ScrollE/>
-
-
-
+    <ScrollE />
   </section>
 
   <section ref="horizontalPinSection" class="relative overflow-hidden">
