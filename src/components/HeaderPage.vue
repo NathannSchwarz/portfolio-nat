@@ -17,19 +17,19 @@
       <nav class="hidden md:flex space-x-8 md:text-[2vw] lg:text-[1.4vw] ">
         <router-link
           to="/"
-          class="font-lactos hover:text-coloyellow transition-colors duration-500"
+          class="font-lactos hover:text-coloyellow transition-colors duration-500" @click="scrollToTop"
         >
           INDEX
         </router-link>
         <router-link
           to="/project"
-          class="font-lactos hover:text-colored transition-colors duration-500"
+          class="font-lactos hover:text-colored transition-colors duration-500" @click="scrollToTop"
         >
           PROJECT
         </router-link>
         <router-link
           to="/contact"
-          class="font-lactos hover:text-coloblue transition-colors duration-500"
+          class="font-lactos hover:text-coloblue transition-colors duration-500" @click="scrollToTop"
         >
           CONTACT
         </router-link>
