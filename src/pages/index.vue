@@ -19,13 +19,13 @@ const scrollDown = () => {
   let scrollMultiplier
 
   if (screenWidth >= 1750) {
-    scrollMultiplier = 1.1
+    scrollMultiplier = 1.3
   } else if (screenWidth >= 1024) {
-    scrollMultiplier = 1.18
+    scrollMultiplier = 1.10
   } else if (screenWidth >= 768) {
     scrollMultiplier = 0.8
   } else {
-    scrollMultiplier = 0.8
+    scrollMultiplier = 0.95
   }
 
   const scrollValue = screenHeight * scrollMultiplier
@@ -87,7 +87,7 @@ const scrollToTop = () => {
   <section class="relative bg-colowhite overflow-hidden px-5 relative ">
     <section>
       <h1
-        class="text-[15vw] mt-32 text-black font-lactos z-10 relative md:mt-52  md:text-[10vw] md:ml-16 lg:text-[10.5vw] lg:ml-[12vw] lg:mt-[6vw] text-stroke"
+        class="text-[15vw] mt-32 text-black font-lactos z-10 relative text-stroke md:mt-52  md:text-[12vw] md:ml-12 lg:text-[11vw] lg:ml-[12vw] lg:mt-[7vw]  xl:text-[12rem] xl:mt-[4%] xl:ml-[14vw]"
       >
         NATHAN
       </h1>
@@ -95,11 +95,11 @@ const scrollToTop = () => {
       <img
         src="/img/Accueilimg3.webp"
         alt="imgaccueil3"
-        class="m-auto -mt-9 object-cover h-[55vh]  md:w-[80vw]  md:-mt-14 lg:-mt-[6vh] md:h-full lg:object-fill lg:md:w-[45vw]"
+        class="m-auto -mt-9 object-cover h-[55vh]  md:w-[80vw]  md:-mt-14 md:h-full lg:object-fill lg:-mt-[12vh] lg:w-[50vw]  xl:w-[41%] xl:-mt-[14vh]"
       />
 
       <h2
-        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite border-1 text-end md:-mt-6  md:mr-16 md:text-[10.5vw] lg:text-[10vw]  lg:-mt-24 lg:mr-[12vw] text-stroke"
+        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite text-stroke text-end md:-mt-8  md:mr-12 md:text-[12vw]  lg:-mt-12 lg:mr-[12vw] xl:text-[12rem] lg:-mt-20"
       >
         SCHWARZ
       </h2>
@@ -107,20 +107,22 @@ const scrollToTop = () => {
       <!-- Bouton Arrow -->
       <button
         @click="scrollDown"
-        class="arrow-animation absolute top-[45rem] left-6 w-8 md:w-11 md:top-[31rem] lg:w-16 lg:top-[42vw] lg:left-20 z-50 group"
+        class="arrow-animation absolute z-50 group top-[45rem]  left-6 w-8 md:w-11 md:top-[60rem]  lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
       >
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
       </button>
 
-      <FleurBleu
-        class="absolute top-[35rem] -right-4 w-28 z-0 md:-right-10 md:top-[30rem] md:w-[14vw] lg:-right-20 lg:top-[35rem] animate-spin-reverse"
+      <FleurPleineYellow
+        class="absolute top-12 right-8 w-24 z-0 md:right-20 md:top-32 md:w-[14vw] lg:right-16  lg:top-10 xl:top-20 animate-spin-reverse-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[23rem] -left-6 w-24 z-0 md:left-28 md:top-[12rem] md:w-[16vw] lg:left-48 lg:top-[25rem] animate-spin-slow"
+        class="absolute top-[23rem] -left-6 w-24 z-0 md:left-8 md:top-[40rem] md:w-[16vw] lg:left-32 lg:top-[20rem] xl:top-[25rem] animate-spin-slow"
       />
-      <FleurPleineYellow
-        class="absolute top-2 right-8 w-24 z-0 md:right-20 md:w-[16vw] lg:right-32 animate-spin-reverse-slow"
+      <FleurBleu
+        class="absolute top-[43rem] -right-4 w-28 z-0 md:-right-10 md:top-[60rem] md:w-[14vw] lg:-right-20 lg:top-[35rem] xl:top-[50rem] animate-spin-reverse"
       />
+
+
     </section>
 
     <!-- Images responsives -->
