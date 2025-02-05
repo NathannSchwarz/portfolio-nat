@@ -84,10 +84,10 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <section class="relative bg-colowhite overflow-hidden px-5 relative">
+  <section class="relative bg-colowhite overflow-hidden px-5 relative ">
     <section>
       <h1
-        class="text-6xl text-black font-lactos z-10 relative mt-2 md:mt-3 md:text-[7vw] lg:text-[13vw] md:ml-20 lg:ml-36"
+        class="text-[15vw] mt-32 text-black font-lactos z-10 relative md:mt-52  md:text-[10vw] md:ml-16 lg:text-[12rem] lg:ml-[12vw] lg:mt-[8vh] text-stroke"
       >
         NATHAN
       </h1>
@@ -95,11 +95,11 @@ const scrollToTop = () => {
       <img
         src="/img/Accueilimg3.webp"
         alt="imgaccueil3"
-        class="m-auto -mt-5 object-cover h-[25rem] md:object-fill md:w-1/2 md:-mt-14 lg:-mt-32 md:h-full"
+        class="m-auto -mt-9 object-cover h-[55vh]  md:w-[80vw]  md:-mt-14 lg:-mt-44 md:h-full lg:object-fill lg:md:w-[45vw]"
       />
 
       <h2
-        class="text-6xl text-black font-lactos -mt-2 z-10 relative border-colowhite border-1 text-end md:-mt-6 md:text-[7vw] md:mr-20 lg:text-[13vw] lg:-mt-12 lg:mr-36"
+        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite border-1 text-end md:-mt-6  md:mr-16 md:text-[10vw] lg:text-[12rem]  lg:-mt-24 lg:mr-[12vw] text-stroke"
       >
         SCHWARZ
       </h2>
@@ -107,7 +107,7 @@ const scrollToTop = () => {
       <!-- Bouton Arrow -->
       <button
         @click="scrollDown"
-        class="arrow-animation absolute top-[32rem] left-6 w-8 md:w-11 md:top-[31rem] lg:w-16 lg:top-[42vw] lg:left-20 z-50 group"
+        class="arrow-animation absolute top-[45rem] left-6 w-8 md:w-11 md:top-[31rem] lg:w-16 lg:top-[42vw] lg:left-20 z-50 group"
       >
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
       </button>
@@ -248,4 +248,8 @@ h4 {
     -webkit-text-stroke: 2px black; /* Desktop */
   }
 }
+
+.text-stroke {
+    -webkit-text-stroke: 1px #F7F4F2;
+  }
 </style>
