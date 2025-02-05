@@ -159,7 +159,7 @@ const scrollToTop = () => {
     >
       <!-- SECTION 1 : WHO AM I -->
       <section
-        class="w-full h-auto /* Mobile : occupe toute la largeur, hauteur auto */ md:w-screen md:h-screen /* Desktop : occupe un écran en largeur/hauteur */ flex-none bg-coloyellow flex flex-col justify-center items-center"
+        class="w-full h-auto /* Mobile : occupe toute la largeur, hauteur auto */ md:w-screen md:h-screen /* Desktop : occupe un écran en largeur/hauteur */ flex-none bg-coloyellow flex flex-col justify-center items-center border-t border-black"
       >
         <div class="relative mx-5 mb-10 md:mb-16">
           <img src="/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-5/12" />
@@ -194,7 +194,7 @@ const scrollToTop = () => {
 
       <!-- SECTION 2 : CONTACT ME -->
       <section
-        class="w-full h-auto md:w-screen md:h-screen flex-none bg-coloyellow flex items-center justify-center"
+        class="w-full h-auto md:w-screen md:h-screen flex-none bg-coloyellow flex items-center justify-center border-b border-black"
       >
         <div class="relative mx-5 flex flex-col items-center justify-center md:flex-row md:mr-20">
           <img

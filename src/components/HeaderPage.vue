@@ -1,12 +1,12 @@
 <template>
   <header
     :class="[
-      'fixed flex items-center justify-between p-8 top-0 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0',
+      'fixed flex items-center justify-between p-8 py-5 md:pt-4 top-0 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0',
       isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
     <div
-      class="bg-colowhite md:flex md:justify-between md:items-center md:border md:border-1 md:border-black md:w-11/12  md:mx-auto md:p-4 md:pb-3 md:px-8 md:rounded-xl"
+      class="bg-colowhite md:flex md:justify-between md:items-center md:border md:border-1 md:border-black md:w-10/12  md:mx-auto md:p-4 md:pb-3 md:px-8 md:rounded-xl"
     >
       <!-- Logo -->
       <router-link to="/" class="block " @click="scrollToTop">
@@ -19,7 +19,7 @@
           to="/"
           class="font-lactos hover:text-coloyellow transition-colors duration-500" @click="scrollToTop"
         >
-          INDEX
+          HOME
         </router-link>
         <router-link
           to="/project"
@@ -75,7 +75,7 @@
 
     <!-- Menu Mobile Content -->
     <div
-      class="md:hidden absolute top-3 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-6 rounded-[30px] shadow-lg transition-all duration-500 ease-in-out transform"
+      class="md:hidden absolute top-2 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-6 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
       <ul class="space-y-8 ">
@@ -84,7 +84,7 @@
             to="/"
             class="block text-3xl  font-lactos hover:text-coloyellow transition-colors duration-500"
           >
-            INDEX
+            HOME
           </router-link>
         </li>
         <li @click="scrollToTop">
