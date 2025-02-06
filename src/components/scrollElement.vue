@@ -61,153 +61,160 @@ const projects = ref([
 ])
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-  // ⚡ Attendre que la page ait bien chargé
+  // ⚡ Attendre que la page ait bien chargé avant de rafraîchir GSAP
   setTimeout(() => {
-    ScrollTrigger.refresh()
-  }, 200)
+    ScrollTrigger.refresh();
+  }, 200);
 
-  ScrollTrigger.getAll().forEach((t) => t.kill()) // Supprime tous les ScrollTrigger actifs
-  ScrollTrigger.refresh() // Recharge proprement les animations
+  // ⚡ Supprime tous les anciens ScrollTrigger pour éviter les bugs
+  ScrollTrigger.getAll().forEach((t) => t.kill());
+  ScrollTrigger.refresh();
 
-  const mm = gsap.matchMedia()
+  const mm = gsap.matchMedia();
 
-  mm.add('(max-width: 640px)', () => {
-    console.log('📱 Mobile mode')
+  mm.add("(max-width: 640px)", () => {
+    console.log("📱 Mobile mode");
+    updateProjects([3, 18, 3, 18, 3], [0, 16, 33, 49, 67]);
+    createTextPin(window.innerHeight * 2.7); // Moins long sur mobile
+  });
+
+  mm.add("(min-width: 641px) and (max-width: 1023px)", () => {
+    console.log("📲 Tablet mode");
+    updateProjects([10, 40, 15, 38, 10], [10, 20, 35, 48, 62]);
+    createTextPin(window.innerHeight * 2.1); // Valeur spécifique pour tablette
+  });
+
+  mm.add("(min-width: 1024px) and (max-width: 1280px)", () => {
+    console.log("🖥️ Tablet 2 mode");
+    updateProjects([10, 40, 8, 35, 15], [0, 19, 35, 45, 62]);
+    createTextPin(window.innerHeight * 2.7); // Longueur intermédiaire
+  });
+
+  mm.add("(min-width: 1281px)", () => {
+    console.log("🖥️ Desktop mode");
+    updateProjects([0, 25, 7, 32, 2], [0, 10, 30, 45, 60]);
+    createTextPin(window.innerHeight * 2.7); // Plus long sur desktop
+  });
+
+  function updateProjects(xValues: number[], yValues: number[]) {
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [3, 18, 3, 18, 3][i],
-      yPercent: [0, 16, 33, 49, 67][i],
-    }))
-    updateAnimations()
-  })
+      xPercent: xValues[i],
+      yPercent: yValues[i],
+    }));
+    updateAnimations();
+  }
 
-  mm.add('(min-width: 641px) and (max-width: 1023px)', () => {
-    console.log('📲 Tablet 2 mode')
-    projects.value = projects.value.map((p, i) => ({
-      ...p,
-      xPercent: [10, 40, 15, 38, 10][i],
-      yPercent: [10, 20, 35, 48, 62][i],
-    }))
-    updateAnimations()
-  })
+  function createTextPin(endValue: number) {
+    // ⚡ Supprime les anciens textPin pour éviter les doublons
+    ScrollTrigger.getAll().forEach((t) => {
+      if (t.trigger && t.trigger.classList.contains("intro-text")) {
+        t.kill();
+      }
+    });
 
-  mm.add('(min-width: 1024px) and (max-width: 1280px)', () => {
-    console.log('🖥️ Tbalet 2 mode')
-    projects.value = projects.value.map((p, i) => ({
-      ...p,
-      xPercent: [10, 40, 8, 35, 15][i],
-      yPercent: [0, 19, 35, 45, 62][i],
-    }))
-    updateAnimations()
-  })
+    // ⚡ Crée un nouveau textPin avec la bonne valeur de end
+    ScrollTrigger.create({
+      trigger: ".intro-text",
+      start: "top+=160vh center",
+      end: `+=${endValue}px`, // ⚡ Valeur différente selon la taille d'écran
+      pin: true,
+      pinSpacing: false,
+      scrub: 1,
+    });
 
-  mm.add('(min-width: 1281px)', () => {
-    console.log('🖥️ Desktop 2 mode')
-    projects.value = projects.value.map((p, i) => ({
-      ...p,
-      xPercent: [0, 25, 7, 32, 2][i],
-      yPercent: [0, 10, 30, 45, 60][i],
-    }))
-    updateAnimations()
-  })
+    console.log(`📌 textPin updated with end: ${endValue}px`);
+  }
 
   async function updateAnimations() {
-    await nextTick() // Assure que Vue applique les nouvelles valeurs avant GSAP
-    console.log('📌 New project values:', projects.value)
-
-    // Rafraîchir GSAP AVANT de définir les animations
-    ScrollTrigger.refresh()
+    await nextTick(); // Assure que Vue applique les nouvelles valeurs avant GSAP
+    console.log("📌 New project values:", projects.value);
 
     // Effet parallaxe sur les images
-    document.querySelectorAll('.parallax-project').forEach((el, i) => {
-      const project = el as HTMLElement
+    document.querySelectorAll(".parallax-project").forEach((el, i) => {
+      const project = el as HTMLElement;
 
-      const xInitial = projects.value[i].xPercent
-      const yInitial = projects.value[i].yPercent
+      const xInitial = projects.value[i].xPercent;
+      const yInitial = projects.value[i].yPercent;
 
       // Mise à jour GSAP
       gsap.set(project, {
         x: `${xInitial}vw`,
         y: `${yInitial}vh`,
-      })
+      });
 
       gsap.to(project, {
-
-
-        ease: 'none',
+        ease: "none",
         scrollTrigger: {
           trigger: project,
-          start: 'top bottom',
-          end: 'bottom top',
+          start: "top bottom",
+          end: "bottom top",
           scrub: true,
         },
-      })
-    })
+      });
+    });
 
-    ScrollTrigger.refresh() // 🔄 Forcer GSAP à recalculer les animations
+    // 🔄 Rafraîchir GSAP après la mise à jour des animations
+    ScrollTrigger.refresh();
   }
-
-  // 🟢 Fixer le h3 et le p jusqu'à la fin des projets
-  const textPin = ScrollTrigger.create({
-    trigger: '.intro-text',
-    start: 'top+=160vh center', // ⚡ Meilleur positionnement
-    end: `+=${window.innerHeight * 2.7}px`, // ⚡ Fixe plus longtemps
-    pin: true,
-    pinSpacing: false,
-    scrub: 1, // ⚡ Meilleure fluidité
-  })
 
   // 🟢 Fixer le texte après le passage des images
   ScrollTrigger.create({
-    start: 'bottom top',
+    start: "bottom top",
     onEnterBack: () => textPin.enable(),
     onLeave: () => textPin.disable(),
-  })
+  });
 
   // 🎯 Réapparition du titre lorsqu'on remonte la page
-  gsap.to('.text', {
+  gsap.to(".text", {
     opacity: 1,
     scrollTrigger: {
-      trigger: '.images',
-      start: 'top top',
-      end: 'top+=5px top',
+      trigger: ".images",
+      start: "top top",
+      end: "top+=5px top",
       scrub: true,
     },
-  })
+  });
 
   // 🟢 Rendre le bouton invisible tant que les images sont visibles
   // 🟢 Cacher le bouton dès que la première image arrive à l'écran
   gsap.fromTo(
-    '.project-button',
+    ".project-button",
     { opacity: 1 },
     {
       opacity: 0, // Le bouton disparaît
       scrollTrigger: {
-        trigger: '.parallax-project:first-child', // Première image
-        start: 'top 80%', // Dès qu'elle commence à apparaître
-        end: 'top 50%', // Le bouton reste invisible
+        trigger: ".parallax-project:first-child", // Première image
+        start: "top 80%", // Dès qu'elle commence à apparaître
+        end: "top 50%", // Le bouton reste invisible
         scrub: true,
       },
-    },
-  )
+    }
+  );
 
   // 🟢 Faire réapparaître le bouton quand la dernière image quitte l'écran
   gsap.fromTo(
-    '.project-button',
+    ".project-button",
     { opacity: 0 },
     {
       opacity: 1, // Le bouton réapparaît
       scrollTrigger: {
-        trigger: '.parallax-project:last-child', // Dernière image
-        start: 'bottom 100%', // Lorsqu'elle approche de la sortie
-        end: 'bottom 0%', // Le bouton devient totalement visible
+        trigger: ".parallax-project:last-child", // Dernière image
+        start: "bottom 100%", // Lorsqu'elle approche de la sortie
+        end: "bottom 0%", // Le bouton devient totalement visible
         scrub: true,
       },
-    },
-  )
-})
+    }
+  );
+
+  // 🔄 Assure que GSAP prend en compte la hauteur correcte après chargement
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 200);
+});
+
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
@@ -216,7 +223,7 @@ const scrollToTop = () => {
 
 <template>
   <div
-    class="overflow-hidden mt-[18rem] pb-[30rem] md:mt-[30rem] md:mb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
+    class="overflow-hidden mt-[18rem] pb-[30rem] md:mt-[30rem] md:mb-[15rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
   >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
