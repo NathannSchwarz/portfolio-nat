@@ -81,11 +81,16 @@ document.addEventListener('DOMContentLoaded', function () {
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
 }
-
-
 </script>
 
 <template>
+  <video autoplay muted loop class="w-screen h-screen object-cover">
+    <source src="/video/Micro_Animation_Portfolio_Nathan_SCHWARZ.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
+  <div
+    class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite"
+  ></div>
   <section class="relative bg-colowhite overflow-hidden px-5 relative">
     <section>
       <h1
@@ -114,7 +119,7 @@ const scrollToTop = () => {
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
       </button>
 
-      <FleurPleineYellow
+      <!-- <FleurPleineYellow
         class="absolute top-12 right-8 w-24 z-0 md:right-20 md:top-32 md:w-[14vw] lg:right-16 lg:top-10 xl:top-20 animate-spin-reverse-slow"
       />
       <FleurPleineRouge
@@ -122,7 +127,7 @@ const scrollToTop = () => {
       />
       <FleurBleu
         class="absolute top-[43rem] -right-4 w-28 z-0 md:-right-10 md:top-[60rem] md:w-[14vw] lg:-right-20 lg:top-[35rem] xl:top-[50rem] animate-spin-reverse"
-      />
+      /> -->
 
       <FleurPleineYellow
         class="absolute top-[250vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[280vh] xl:w-[15vw] animate-spin-reverse-slow"
