@@ -87,28 +87,28 @@ onMounted(() => {
     console.log('📱 Mobile mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [5, 18, 3, 18, 3, 18][i],
-      yPercent: [8, 16, 38, 48, 64, 80][i],
+      xPercent: [17, 33, 17, 33, 17, 33][i],
+      yPercent: [0, 14, 30, 43, 58, 74][i],
     }))
     updateAnimations()
   })
 
-  mm.add('(min-width: 641px) and (max-width: 1024px)', () => {
+  mm.add('(min-width: 641px) and (max-width: 1023px)', () => {
     console.log('📲 Tablet 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [3, 30, 4, 26, 3, 20][i],
-      yPercent: [8, 19, 30, 45, 60, 75][i],
+      xPercent: [10, 40, 15, 38, 10, 38][i],
+      yPercent: [0, 20, 35, 48, 62, 75][i],
     }))
     updateAnimations()
   })
 
-  mm.add('(min-width: 1025px) and (max-width: 1280px)', () => {
+  mm.add('(min-width: 1024px) and (max-width: 1280px)', () => {
     console.log('🖥️ Tbalet 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [4, 34, 8, 30, 2, 33][i],
-      yPercent: [10, 20, 35, 48, 62, 75][i],
+      xPercent: [10, 40, 8, 35, 15, 42][i],
+      yPercent: [0, 19, 35, 45, 62, 75][i],
     }))
     updateAnimations()
   })
@@ -117,8 +117,8 @@ onMounted(() => {
     console.log('🖥️ Desktop 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [1, 25, 7, 32, 2, 28][i],
-      yPercent: [0, 15, 35, 50, 65, 75][i],
+      xPercent: [0, 25, 7, 32, 2, 28][i],
+      yPercent: [0, 10, 30, 45, 60, 75][i],
     }))
     updateAnimations()
   })

@@ -138,17 +138,17 @@ const scrollToTop = () => {
 
     <!-- Images responsives -->
     <img
-      src="/public/img/GreatDesignMobile.webp"
+      src="/img/GreatDesignMobile.webp"
       alt="GreatDesignMobile"
       class="block md:hidden mt-[22rem]"
     />
     <img
-      src="/public/img/GreatDesignTablet.webp"
+      src="/img/GreatDesignTablet.webp"
       alt="GreatDesignTablet"
       class="hidden md:block lg:hidden mt-[25rem]"
     />
     <img
-      src="/public/img/GreatDesignDesktop.webp"
+      src="/img/GreatDesignDesktop.webp"
       alt="GreatDesignDesktop"
       class="hidden lg:block mt-[25rem] xl:mt-[30rem]"
     />
