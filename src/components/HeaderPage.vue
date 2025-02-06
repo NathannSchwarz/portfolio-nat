@@ -14,7 +14,7 @@
       </router-link>
 
       <!-- Navigation Desktop -->
-      <nav class="hidden md:flex space-x-8 md:text-[2vw] lg:text-[1.4vw] ">
+      <nav class="hidden md:flex space-x-8 md:text-[2vw] xl:text-[1.4vw]">
         <router-link
           to="/"
           class="font-lactos hover:text-coloyellow transition-colors duration-500" @click="scrollToTop"

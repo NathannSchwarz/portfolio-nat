@@ -51,12 +51,12 @@ const countProjects = (filter: string) => {
 <template>
   <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
     <h1
-      class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[10rem] pt-8 md:pt-12 lg:pt-16 z-10 relative pb-8 lg:pb-20"
+      class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-32 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20"
     >
       MY WORK
     </h1>
     <p
-      class="font-unbounded font-light text-base md:text-lg md:w-2/3 lg:text-2xl lg:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
+      class="font-unbounded font-light text-base md:text-lg md:w-2/3 lg:text-xl lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
     >
       I bring a unique perspective to every project, blending expertise in
       <span class="font-medium">web design</span>,
@@ -67,18 +67,18 @@ const countProjects = (filter: string) => {
 
     <!-- Decorative Images -->
     <FleurPleineRouge
-      class="absolute top-[19rem] left-2 w-[18vw] z-0 md:top-[21rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[26rem] animate-spin-slow-20"
+      class="absolute top-[24.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
     />
     <FleurPleineYellow
-      class="absolute top-0 -right-6 w-[24vw] z-0 md:right-20 md:w-[16vw] lg:right-32 lg:top-2 animate-spin-slow"
+      class="absolute top-20 -right-6 w-[24vw] z-0 md:right-20 md:top-[5rem] md:w-[16vw] lg:right-32 lg:top-24 xl:w-[15vw] xl:top-[10rem] animate-spin-slow"
     />
     <FleurPleineBleu
-      class="absolute top-[17rem] right-10 w-[20vw] z-0 md:w-[24vw] md:top-[15rem] md:right-20 lg:right-32 animate-spin-reverse-slow"
+      class="absolute top-[24rem] right-10 w-[20vw] z-0 md:w-[24vw] md:top-[20rem] md:right-20 lg:right-32 lg:top-[25rem] xl:w-[21vw] xl:top-[25rem] xl:right-40 animate-spin-reverse-slow"
     />
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-3xl lg:gap-10 lg:mt-96"
+      class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-3xl "
     >
       <li
         v-for="filter in filters"
@@ -98,7 +98,7 @@ const countProjects = (filter: string) => {
     </ul>
 
     <!-- Project Grid -->
-    <section class="mt-10 md:mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
+    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
       <div v-for="(project, index) in filteredProjects" :key="index" :class="project.gridClass">
         <ProjectComp
           :id="project.id"

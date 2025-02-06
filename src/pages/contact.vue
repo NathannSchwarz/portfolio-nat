@@ -2,6 +2,7 @@
 import { reactive, ref } from 'vue';
 import emailjs from 'emailjs-com';
 import FleurBleu from "@/components/icons/FleurBleu.vue";
+import FleurPleineBleu from "@/components/icons/FleurPleineBleu.vue";
 import FleurRouge from "@/components/icons/FleurRouge.vue";
 import FleurPleineRouge from "@/components/icons/FleurPleineRouge.vue";
 import FleurPleineYellow from "@/components/icons/FleurPleineYellow.vue";
@@ -100,14 +101,14 @@ const submitForm = async () => {
     <!-- Fleurs avec animation -->
      <FleurRouge
       alt="FleurRouge"
-      class="absolute top-24 left-2 w-[16vw] z-0 md:top-32 md:left-10 md:w-[14vw] lg:left-20 animate-spin-slow-20"/>
+      class="absolute top-36 left-2 w-[16vw] z-0 md:top-32 md:left-10 md:w-[14vw] lg:left-16 animate-spin-slow-20"/>
 
       <FleurPleineYellow alt="FleurYellow"
-      class="absolute top-0 right-8 w-[18vw] z-0 md:right-20 md:w-[16vw] lg:right-32 animate-spin-reverse-slow"/>
+      class="absolute top-20 right-8 w-[18vw] z-0 md:right-12 md:w-[16vw] lg:right-20 animate-spin-reverse-slow"/>
 
     <transition name="fade">
-       <FleurBleu v-if="!formSubmitted"
-          alt="FleurBleu"
+       <FleurPleineBleu v-if="!formSubmitted"
+          alt="FleurPleineBleu"
           class="absolute top-[25rem] right-0 w-[16vw] z-0 md:-right-10 md:w-[14vw] lg:-right-20 lg:top-[40rem] animate-spin-reverse"/>
 
       </transition>
@@ -126,8 +127,8 @@ const submitForm = async () => {
           alt="FleurRouge"
           class="absolute bottom-10 -right-10 w-[16vw] z-0 md:w-[14vw] lg:right-32 animate-spin-slow-20"/>
       </transition>
-      <FleurBleu
-      alt="FleurBleu"
+      <FleurPleineBleu
+      alt="FleurPleineBleu"
           class="absolute bottom-[15rem] -left-10 w-[18vw] z-0 md:w-[16vw] md:bottom-[10rem] md:-left-20 lg:right-32 animate-spin-reverse-slow"/>
 
 
@@ -135,7 +136,7 @@ const submitForm = async () => {
 
     <!-- Texte au-dessus -->
     <div v-if="!formSubmitted">
-      <h1 class="text-5xl text-black font-lactos text-center md:text-[7rem] lg:text-[10rem] pt-8 md:pt-12 lg:pt-16 z-10 relative pb-8 lg:pb-20">
+      <h1 class="text-5xl text-black font-lactos text-center md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-32 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20">
         START A<br>PROJECT
       </h1>
     </div>

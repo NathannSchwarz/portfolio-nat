@@ -6,11 +6,11 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover mb-2 transition-transform duration-500 ease-in-out "
+        class="w-full object-cover mb-2 md:mb-4 xl:mb-6 transition-transform duration-500 ease-in-out "
       />
     </div>
 
-    <h2 class="text-2xl font-lactos md:text-3xl">{{ title }}</h2>
+    <h2 class="text-2xl font-lactos xl:text-3xl ">{{ title }}</h2>
     <p
       class="text-sm font-unbounded font-light text-coloblue hover:text-colored transition-colors duration-500 md:text-base"
     >
