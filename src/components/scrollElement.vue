@@ -87,8 +87,8 @@ onMounted(() => {
     console.log('📱 Mobile mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [17, 33, 17, 33, 17, 33][i],
-      yPercent: [0, 16, 26, 49, 67, 85][i],
+      xPercent: [3, 19, 3, 19, 3, 19][i],
+      yPercent: [0, 16, 33, 49, 67, 85][i],
     }))
     updateAnimations()
   })
@@ -133,7 +133,7 @@ onMounted(() => {
     // Effet parallaxe sur les images
     document.querySelectorAll('.parallax-project').forEach((el, i) => {
       const project = el as HTMLElement
-      
+
       const xInitial = projects.value[i].xPercent
       const yInitial = projects.value[i].yPercent
 
