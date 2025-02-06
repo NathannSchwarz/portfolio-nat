@@ -123,16 +123,16 @@ const scrollToTop = () => {
       />
 
       <FleurPleineYellow
-        class="absolute top-[210vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[280vh] xl:w-[15vw] animate-spin-reverse-slow"
+        class="absolute top-[250vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[280vh] xl:w-[15vw] animate-spin-reverse-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[205vh] -left-6 w-24 z-0 md:-left-5 md:top-[210vh] md:w-[18vw] lg:top-[210vh] lg:w-[16vw] xl:-left-16 xl:top-[260vh] xl:w-[13vw] animate-spin-slow"
+        class="absolute top-[235vh] -left-6 w-24 z-0 md:-left-5 md:top-[210vh] md:w-[18vw] lg:top-[210vh] lg:w-[16vw] xl:-left-16 xl:top-[260vh] xl:w-[13vw] animate-spin-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[265rem] -left-6 w-24 z-0 md:left-0 md:top-[500vh] md:w-[20vw] lg:-left-5 lg:top-[510vh] lg:w-[18vw] xl:top-[565vh] xl:w-[15vw] animate-spin-slow"
+        class="absolute top-[240rem] -left-6 w-24 z-0 md:left-0 md:top-[510vh] md:w-[20vw] lg:-left-5 lg:top-[510vh] lg:w-[18vw] xl:top-[565vh] xl:w-[15vw] animate-spin-slow"
       />
       <FleurBleu
-        class="absolute top-[275rem] -right-4 w-28 z-0 md:-right-10 md:top-[520vh] md:w-[19vw] lg:-right-10 lg:top-[530vh] lg:w-[16vw] xl:top-[605vh] xl:w-[13vw] animate-spin-reverse"
+        class="absolute top-[250rem] -right-4 w-28 z-0 md:-right-10 md:top-[530vh] md:w-[19vw] lg:-right-10 lg:top-[530vh] lg:w-[16vw] xl:top-[605vh] xl:w-[13vw] animate-spin-reverse"
       />
     </section>
 

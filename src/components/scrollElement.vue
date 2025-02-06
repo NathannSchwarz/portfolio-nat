@@ -98,7 +98,7 @@ onMounted(() => {
     projects.value = projects.value.map((p, i) => ({
       ...p,
       xPercent: [10, 40, 15, 38, 10, 38][i],
-      yPercent: [0, 20, 35, 48, 62, 75][i],
+      yPercent: [0, 10, 25, 38, 52, 65][i],
     }))
     updateAnimations()
   })
@@ -163,7 +163,7 @@ onMounted(() => {
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
     start: 'top+=160vh center', // ⚡ Meilleur positionnement
-    end: `+=${window.innerHeight * 2.6}px`, // ⚡ Fixe plus longtemps
+    end: `+=${window.innerHeight * 2.7}px`, // ⚡ Fixe plus longtemps
     pin: true,
     pinSpacing: false,
     scrub: 1, // ⚡ Meilleure fluidité
@@ -226,7 +226,7 @@ const scrollToTop = () => {
 
 <template>
   <div
-    class="overflow-hidden mt-[18rem] pb-[50rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:mb-[25rem] -mx-5"
+    class="overflow-hidden mt-[18rem] pb-[50rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
   >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
