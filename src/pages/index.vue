@@ -121,6 +121,19 @@ const scrollToTop = () => {
       <FleurBleu
         class="absolute top-[43rem] -right-4 w-28 z-0 md:-right-10 md:top-[60rem] md:w-[14vw] lg:-right-20 lg:top-[35rem] xl:top-[50rem] animate-spin-reverse"
       />
+
+      <FleurPleineYellow
+        class="absolute top-[210vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[280vh] xl:w-[15vw] animate-spin-reverse-slow"
+      />
+      <FleurPleineRouge
+        class="absolute top-[205vh] -left-6 w-24 z-0 md:-left-5 md:top-[210vh] md:w-[18vw] lg:top-[210vh] lg:w-[16vw] xl:-left-16 xl:top-[260vh] xl:w-[13vw] animate-spin-slow"
+      />
+      <FleurPleineRouge
+        class="absolute top-[265rem] -left-6 w-24 z-0 md:left-0 md:top-[500vh] md:w-[20vw] lg:-left-5 lg:top-[510vh] lg:w-[18vw] xl:top-[565vh] xl:w-[15vw] animate-spin-slow"
+      />
+      <FleurBleu
+        class="absolute top-[275rem] -right-4 w-28 z-0 md:-right-10 md:top-[520vh] md:w-[19vw] lg:-right-10 lg:top-[530vh] lg:w-[16vw] xl:top-[605vh] xl:w-[13vw] animate-spin-reverse"
+      />
     </section>
 
     <!-- Images responsives -->
@@ -143,8 +156,6 @@ const scrollToTop = () => {
     <!-- Section avec les projets -->
     <ScrollE />
   </section>
-
-  
 
   <section ref="horizontalPinSection" class="relative overflow-hidden">
     <!--
@@ -202,7 +213,7 @@ const scrollToTop = () => {
           <img
             src="/img/Accueilimg2.webp"
             alt="Accueilimg2"
-            class="mx-auto md:w-7/12 lg:w-5/12 xl:w-4/12 mb-10 md:mb-12"
+            class="mx-auto md:w-7/12 lg:w-5/12 xl:w-4/12 mb-10 md:mb-12 lg:mb-14"
           />
           <div class="text-center xl:mt-52">
             <h4

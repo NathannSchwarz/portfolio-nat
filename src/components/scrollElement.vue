@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import ProjectCompIndex from '@/components/ProjectCompIndex.vue'
@@ -10,8 +10,8 @@ const projects = ref([
   {
     id: 1,
     speed: 0.8,
-    xPercent: 0,
-    yPercent: 50,
+    xPercent: 30,
+    yPercent: 10,
     imageSrc: '/img/Accueilimg1.webp',
     imageAlt: 'EYE ON ME',
     title: 'EYE ON ME',
@@ -21,7 +21,7 @@ const projects = ref([
     id: 2,
     speed: 0.9,
     xPercent: 70,
-    yPercent: 60,
+    yPercent: 45,
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'BRANDING PROJECT',
     title: 'BRANDING PROJECT',
@@ -30,8 +30,8 @@ const projects = ref([
   {
     id: 3,
     speed: 1.0,
-    xPercent: 45,
-    yPercent: 80,
+    xPercent: 30,
+    yPercent: 70,
     imageSrc: '/img/Accueilimg3.webp',
     imageAlt: 'WEB PROJECT',
     title: 'WEB PROJECT',
@@ -40,8 +40,28 @@ const projects = ref([
   {
     id: 4,
     speed: 1.1,
-    xPercent: 15,
-    yPercent: 90,
+    xPercent: 60,
+    yPercent: 95,
+    imageSrc: '/img/Accueilimg2.webp',
+    imageAlt: 'FULL DESIGN',
+    title: 'FULL DESIGN',
+    subtitle: 'VIEW PROJECT >',
+  },
+  {
+    id: 5,
+    speed: 1.1,
+    xPercent: -5,
+    yPercent: 95,
+    imageSrc: '/img/Accueilimg2.webp',
+    imageAlt: 'FULL DESIGN',
+    title: 'FULL DESIGN',
+    subtitle: 'VIEW PROJECT >',
+  },
+  {
+    id: 6,
+    speed: 1.1,
+    xPercent: -5,
+    yPercent: 95,
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'FULL DESIGN',
     title: 'FULL DESIGN',
@@ -52,38 +72,94 @@ const projects = ref([
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
 
-  // Effet parallaxe sur les images
-  document.querySelectorAll('.parallax-project').forEach((el, i) => {
-    const project = el as HTMLElement
-    const speed = parseFloat(project.dataset.speed || '1')
-    const xInitial = parseFloat(project.dataset.xPercent || '0')
-    const yInitial = parseFloat(project.dataset.yPercent || '0')
+  const mm = gsap.matchMedia()
 
-    // 🟢 Définition initiale de la position
-    gsap.set(project, {
-      x: `${xInitial}vw`,
-      y: `${yInitial}vh`,
+  mm.add(
+    "(max-width: 640px)", () => {
+      console.log("📱 Mobile mode")
+      projects.value = projects.value.map((p, i) => ({
+        ...p,
+        xPercent: [3, 18, 3, 18, 3, 18][i],
+        yPercent: [8, 16, 38, 48, 64, 80][i],
+      }))
+      updateAnimations()
+    }
+  )
+
+  mm.add(
+    "(min-width: 641px) and (max-width: 1024px)", () => {
+      console.log("📲 Tablet 2 mode")
+      projects.value = projects.value.map((p, i) => ({
+        ...p,
+        xPercent: [3, 30, 4, 26, 3, 20][i],
+        yPercent: [8, 19, 30, 45, 60, 75][i],
+      }))
+      updateAnimations()
+    }
+  )
+
+  mm.add(
+    "(min-width: 1025px) and (max-width: 1280px)", () => {
+      console.log("🖥️ Tbalet 2 mode")
+      projects.value = projects.value.map((p, i) => ({
+        ...p,
+        xPercent: [4, 34, 8, 30, 2, 33][i],
+        yPercent: [10, 20, 35, 48, 62, 75][i],
+      }))
+      updateAnimations()
+    }
+  )
+
+  mm.add(
+    "(min-width: 1281px)", () => {
+      console.log("🖥️ Desktop 2 mode")
+      projects.value = projects.value.map((p, i) => ({
+        ...p,
+        xPercent: [1, 25, 7, 32, 2, 28][i],
+        yPercent: [0, 15, 35, 50, 65, 75][i],
+      }))
+      updateAnimations()
+    }
+  )
+
+  async function updateAnimations() {
+    await nextTick(); // Assure que Vue applique les nouvelles valeurs avant GSAP
+    console.log("📌 New project values:", projects.value)
+
+    // Effet parallaxe sur les images
+    document.querySelectorAll('.parallax-project').forEach((el, i) => {
+      const project = el as HTMLElement
+      const speed = projects.value[i].speed
+      const xInitial = projects.value[i].xPercent
+      const yInitial = projects.value[i].yPercent
+
+      // Mise à jour GSAP
+      gsap.set(project, {
+        x: `${xInitial}vw`,
+        y: `${yInitial}vh`,
+      })
+
+      gsap.to(project, {
+        y: `-=${speed * 10}vh`, // Déplacement vertical
+
+        ease: 'none',
+        scrollTrigger: {
+          trigger: project,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      })
     })
 
-    // 🟢 Animation avec GSAP + ScrollTrigger
-    gsap.to(project, {
-      y: `-=${speed * 10}vh`, // Déplacement vertical en VH
-      x: () => `${(i % 2 === 0 ? 1 : -1) * 2}vw`, // Léger déplacement horizontal
-      ease: 'none',
-      scrollTrigger: {
-        trigger: project,
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
-      },
-    })
-  })
+    ScrollTrigger.refresh(); // 🔄 Forcer GSAP à recalculer les animations
+  }
 
   // 🟢 Fixer le h3 et le p jusqu'à la fin des projets
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
     start: 'top 33%',
-    end: `+=${window.innerHeight * 2}px`,
+    end: `+=${window.innerHeight * 2.5}px`,
     pin: true,
     pinSpacing: false,
     scrub: true,
@@ -109,11 +185,17 @@ onMounted(() => {
 })
 </script>
 
+
+
 <template>
-  <div class="overflow-hidden mt-[18rem]  pb-[25rem] md:mt-[30rem] md:mb-[20rem] lg:mt-[20rem] lg:mb-[10rem]  xl:mt-[40rem] xlpb-[60rem]">
+  <div
+    class="overflow-hidden mt-[18rem] pb-[55rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:mb-[25rem] -mx-5"
+  >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
-      <h3 class="text-[10vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue lg:text-[7vw]">
+      <h3
+        class="text-[10vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue lg:text-[7vw] xl:text-[6vw]"
+      >
         YOUNG
         <span class="text-colored">
           <br />
@@ -122,7 +204,7 @@ onMounted(() => {
       </h3>
 
       <p
-        class="font-unbounded font-light text-sm md:text-base md:w-2/3 md:m-auto lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 text-center"
+        class="font-unbounded font-light text-xs md:text-base md:w-2/3 md:m-auto lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 text-center mx-5"
       >
         I bring a unique perspective to every project, blending expertise in
         <span class="font-medium">web design</span>,
@@ -136,7 +218,6 @@ onMounted(() => {
 
     <!-- ✅ Espace supplémentaire pour éviter que le texte soit coupé -->
 
-
     <!-- Conteneur des projets -->
     <div class="relative w-full max-w-[1200px] mx-auto min-h-[150vh]">
       <ProjectCompIndex
@@ -147,7 +228,7 @@ onMounted(() => {
         :imageAlt="project.imageAlt"
         :title="project.title"
         :subtitle="project.subtitle"
-        class="absolute project-item parallax-project  w-2/4 md:w-1/4 lg:w-1/4 text-sm"
+        class="absolute project-item parallax-project w-7/12 md:w-4/12 lg:w-3/12 xl:w-4/12 text-sm"
         :data-speed="project.speed"
         :style="{
           left: `${project.xPercent}vw`,
