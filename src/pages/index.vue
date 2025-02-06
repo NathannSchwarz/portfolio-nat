@@ -99,19 +99,28 @@ const scrollToTop = () => {
 
     <!-- Titres positionnés en bas à gauche -->
     <div class="absolute bottom-10 left-5 lg:bottom-20 lg:left-20 text-black font-lactos z-10">
-      <h1 class="text-[10vw]  lg:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent">HEY, I'M <br> NATHAN SCHWARZ <br> A WEB DESIGNER <br> & UX DESIGNER</h1>
+      <h1
+        class="text-[10vw] lg:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent"
+      >
+        HEY, I'M <br />
+        NATHAN SCHWARZ <br />
+        A WEB DESIGNER <br />
+        & UX DESIGNER
+      </h1>
+      <button class="bg-red flex items-center space-x-6 bg-colowhite p-1 pb-0.5 lg:p-3 px-4 lg:pb-2 lg:px-6 rounded-[10rem] border-2 border-black hover:text-colowhite hover:bg-black transition-colors duration-500" @click="scrollDown">
+        <p class="text-base md:text-lg lg:text-2xl">CHECK OUT MY WORK</p>
+        <Arrow class="w-3 lg:w-4"/>
+      </button>
     </div>
   </section>
 
   <section class="relative bg-colowhite overflow-hidden px-5 relative">
     <section>
-
       <img
         src="/img/Accueilimg3.webp"
         alt="imgaccueil3"
-        class="m-auto mt-72 object-cover h-[55vh] md:w-[80vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh]  lg:w-[50vw] xl:w-[41%] xl:mt-[40vh] xl:mb-[20vh]"
+        class="m-auto mt-72 object-cover h-[55vh] md:w-[80vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[50vw] xl:w-[41%] xl:mt-[40vh] xl:mb-[20vh]"
       />
-
 
       <!-- Bouton Arrow -->
       <!-- <button
@@ -138,10 +147,10 @@ const scrollToTop = () => {
         class="absolute top-[115vh] -left-6 w-24 z-0 md:-left-5 md:top-[110vh] md:w-[18vw] lg:top-[110vh] lg:w-[16vw] xl:-left-16 xl:top-[160vh] xl:w-[13vw] animate-spin-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[165rem] -left-6 w-24 z-0 md:left-0 md:top-[360vh] md:w-[20vw] lg:-left-5 lg:top-[410vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
+        class="absolute top-[180rem] -left-6 w-24 z-0 md:left-0 md:top-[360vh] md:w-[20vw] lg:-left-5 lg:top-[410vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
       />
       <FleurBleu
-        class="absolute top-[170rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
+        class="absolute top-[185rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
       />
     </section>
 
@@ -278,7 +287,6 @@ h4 {
 .text-stroke-black-mobile {
   -webkit-text-stroke: 1.5px black;
 }
-
 
 .text-stroke-black {
   -webkit-text-stroke: 3px black;
