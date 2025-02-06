@@ -3,6 +3,7 @@ import { onMounted, ref, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import ProjectCompIndex from '@/components/ProjectCompIndex.vue'
+import Arrow from '@/components/icons/Arrow.vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -74,57 +75,49 @@ onMounted(() => {
 
   const mm = gsap.matchMedia()
 
-  mm.add(
-    "(max-width: 640px)", () => {
-      console.log("📱 Mobile mode")
-      projects.value = projects.value.map((p, i) => ({
-        ...p,
-        xPercent: [3, 18, 3, 18, 3, 18][i],
-        yPercent: [8, 16, 38, 48, 64, 80][i],
-      }))
-      updateAnimations()
-    }
-  )
+  mm.add('(max-width: 640px)', () => {
+    console.log('📱 Mobile mode')
+    projects.value = projects.value.map((p, i) => ({
+      ...p,
+      xPercent: [3, 18, 3, 18, 3, 18][i],
+      yPercent: [8, 16, 38, 48, 64, 80][i],
+    }))
+    updateAnimations()
+  })
 
-  mm.add(
-    "(min-width: 641px) and (max-width: 1024px)", () => {
-      console.log("📲 Tablet 2 mode")
-      projects.value = projects.value.map((p, i) => ({
-        ...p,
-        xPercent: [3, 30, 4, 26, 3, 20][i],
-        yPercent: [8, 19, 30, 45, 60, 75][i],
-      }))
-      updateAnimations()
-    }
-  )
+  mm.add('(min-width: 641px) and (max-width: 1024px)', () => {
+    console.log('📲 Tablet 2 mode')
+    projects.value = projects.value.map((p, i) => ({
+      ...p,
+      xPercent: [3, 30, 4, 26, 3, 20][i],
+      yPercent: [8, 19, 30, 45, 60, 75][i],
+    }))
+    updateAnimations()
+  })
 
-  mm.add(
-    "(min-width: 1025px) and (max-width: 1280px)", () => {
-      console.log("🖥️ Tbalet 2 mode")
-      projects.value = projects.value.map((p, i) => ({
-        ...p,
-        xPercent: [4, 34, 8, 30, 2, 33][i],
-        yPercent: [10, 20, 35, 48, 62, 75][i],
-      }))
-      updateAnimations()
-    }
-  )
+  mm.add('(min-width: 1025px) and (max-width: 1280px)', () => {
+    console.log('🖥️ Tbalet 2 mode')
+    projects.value = projects.value.map((p, i) => ({
+      ...p,
+      xPercent: [4, 34, 8, 30, 2, 33][i],
+      yPercent: [10, 20, 35, 48, 62, 75][i],
+    }))
+    updateAnimations()
+  })
 
-  mm.add(
-    "(min-width: 1281px)", () => {
-      console.log("🖥️ Desktop 2 mode")
-      projects.value = projects.value.map((p, i) => ({
-        ...p,
-        xPercent: [1, 25, 7, 32, 2, 28][i],
-        yPercent: [0, 15, 35, 50, 65, 75][i],
-      }))
-      updateAnimations()
-    }
-  )
+  mm.add('(min-width: 1281px)', () => {
+    console.log('🖥️ Desktop 2 mode')
+    projects.value = projects.value.map((p, i) => ({
+      ...p,
+      xPercent: [1, 25, 7, 32, 2, 28][i],
+      yPercent: [0, 15, 35, 50, 65, 75][i],
+    }))
+    updateAnimations()
+  })
 
   async function updateAnimations() {
-    await nextTick(); // Assure que Vue applique les nouvelles valeurs avant GSAP
-    console.log("📌 New project values:", projects.value)
+    await nextTick() // Assure que Vue applique les nouvelles valeurs avant GSAP
+    console.log('📌 New project values:', projects.value)
 
     // Effet parallaxe sur les images
     document.querySelectorAll('.parallax-project').forEach((el, i) => {
@@ -152,7 +145,7 @@ onMounted(() => {
       })
     })
 
-    ScrollTrigger.refresh(); // 🔄 Forcer GSAP à recalculer les animations
+    ScrollTrigger.refresh() // 🔄 Forcer GSAP à recalculer les animations
   }
 
   // 🟢 Fixer le h3 et le p jusqu'à la fin des projets
@@ -182,10 +175,43 @@ onMounted(() => {
       scrub: true,
     },
   })
+
+  // 🟢 Rendre le bouton invisible tant que les images sont visibles
+  // 🟢 Cacher le bouton dès que la première image arrive à l'écran
+  gsap.fromTo(
+    '.project-button',
+    { opacity: 1 },
+    {
+      opacity: 0, // Le bouton disparaît
+      scrollTrigger: {
+        trigger: '.parallax-project:first-child', // Première image
+        start: 'top 90%', // Dès qu'elle commence à apparaître
+        end: 'top 50%', // Le bouton reste invisible
+        scrub: true,
+      },
+    },
+  )
+
+  // 🟢 Faire réapparaître le bouton quand la dernière image quitte l'écran
+  gsap.fromTo(
+    '.project-button',
+    { opacity: 0 },
+    {
+      opacity: 1, // Le bouton réapparaît
+      scrollTrigger: {
+        trigger: '.parallax-project:last-child', // Dernière image
+        start: 'bottom 20%', // Lorsqu'elle approche de la sortie
+        end: 'bottom 0%', // Le bouton devient totalement visible
+        scrub: true,
+      },
+    },
+  )
 })
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
+}
 </script>
-
-
 
 <template>
   <div
@@ -212,6 +238,14 @@ onMounted(() => {
         to creating meaningful, impactful designs. <br />
         Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
       </p>
+      <routerLink to="/project" @click="scrollToTop">
+        <button
+          class=" text-xs md:text-sm xl:text-lg project-button border-colored border text-colored p-1 px-3 md:p-2 md:px-4 lg:p-3 lg:px-5 rounded-[12rem] hover:text-coloblue hover:border-coloblue transition-colors duration-500 flex space-x-4 items-center mx-auto mt-3 lg:mt-6"
+        >
+          <p class="font-unbounded">MY PROJECTS</p>
+          <Arrow class="w-3 md:w-4 xl:w-5 -rotate-90" />
+        </button>
+      </routerLink>
 
       <div class="buffer-space"></div>
     </div>

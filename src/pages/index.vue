@@ -19,13 +19,13 @@ const scrollDown = () => {
   let scrollMultiplier
 
   if (screenWidth >= 1750) {
-    scrollMultiplier = 1.3
+    scrollMultiplier = 1.55
   } else if (screenWidth >= 1024) {
-    scrollMultiplier = 1.1
+    scrollMultiplier = 1.15
   } else if (screenWidth >= 768) {
-    scrollMultiplier = 0.8
+    scrollMultiplier = 1.05
   } else {
-    scrollMultiplier = 0.95
+    scrollMultiplier = 1.1
   }
 
   const scrollValue = screenHeight * scrollMultiplier
