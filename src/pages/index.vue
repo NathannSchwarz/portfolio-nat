@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
 }
+
+
 </script>
 
 <template>
@@ -107,7 +109,7 @@ const scrollToTop = () => {
       <!-- Bouton Arrow -->
       <button
         @click="scrollDown"
-        class="arrow-animation absolute z-50 group top-[40rem] left-6 w-8 md:w-11 md:top-[60rem] lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
+        class="arrow-animation absolute z-40 group top-[40rem] left-6 w-8 md:w-11 md:top-[60rem] lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
       >
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
       </button>
