@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Arrow from '@/components/icons/Arrow.vue'
 import FleurBleu from '@/components/icons/FleurBleu.vue'
+import FleurPleineBleu from '@/components/icons/FleurPleineBleu.vue'
 import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
 import FleurPleineYellow from '@/components/icons/FleurPleineYellow.vue'
 import ScrollE from '@/components/scrollElement.vue'
@@ -84,67 +85,68 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <video autoplay muted loop class="w-screen h-screen object-cover">
-    <source src="/video/Micro_Animation_Portfolio_Nathan_SCHWARZ.mp4" type="video/mp4" />
-    Votre navigateur ne supporte pas la lecture de vidéos.
-  </video>
-  <div
-    class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite"
-  ></div>
+  <section class="relative w-screen h-screen">
+    <!-- Vidéo -->
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="/video/Micro_Animation_Portfolio_Nathan_SCHWARZ.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+
+    <!-- Dégradé vers le blanc -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite"
+    ></div>
+
+    <!-- Titres positionnés en bas à gauche -->
+    <div class="absolute bottom-10 left-5 lg:bottom-20 lg:left-20 text-black font-lactos z-10">
+      <h1 class="text-[10vw]  lg:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent">HEY, I'M <br> NATHAN SCHWARZ <br> A WEB DESIGNER <br> & UX DESIGNER</h1>
+    </div>
+  </section>
+
   <section class="relative bg-colowhite overflow-hidden px-5 relative">
     <section>
-      <h1
-        class="text-[15vw] mt-28 text-black font-lactos z-10 relative text-stroke md:mt-52 md:text-[12vw] md:ml-12 lg:text-[11vw] lg:ml-[12vw] lg:mt-[7vw] xl:text-[12rem] xl:mt-[4%] xl:ml-[14vw]"
-      >
-        NATHAN
-      </h1>
 
       <img
         src="/img/Accueilimg3.webp"
         alt="imgaccueil3"
-        class="m-auto -mt-9 object-cover h-[55vh] md:w-[80vw] md:-mt-14 md:h-full lg:object-fill lg:-mt-[12vh] lg:w-[50vw] xl:w-[41%] xl:-mt-[14vh]"
+        class="m-auto mt-72 object-cover h-[55vh] md:w-[80vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh]  lg:w-[50vw] xl:w-[41%] xl:mt-[40vh] xl:mb-[20vh]"
       />
 
-      <h2
-        class="text-[15vw] text-black font-lactos -mt-5 z-10 relative border-colowhite text-stroke text-end md:-mt-8 md:mr-12 md:text-[12vw] lg:-mt-12 lg:mr-[12vw] xl:text-[12rem] lg:-mt-20"
-      >
-        SCHWARZ
-      </h2>
 
       <!-- Bouton Arrow -->
-      <button
+      <!-- <button
         @click="scrollDown"
         class="arrow-animation absolute z-40 group top-[40rem] left-6 w-8 md:w-11 md:top-[60rem] lg:top-[40rem] lg:left-20 xl:top-[50rem] xl:w-14"
       >
         <Arrow class="text-black group-hover:text-colored transition-colors duration-500" />
-      </button>
-
-      <!-- <FleurPleineYellow
-        class="absolute top-12 right-8 w-24 z-0 md:right-20 md:top-32 md:w-[14vw] lg:right-16 lg:top-10 xl:top-20 animate-spin-reverse-slow"
-      />
-      <FleurPleineRouge
-        class="absolute top-[23rem] -left-6 w-24 z-0 md:left-8 md:top-[40rem] md:w-[16vw] lg:left-32 lg:top-[20rem] xl:top-[25rem] animate-spin-slow"
-      />
-      <FleurBleu
-        class="absolute top-[43rem] -right-4 w-28 z-0 md:-right-10 md:top-[60rem] md:w-[14vw] lg:-right-20 lg:top-[35rem] xl:top-[50rem] animate-spin-reverse"
-      /> -->
+      </button> -->
 
       <FleurPleineYellow
-        class="absolute top-[250vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[280vh] xl:w-[15vw] animate-spin-reverse-slow"
+        class="absolute top-12 right-8 w-32 z-0 md:right-20 md:top-32 md:w-[24vw] lg:right-16 lg:w-[20vw] xl:w-[16vw] lg:top-10 xl:top-20 animate-spin-reverse-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[235vh] -left-6 w-24 z-0 md:-left-5 md:top-[210vh] md:w-[18vw] lg:top-[210vh] lg:w-[16vw] xl:-left-16 xl:top-[260vh] xl:w-[13vw] animate-spin-slow"
+        class="absolute top-[23rem] -left-6 w-28 z-0 md:left-8 md:top-[40rem] md:w-[20vw] lg:left-32 lg:w-[18vw] xl:w-[14vw] lg:top-[20rem] xl:top-[25rem] animate-spin-slow"
+      />
+      <FleurPleineBleu
+        class="absolute top-[43rem] -right-4 w-32 z-0 md:-right-10 md:top-[60rem] md:w-[24vw] lg:-right-20 lg:w-[20vw] xl:w-[16vw] lg:top-[35rem] xl:top-[50rem] animate-spin-reverse"
+      />
+
+      <FleurPleineYellow
+        class="absolute top-[250vh] -right-10 w-24 z-0 md:-right-10 md:top-[220vh] md:w-[20vw] lg:-right-16 lg:top-[220vh] lg:w-[18vw] xl:-right-16 xl:top-[180vh] xl:w-[15vw] animate-spin-reverse-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[235rem] -left-6 w-24 z-0 md:left-0 md:top-[460vh] md:w-[20vw] lg:-left-5 lg:top-[510vh] lg:w-[18vw] xl:top-[565vh] xl:w-[15vw] animate-spin-slow"
+        class="absolute top-[235vh] -left-6 w-24 z-0 md:-left-5 md:top-[210vh] md:w-[18vw] lg:top-[210vh] lg:w-[16vw] xl:-left-16 xl:top-[160vh] xl:w-[13vw] animate-spin-slow"
+      />
+      <FleurPleineRouge
+        class="absolute top-[235rem] -left-6 w-24 z-0 md:left-0 md:top-[460vh] md:w-[20vw] lg:-left-5 lg:top-[510vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
       />
       <FleurBleu
-        class="absolute top-[240rem] -right-4 w-28 z-0 md:-right-10 md:top-[475vh] md:w-[19vw] lg:-right-10 lg:top-[530vh] lg:w-[16vw] xl:top-[605vh] xl:w-[13vw] animate-spin-reverse"
+        class="absolute top-[240rem] -right-4 w-28 z-0 md:-right-10 md:top-[475vh] md:w-[19vw] lg:-right-10 lg:top-[530vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
       />
     </section>
 
     <!-- Images responsives -->
-    <img
+    <!-- <img
       src="/img/GreatDesignMobile.webp"
       alt="GreatDesignMobile"
       class="block md:hidden mt-[22rem]"
@@ -158,7 +160,7 @@ const scrollToTop = () => {
       src="/img/GreatDesignDesktop.webp"
       alt="GreatDesignDesktop"
       class="hidden lg:block mt-[25rem] xl:mt-[30rem]"
-    />
+    /> -->
 
     <!-- Section avec les projets -->
     <ScrollE />
@@ -271,5 +273,14 @@ h4 {
 
 .text-stroke {
   -webkit-text-stroke: 1px #f7f4f2;
+}
+
+.text-stroke-black-mobile {
+  -webkit-text-stroke: 2px black;
+}
+
+
+.text-stroke-black {
+  -webkit-text-stroke: 3px black;
 }
 </style>
