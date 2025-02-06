@@ -87,7 +87,7 @@ onMounted(() => {
     console.log('📱 Mobile mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [3, 19, 3, 19, 3, 19][i],
+      xPercent: [3, 18, 3, 18, 3, 18][i],
       yPercent: [0, 16, 33, 49, 67, 85][i],
     }))
     updateAnimations()
