@@ -216,7 +216,7 @@ const scrollToTop = () => {
 
 <template>
   <div
-    class="overflow-hidden mt-[18rem] pb-[40rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
+    class="overflow-hidden mt-[18rem] pb-[30rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
   >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
