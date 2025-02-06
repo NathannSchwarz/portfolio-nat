@@ -82,7 +82,7 @@ onMounted(() => {
   // 🟢 Fixer le h3 et le p jusqu'à la fin des projets
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
-    start: 'top 30%',
+    start: 'top 33%',
     end: `+=${window.innerHeight * 2}px`,
     pin: true,
     pinSpacing: false,
@@ -110,10 +110,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="overflow-hidden mt-[22rem]  pb-[30rem] md:mt-[30rem] md:mb-[20rem]  xl:mt-[40rem] xlpb-[60rem]">
+  <div class="overflow-hidden mt-[18rem]  pb-[25rem] md:mt-[30rem] md:mb-[20rem] lg:mt-[20rem] lg:mb-[10rem]  xl:mt-[40rem] xlpb-[60rem]">
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
-      <h3 class="text-[10vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue">
+      <h3 class="text-[10vw] md:text-[7.5vw] font-lactos leading-[1.1] text-center text-coloblue lg:text-[7vw]">
         YOUNG
         <span class="text-colored">
           <br />
@@ -122,7 +122,7 @@ onMounted(() => {
       </h3>
 
       <p
-        class="font-unbounded font-light text-sm md:text-base md:w-2/3 md:m-auto lg:text-2xl text-center"
+        class="font-unbounded font-light text-sm md:text-base md:w-2/3 md:m-auto lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 text-center"
       >
         I bring a unique perspective to every project, blending expertise in
         <span class="font-medium">web design</span>,
