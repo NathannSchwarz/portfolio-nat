@@ -163,7 +163,7 @@ onMounted(() => {
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
     start: 'top+=160vh center', // ⚡ Meilleur positionnement
-    end: `+=${window.innerHeight * 2.5}px`, // ⚡ Fixe plus longtemps
+    end: `+=${window.innerHeight * 2.6}px`, // ⚡ Fixe plus longtemps
     pin: true,
     pinSpacing: false,
     scrub: 1, // ⚡ Meilleure fluidité
