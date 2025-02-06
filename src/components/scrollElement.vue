@@ -58,16 +58,6 @@ const projects = ref([
     title: 'FULL DESIGN',
     subtitle: 'VIEW PROJECT >',
   },
-  {
-    id: 6,
-    speed: 1.1,
-    xPercent: 5,
-    yPercent: 95,
-    imageSrc: '/img/Accueilimg2.webp',
-    imageAlt: 'FULL DESIGN',
-    title: 'FULL DESIGN',
-    subtitle: 'VIEW PROJECT >',
-  },
 ])
 
 onMounted(() => {
@@ -87,8 +77,8 @@ onMounted(() => {
     console.log('📱 Mobile mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [3, 18, 3, 18, 3, 18][i],
-      yPercent: [0, 16, 33, 49, 67, 85][i],
+      xPercent: [3, 18, 3, 18, 3][i],
+      yPercent: [0, 16, 33, 49, 67][i],
     }))
     updateAnimations()
   })
@@ -97,8 +87,8 @@ onMounted(() => {
     console.log('📲 Tablet 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [10, 40, 15, 38, 10, 38][i],
-      yPercent: [0, 10, 25, 38, 52, 65][i],
+      xPercent: [10, 40, 15, 38, 10][i],
+      yPercent: [0, 10, 25, 38, 52][i],
     }))
     updateAnimations()
   })
@@ -107,8 +97,8 @@ onMounted(() => {
     console.log('🖥️ Tbalet 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [10, 40, 8, 35, 15, 42][i],
-      yPercent: [0, 19, 35, 45, 62, 75][i],
+      xPercent: [10, 40, 8, 35, 15][i],
+      yPercent: [0, 19, 35, 45, 62][i],
     }))
     updateAnimations()
   })
@@ -117,8 +107,8 @@ onMounted(() => {
     console.log('🖥️ Desktop 2 mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [0, 25, 7, 32, 2, 28][i],
-      yPercent: [0, 10, 30, 45, 60, 75][i],
+      xPercent: [0, 25, 7, 32, 2][i],
+      yPercent: [0, 10, 30, 45, 60][i],
     }))
     updateAnimations()
   })
@@ -226,7 +216,7 @@ const scrollToTop = () => {
 
 <template>
   <div
-    class="overflow-hidden mt-[18rem] pb-[30rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
+    class="overflow-hidden mt-[18rem] pb-[40rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[55rem] xl:mb-[25rem] -mx-5"
   >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
