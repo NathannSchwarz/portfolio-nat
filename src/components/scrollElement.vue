@@ -89,7 +89,7 @@ onMounted(() => {
   mm.add("(min-width: 1024px) and (max-width: 1280px)", () => {
     console.log("🖥️ Tablet 2 mode");
     updateProjects([10, 40, 8, 35, 15], [0, 19, 35, 45, 62]);
-    createTextPin(window.innerHeight * 2.7); // Longueur intermédiaire
+    createTextPin(window.innerHeight * 2.8); // Longueur intermédiaire
   });
 
   mm.add("(min-width: 1281px)", () => {
