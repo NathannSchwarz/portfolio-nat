@@ -94,7 +94,7 @@ onMounted(() => {
 
   mm.add("(min-width: 1281px)", () => {
     console.log("🖥️ Desktop mode");
-    updateProjects([0, 25, 7, 32, 2], [0, 10, 30, 45, 60]);
+    updateProjects([0, 25, 7, 32, 2], [0, 17, 37, 52, 70]);
     createTextPin(window.innerHeight * 2.7); // Plus long sur desktop
   });
 

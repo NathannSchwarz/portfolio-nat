@@ -75,7 +75,7 @@
 
     <!-- Menu Mobile Content -->
     <div
-      class="md:hidden absolute top-2 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-6 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
+      class="md:hidden absolute top-2 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-5 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
       <ul class="space-y-8 ">

@@ -24,22 +24,22 @@ const relatedProjects = computed(() => {
 </script>
 
 <template>
-  <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
+  <section class="relative bg-colowhite pb-32 overflow-hidden px-5 pt-24 md:pt-28 lg:pt-32">
     <div v-if="project">
       <section class="lg:grid lg:grid-cols-12 mb-24 md:mb-28 lg:mb-36">
         <div class="lg:w-10/12 lg:col-span-10">
           <h1
-            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[8rem] pt-8 md:pt-12 lg:pt-16 pb-8"
+            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[7rem] xl:text-[8rem] pt-8 md:pt-12 lg:pt-16 pb-8"
           >
             {{ project.title }}
           </h1>
           <h2
-            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-2xl mb-4 md:mb-5 lg:mb-10"
+            class="text-black font-unbounded font-semibold text-lg md:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-10"
           >
             {{ project.subtitleid }}
           </h2>
           <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-2xl mb-10 md:mb-12 lg:w-4/5"
+            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-4/5"
           >
             {{ project.description }}
           </p>
@@ -48,17 +48,17 @@ const relatedProjects = computed(() => {
         <div class="flex lg:flex-col lg:mt-14 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2">
           <div>
             <h2
-              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-2xl mb-3 md:mb-4 lg:mb-5"
+              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-xl xl:text-2xl mb-3 md:mb-4 lg:mb-5"
             >
               MY WORK
             </h2>
-            <ul class="font-unbounded font-light text-sm md:text-base lg:text-2xl">
+            <ul class="font-unbounded font-light text-sm md:text-base lg:text-xl xl:text-2xl">
               <li v-for="(item, index) in project.myWork" :key="index">{{ item }}</li>
             </ul>
           </div>
           <div class="lg:mt-10">
             <h2
-              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-2xl mb-3 md:mb-4 lg:mb-5"
+              class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-xl xl:text-2xl mb-3 md:mb-4 lg:mb-5"
             >
               LOGICIEL UTILISÉ
             </h2>
@@ -68,7 +68,7 @@ const relatedProjects = computed(() => {
                 :key="index"
                 :src="image"
                 alt="Software Used"
-                class="w-8 md:w-10 lg:w-12"
+                class="w-8 md:w-10 xl:w-12"
               />
             </div>
           </div>
@@ -98,12 +98,12 @@ const relatedProjects = computed(() => {
       <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
         <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
           <h3
-            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-2xl mb-4 md:mb-5 lg:mb-7"
+            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
           >
             DESCRIPTION
           </h3>
           <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-2xl mb-10 md:mb-12 lg:w-3/4"
+            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
           >
             {{ project.description2 }}
           </p>
