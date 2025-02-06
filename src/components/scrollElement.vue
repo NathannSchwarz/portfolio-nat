@@ -161,11 +161,7 @@ onMounted(() => {
   }
 
   // 🟢 Fixer le texte après le passage des images
-  ScrollTrigger.create({
-    start: "bottom top",
-    onEnterBack: () => textPin.enable(),
-    onLeave: () => textPin.disable(),
-  });
+
 
   // 🎯 Réapparition du titre lorsqu'on remonte la page
   gsap.to(".text", {
