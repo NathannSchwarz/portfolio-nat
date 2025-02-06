@@ -51,7 +51,7 @@ const projects = ref([
   {
     id: 5,
     speed: 1.1,
-    xPercent: -5,
+    xPercent: 5,
     yPercent: 95,
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'FULL DESIGN',
@@ -61,7 +61,7 @@ const projects = ref([
   {
     id: 6,
     speed: 1.1,
-    xPercent: -5,
+    xPercent: 5,
     yPercent: 95,
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'FULL DESIGN',
@@ -73,13 +73,21 @@ const projects = ref([
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
 
+  // ⚡ Attendre que la page ait bien chargé
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 100);
+
+  ScrollTrigger.getAll().forEach((t) => t.kill()) // Supprime tous les ScrollTrigger actifs
+  ScrollTrigger.refresh() // Recharge proprement les animations
+
   const mm = gsap.matchMedia()
 
   mm.add('(max-width: 640px)', () => {
     console.log('📱 Mobile mode')
     projects.value = projects.value.map((p, i) => ({
       ...p,
-      xPercent: [3, 18, 3, 18, 3, 18][i],
+      xPercent: [5, 18, 3, 18, 3, 18][i],
       yPercent: [8, 16, 38, 48, 64, 80][i],
     }))
     updateAnimations()
@@ -119,6 +127,9 @@ onMounted(() => {
     await nextTick() // Assure que Vue applique les nouvelles valeurs avant GSAP
     console.log('📌 New project values:', projects.value)
 
+    // Rafraîchir GSAP AVANT de définir les animations
+    ScrollTrigger.refresh();
+
     // Effet parallaxe sur les images
     document.querySelectorAll('.parallax-project').forEach((el, i) => {
       const project = el as HTMLElement
@@ -151,11 +162,11 @@ onMounted(() => {
   // 🟢 Fixer le h3 et le p jusqu'à la fin des projets
   const textPin = ScrollTrigger.create({
     trigger: '.intro-text',
-    start: 'top 33%',
-    end: `+=${window.innerHeight * 2.5}px`,
+    start: 'top+=160vh center', // ⚡ Meilleur positionnement
+    end: `+=${window.innerHeight * 2.5}px`, // ⚡ Fixe plus longtemps
     pin: true,
     pinSpacing: false,
-    scrub: true,
+    scrub: 1, // ⚡ Meilleure fluidité
   })
 
   // 🟢 Fixer le texte après le passage des images
@@ -240,7 +251,7 @@ const scrollToTop = () => {
       </p>
       <routerLink to="/project" @click="scrollToTop">
         <button
-          class=" text-xs md:text-sm xl:text-lg project-button border-colored border text-colored p-1 px-3 md:p-2 md:px-4 lg:p-3 lg:px-5 rounded-[12rem] hover:text-coloblue hover:border-coloblue transition-colors duration-500 flex space-x-4 items-center mx-auto mt-3 lg:mt-6"
+          class="text-xs md:text-sm xl:text-lg project-button border-colored border text-colored p-1 px-3 md:p-2 md:px-4 lg:p-3 lg:px-5 rounded-[12rem] hover:text-coloblue hover:border-coloblue transition-colors duration-500 flex space-x-4 items-center mx-auto mt-3 lg:mt-6"
         >
           <p class="font-unbounded">MY PROJECTS</p>
           <Arrow class="w-3 md:w-4 xl:w-5 -rotate-90" />
