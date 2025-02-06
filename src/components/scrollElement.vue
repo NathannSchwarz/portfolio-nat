@@ -76,7 +76,7 @@ onMounted(() => {
   // ⚡ Attendre que la page ait bien chargé
   setTimeout(() => {
     ScrollTrigger.refresh();
-  }, 100);
+  }, 200);
 
   ScrollTrigger.getAll().forEach((t) => t.kill()) // Supprime tous les ScrollTrigger actifs
   ScrollTrigger.refresh() // Recharge proprement les animations
