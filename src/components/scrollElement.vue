@@ -75,8 +75,8 @@ onMounted(() => {
 
   // ⚡ Attendre que la page ait bien chargé
   setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 200);
+    ScrollTrigger.refresh()
+  }, 200)
 
   ScrollTrigger.getAll().forEach((t) => t.kill()) // Supprime tous les ScrollTrigger actifs
   ScrollTrigger.refresh() // Recharge proprement les animations
@@ -88,7 +88,7 @@ onMounted(() => {
     projects.value = projects.value.map((p, i) => ({
       ...p,
       xPercent: [17, 33, 17, 33, 17, 33][i],
-      yPercent: [0, 14, 30, 43, 58, 74][i],
+      yPercent: [0, 16, 26, 49, 67, 85][i],
     }))
     updateAnimations()
   })
@@ -128,12 +128,12 @@ onMounted(() => {
     console.log('📌 New project values:', projects.value)
 
     // Rafraîchir GSAP AVANT de définir les animations
-    ScrollTrigger.refresh();
+    ScrollTrigger.refresh()
 
     // Effet parallaxe sur les images
     document.querySelectorAll('.parallax-project').forEach((el, i) => {
       const project = el as HTMLElement
-      const speed = projects.value[i].speed
+      
       const xInitial = projects.value[i].xPercent
       const yInitial = projects.value[i].yPercent
 
@@ -144,7 +144,7 @@ onMounted(() => {
       })
 
       gsap.to(project, {
-        y: `-=${speed * 10}vh`, // Déplacement vertical
+
 
         ease: 'none',
         scrollTrigger: {
@@ -196,7 +196,7 @@ onMounted(() => {
       opacity: 0, // Le bouton disparaît
       scrollTrigger: {
         trigger: '.parallax-project:first-child', // Première image
-        start: 'top 90%', // Dès qu'elle commence à apparaître
+        start: 'top 80%', // Dès qu'elle commence à apparaître
         end: 'top 50%', // Le bouton reste invisible
         scrub: true,
       },
@@ -211,7 +211,7 @@ onMounted(() => {
       opacity: 1, // Le bouton réapparaît
       scrollTrigger: {
         trigger: '.parallax-project:last-child', // Dernière image
-        start: 'bottom 20%', // Lorsqu'elle approche de la sortie
+        start: 'bottom 100%', // Lorsqu'elle approche de la sortie
         end: 'bottom 0%', // Le bouton devient totalement visible
         scrub: true,
       },
@@ -226,7 +226,7 @@ const scrollToTop = () => {
 
 <template>
   <div
-    class="overflow-hidden mt-[18rem] pb-[55rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:mb-[25rem] -mx-5"
+    class="overflow-hidden mt-[18rem] pb-[50rem] md:mt-[30rem] md:pb-[85rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:mb-[25rem] -mx-5"
   >
     <!-- Bloc du titre + description qui sera fixé -->
     <div class="intro-text">
