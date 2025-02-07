@@ -29,7 +29,7 @@ onMounted(() => {
     playsinline
     class="absolute top-0 left-0 w-full h-full object-cover no-controls"
   >
-    <source src="/video/Fleur_1.mp4" type="video/mp4" />
+    <source src="/video/Fleur_1.webm" type="video/mp4" />
     Votre navigateur ne supporte pas la lecture de vidéos.
   </video>
 </template>
