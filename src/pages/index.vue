@@ -198,12 +198,12 @@ const scrollToTop = () => {
 
         <div class="text-center flex flex-col gap-4 md:gap-6 items-center">
           <h4
-            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right lg:pr-40 xl:pr-72"
+            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right lg:pr-40 xl:pr-72 text-stroke-black"
           >
             UNIQUE WEB DESIGNER
           </h4>
           <h4
-            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left lg:pl-40 xl:pl-72"
+            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left lg:pl-40 xl:pl-72 text-stroke-black"
           >
             PASSIONATED BY DESIGN
           </h4>
@@ -232,7 +232,7 @@ const scrollToTop = () => {
           />
           <div class="text-center xl:mt-52">
             <h4
-              class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow mb-2 md:mb-6 lg:mb-4"
+              class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow mb-2 md:mb-6 lg:mb-4 text-stroke-black"
             >
               IF YOU INTERESTED <br />
               TO WORK WITH ME
@@ -285,7 +285,7 @@ h4 {
   -webkit-text-stroke: 2px black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .text-stroke-black {
     -webkit-text-stroke: 1px black;
   }
