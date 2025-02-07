@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/project/${id}`" class="block group" @click="scrollToTop">
+  <router-link :to="`/projects/${id}`" class="block group" @click="scrollToTop">
     <div
       class="relative w-full overflow-hidden transition-all duration-700 ease-in-out group-hover:rounded-xl"
     >

@@ -126,7 +126,7 @@ const relatedProjects = computed(() => {
           <router-link
             v-for="(related, index) in relatedProjects"
             :key="index"
-            :to="`/project/${related.id}`"
+            :to="`/projects/${related.id}`"
           >
             <ProjectComp
               :id="related.id"

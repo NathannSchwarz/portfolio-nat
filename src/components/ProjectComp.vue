@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/project/${id}`" class="flex flex-col group" @click="scrollToTop">
+  <router-link :to="`/projects/${id}`" class="flex flex-col group" @click="scrollToTop">
     <div class="relative w-full overflow-hidden transition-all duration-500 ease-in-out">
       <img
         :src="imageSrc"
