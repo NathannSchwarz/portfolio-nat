@@ -74,47 +74,48 @@ const relatedProjects = computed(() => {
           </div>
         </div>
       </section>
-
-      <img
-        class="w-full md:h-[45vw] object-cover mb-6 md:mb-5"
-        :src="project.images.secondary2"
-        alt="Project Last Image"
-      />
-
-      <!-- ✅ Images spécifiques pour chaque projet -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <section class="-mx-4 mx-auto">
         <img
-          class="w-full md:h-[45vw] object-cover"
-          :src="project.images.main"
-          alt="Project Main Image"
+          class="w-full md:h-[45vw] object-cover mb-0.5  lg:mb-1"
+          :src="project.images.secondary2"
+          alt="Project Last Image"
         />
-        <img
-          class="w-full md:h-[45vw] object-cover"
-          :src="project.images.secondary1"
-          alt="Project Secondary Image"
-        />
-      </div>
 
-      <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
-        <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
-          <h3
-            class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
-          >
-            DESCRIPTION
-          </h3>
-          <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
-          >
-            {{ project.description2 }}
-          </p>
+        <!-- ✅ Images spécifiques pour chaque projet -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5 md:gap-1">
+          <img
+            class="w-full md:h-[45vw] object-cover"
+            :src="project.images.main"
+            alt="Project Main Image"
+          />
+          <img
+            class="w-full md:h-[45vw] object-cover"
+            :src="project.images.secondary1"
+            alt="Project Secondary Image"
+          />
         </div>
-      </div>
 
-      <img
-        class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40"
-        :src="project.images.secondary2"
-        alt="Project Last Image"
-      />
+        <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
+          <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
+            <h3
+              class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
+            >
+              DESCRIPTION
+            </h3>
+            <p
+              class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
+            >
+              {{ project.description2 }}
+            </p>
+          </div>
+        </div>
+
+        <img
+          class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40"
+          :src="project.images.secondary2"
+          alt="Project Last Image"
+        />
+      </section>
 
       <section v-if="relatedProjects.length" class="mt-20">
         <h4 class="text-3xl text-black font-lactos md:text-[2rem] lg:text-[3rem] mb-6">
