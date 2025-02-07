@@ -24,11 +24,14 @@
     </div>
 
     <h2 class="text-2xl font-lactos xl:text-3xl xl:hidden pt-4">{{ title }}</h2>
-    <p
-      class="text-sm font-unbounded font-light text-coloblue hover:text-colored transition-colors duration-500 md:text-base xl:hidden pb-4"
+    <div
+      class="flex items-center xl:hidden text-coloblue hover:text-colored transition-colors duration-500 space-x-3 pb-4 "
     >
-      {{ subtitle }}
-    </p>
+      <p class="text-sm font-unbounded font-light md:text-base xl:hidden">
+        {{ subtitle }}
+      </p>
+      <Arrow class="w-3 -rotate-90 " />
+    </div>
   </router-link>
 </template>
 

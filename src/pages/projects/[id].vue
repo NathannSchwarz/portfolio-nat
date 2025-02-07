@@ -98,12 +98,12 @@ const relatedProjects = computed(() => {
         <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
           <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
             <h3
-              class="text-black font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
+              class="text-black mx-4  font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
             >
               DESCRIPTION
             </h3>
             <p
-              class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
+              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
             >
               {{ project.description2 }}
             </p>

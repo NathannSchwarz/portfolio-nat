@@ -7,12 +7,12 @@
   >
 
       <!-- Logo -->
-      <router-link to="/" class="block md:border p-3 px-5 border-black bg-colowhite rounded-[10rem]" @click="scrollToTop">
-        <img class="w-32 md:w-24 xl:w-28" src="/img/Logo.png" alt="logo" />
+      <router-link to="/" class="block md:border md:p-2 md:pb-1 md:px-5 md:border-black md:bg-colowhite md:rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500" @click="scrollToTop">
+        <p class="pt-2 md:pt-0 font-lactos text-2xl md:text-[1.8vw] xl:text-[1.3vw] ">NATHAN SCHWARZ</p>
       </router-link>
 
       <!-- Navigation Desktop -->
-      <nav class="hidden md:flex space-x-2 md:space-x-6 xl:space-x-8 md:text-[1.8vw] xl:text-[1.3vw]">
+      <nav class="hidden md:flex space-x-2 md:space-x-6 xl:space-x-8 md:text-[1.8vw] xl:text-[1.3vw] ">
         <router-link
           to="/"
           class="font-lactos hover:bg-coloyellow hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem] " @click="scrollToTop"
