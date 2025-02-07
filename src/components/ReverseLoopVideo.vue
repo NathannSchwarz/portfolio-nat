@@ -3,7 +3,6 @@ import { ref, onMounted } from 'vue';
 
 const videoRef = ref<HTMLVideoElement | null>(null);
 const isReversing = ref(false);
-let frameRequest: number | null = null;
 
 onMounted(() => {
   const video = videoRef.value;
@@ -20,31 +19,22 @@ onMounted(() => {
 
   // Détecter la fin de la vidéo et inverser la lecture
   video.addEventListener("ended", () => {
-    startReversePlayback();
+    isReversing.value = true;
+    video.playbackRate = -1; // Inverser la vitesse de lecture
+    video.currentTime = video.duration - 0.1; // Déclencher l'inversion
+    video.play();
+  });
+
+  // Détecter le début de la vidéo pour repartir en avant
+  video.addEventListener("timeupdate", () => {
+    if (isReversing.value && video.currentTime <= 0.1) {
+      isReversing.value = false;
+      video.playbackRate = 1; // Revenir à la vitesse normale
+      video.currentTime = 0.1;
+      video.play();
+    }
   });
 });
-
-const startReversePlayback = () => {
-  const video = videoRef.value;
-  if (!video) return;
-
-  isReversing.value = true;
-
-  const reverseFrame = () => {
-    if (!isReversing.value || !video) return;
-
-    if (video.currentTime <= 0.1) {
-      isReversing.value = false;
-      video.play();
-      return;
-    }
-
-    video.currentTime -= 1; 
-    frameRequest = requestAnimationFrame(reverseFrame);
-  };
-
-  frameRequest = requestAnimationFrame(reverseFrame);
-};
 </script>
 
 <template>
