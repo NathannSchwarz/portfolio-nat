@@ -4,11 +4,11 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[20rem] md:max-h-[23rem]  xl:w-[40rem] xl:h-[25rem]"
+        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[20rem] md:max-h-[23rem] xl:w-[40rem] xl:h-[25rem]"
       />
       <div class="hidden xl:block">
         <div
-          class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-100 transition-opacity duration-500 opacity-0 group-hover:opacity-100 flex flex-col justify-between p-8 h-full"
+          class="absolute inset-0 bg-black transition-all duration-500 bg-opacity-0 group-hover:bg-opacity-100 opacity-0 group-hover:opacity-100 flex flex-col justify-between p-8 h-full"
         >
           <h2 class="text-white text-2xl font-lactos xl:text-7xl self-start">{{ title }}</h2>
           <div
