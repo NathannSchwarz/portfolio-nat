@@ -118,7 +118,7 @@ const scrollToTop = () => {
       <img
         src="/img/perso2.webp"
         alt="imgaccueil3"
-        class="m-auto  mt-72 object-cover h-[55vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[38%] xl:mt-[40vh] xl:mb-[20vh]"
+        class="m-auto  mt-72 object-cover h-[62vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[38%] xl:mt-[40vh] xl:mb-[20vh]"
       />
 
       <!-- Bouton Arrow -->
