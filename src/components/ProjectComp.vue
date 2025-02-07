@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/projects/${id}`" class="flex flex-col group" @click="scrollToTop">
+  <router-link :to="`/project/${id}`" class="flex flex-col group" @click="scrollToTop">
     <div class="relative w-full overflow-hidden transition-all duration-500 ease-in-out">
       <img
         :src="imageSrc"
@@ -25,12 +25,12 @@
 
     <h2 class="text-2xl font-lactos xl:text-3xl xl:hidden pt-4">{{ title }}</h2>
     <div
-      class="flex items-center xl:hidden text-coloblue hover:text-colored transition-colors duration-500 space-x-3 pb-4 "
+      class="flex items-center xl:hidden text-coloblue hover:text-colored transition-colors duration-500 space-x-3 pb-4"
     >
       <p class="text-sm font-unbounded font-light md:text-base xl:hidden">
         {{ subtitle }}
       </p>
-      <Arrow class="w-3 -rotate-90 " />
+      <Arrow class="w-3 -rotate-90" />
     </div>
   </router-link>
 </template>
@@ -40,7 +40,7 @@ import { defineProps } from 'vue'
 import Arrow from '@/components/icons/Arrow.vue'
 
 defineProps<{
-  id: number
+  id: string
   imageSrc: string
   imageAlt?: string
   title: string

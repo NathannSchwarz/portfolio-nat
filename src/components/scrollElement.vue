@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const projects = ref([
   {
-    id: 1,
+    id: 'eyeonme',
     speed: 0.8,
     xPercent: 30,
     yPercent: 10,
@@ -19,7 +19,7 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 2,
+    id: 'brandingproject',
     speed: 0.9,
     xPercent: 70,
     yPercent: 45,
@@ -29,7 +29,7 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 3,
+    id: 'webproject',
     speed: 1.0,
     xPercent: 30,
     yPercent: 70,
@@ -39,7 +39,7 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 4,
+    id: 'fulldesign',
     speed: 1.1,
     xPercent: 60,
     yPercent: 95,
@@ -49,7 +49,7 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 5,
+    id: 'fulldesign2',
     speed: 1.1,
     xPercent: 5,
     yPercent: 95,
@@ -180,6 +180,8 @@ onMounted(() => {
     },
   });
 
+
+
   // 🟢 Rendre le bouton invisible tant que les images sont visibles
   // 🟢 Cacher le bouton dès que la première image arrive à l'écran
   gsap.fromTo(
@@ -189,7 +191,7 @@ onMounted(() => {
       opacity: 0, // Le bouton disparaît
       scrollTrigger: {
         trigger: ".parallax-project:first-child", // Première image
-        start: "top 80%", // Dès qu'elle commence à apparaître
+        start: "top 100%", // Dès qu'elle commence à apparaître
         end: "top 50%", // Le bouton reste invisible
         scrub: true,
       },

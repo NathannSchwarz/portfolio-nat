@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/projects/${id}`" class="block group" @click="scrollToTop">
+  <router-link :to="`/project/${id}`" class="block group" @click="scrollToTop">
     <div
       class="relative w-full overflow-hidden transition-all duration-700 ease-in-out group-hover:rounded-xl"
     >
@@ -32,7 +32,7 @@
       <p class="text-sm font-unbounded font-light md:text-base xl:hidden">
         {{ subtitle }}
       </p>
-      <Arrow class="w-3 -rotate-90 " />
+      <Arrow class="w-3 -rotate-90" />
     </div>
   </router-link>
 </template>
@@ -41,7 +41,7 @@
 import { defineProps } from 'vue'
 import Arrow from '@/components/icons/Arrow.vue'
 defineProps<{
-  id: number
+  id: string
   imageSrc: string
   imageAlt?: string
   title: string

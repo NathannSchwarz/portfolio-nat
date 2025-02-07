@@ -1,13 +1,13 @@
 <template>
   <header
     :class="[
-      'fixed flex items-center justify-between p-8 py-5 md:pt-4 top-0 md:top-4 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0 z-50',
+      'fixed flex items-center justify-between p-4 md:p-8 md:py-5 md:pt-4 top-0 md:top-4 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0 z-50',
       isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
 
       <!-- Logo -->
-      <router-link to="/" class="block md:border md:p-2 md:pb-1 md:px-5 md:border-black md:bg-colowhite md:rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500" @click="scrollToTop">
+      <router-link to="/" class="block md:border md:p-0.5 md:pb-0.5 md:px-5 lg:p-2 lg:pb-1 lg:px-5 md:border-black md:bg-colowhite md:rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500" @click="scrollToTop">
         <p class="pt-2 md:pt-0 font-lactos text-2xl md:text-[1.8vw] xl:text-[1.3vw] ">NATHAN SCHWARZ</p>
       </router-link>
 

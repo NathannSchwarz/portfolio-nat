@@ -1,6 +1,6 @@
 const projects = [
   {
-    id: 1,
+    id: 'eyeonme',
     title: 'EYE ON ME',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
@@ -30,7 +30,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 'brandingproject',
     title: 'BRANDING PROJECT',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
@@ -54,7 +54,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 'webproject',
     title: 'WEB PROJECT',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEdzaadafzzefezfCT >',
@@ -79,7 +79,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 'fulldesign',
     title: 'FULL DESIGN',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
