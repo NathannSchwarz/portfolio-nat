@@ -6,7 +6,7 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110 xl:group-hover:scale-100"
+        class="w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110 xl:group-hover:scale-100 h-[9.5rem] md:h-[13rem] lg:h-[15rem] xl:h-[18rem]"
       />
       <div class="hidden xl:block">
         <div

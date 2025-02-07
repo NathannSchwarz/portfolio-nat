@@ -9,23 +9,23 @@ gsap.registerPlugin(ScrollTrigger)
 
 const projects = ref([
   {
-    id: 'eyeonme',
+    id: 'watergirl',
     speed: 0.8,
     xPercent: 30,
     yPercent: 10,
-    imageSrc: '/img/Accueilimg1.webp',
-    imageAlt: 'EYE ON ME',
-    title: 'EYE ON ME',
+    imageSrc: '/img/Femme2.webp',
+    imageAlt: 'watergirl',
+    title: 'WATER GIRL',
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 'brandingproject',
+    id: 'jo2024',
     speed: 0.9,
     xPercent: 70,
     yPercent: 45,
-    imageSrc: '/img/Accueilimg2.webp',
-    imageAlt: 'BRANDING PROJECT',
-    title: 'BRANDING PROJECT',
+    imageSrc: 'img/JO2024-1.webp',
+    imageAlt: 'JO 2024',
+    title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
   },
   {

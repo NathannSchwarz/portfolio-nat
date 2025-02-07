@@ -75,10 +75,16 @@ const relatedProjects = computed(() => {
         </div>
       </section>
       <section class="-mx-4 mx-auto">
-        <img
-          class="w-full md:h-[45vw] object-cover mb-0.5  lg:mb-1"
-          :src="project.images.secondary2"
+        <component
+          :is="project.images.principal.endsWith('.mp4') ? 'video' : 'img'"
+          class="w-full md:h-[55vw] object-cover mb-0.5 lg:mb-1 pointer-events-none touch-none"
+          :src="project.images.principal"
           alt="Project Last Image"
+          v-bind="
+            project.images.principal.endsWith('.mp4')
+              ? { autoplay: true, loop: true, muted: true, playsinline: true }
+              : {}
+          "
         />
 
         <!-- ✅ Images spécifiques pour chaque projet -->
@@ -98,9 +104,9 @@ const relatedProjects = computed(() => {
         <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
           <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
             <h3
-              class="text-black mx-4  font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
+              class="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
             >
-              DESCRIPTION
+              WHAT I DID
             </h3>
             <p
               class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
@@ -110,10 +116,16 @@ const relatedProjects = computed(() => {
           </div>
         </div>
 
-        <img
-          class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40"
+        <component
+          :is="project.images.secondary2.endsWith('.mp4') ? 'video' : 'img'"
+          class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40 pointer-events-none touch-none"
           :src="project.images.secondary2"
           alt="Project Last Image"
+          v-bind="
+            project.images.secondary2.endsWith('.mp4')
+              ? { autoplay: true, loop: true, muted: true, playsinline: true }
+              : {}
+          "
         />
       </section>
 

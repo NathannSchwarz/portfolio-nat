@@ -1,10 +1,10 @@
 const projects = [
   {
-    id: 'eyeonme',
-    title: 'EYE ON ME',
+    id: 'watergirl',
+    title: 'WATER GIRL',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
-    imageSrc: '/img/Accueilimg1.webp',
+    imageSrc: '/img/Femme2.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
     gridClass: 'lg:col-span-1',
@@ -13,41 +13,37 @@ const projects = [
     description2:
       'In this project, I focused on creating a seamless user experience by integrating motion design and branding strategies.',
     images: {
-      principal: '/img/Accueilimg3.webp',
-      main: '/img/Accueilimg1.webp',
-      secondary1: '/img/Accueilimg2.webp',
-      secondary2: '/img/Accueilimg3.webp',
+      principal: '/img/Femme2.webp',
+      main: '/img/Femme3.webp',
+      secondary1: '/img/Femme1.webp',
+      secondary2: '/img/Femme4.webp',
     },
-    myWork: ['Brand', 'Visual identity', 'User experience'],
+    myWork: ['Personal work', 'Visual identity'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/Photoshop.webp',
-      '/img/Photoshop.webp',
-      '/img/Photoshop.webp',
-      '/img/Photoshop.webp',
       '/img/Photoshop.webp',
     ],
   },
 
   {
-    id: 'brandingproject',
-    title: 'BRANDING PROJECT',
+    id: 'jo2024',
+    title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
-    imageSrc: '/img/Accueilimg2.webp',
+    imageSrc: '/img/JO2024-1.webp',
     imageAlt: 'Example Project',
-    category: 'BRANDING',
+    category: 'GRAPHIC DESIGN',
     gridClass: 'lg:col-span-1',
     description: 'A deep dive into branding strategies and visual identity design.',
     description2:
       'Branding requires consistency and clarity. This project was all about building a strong visual language for brands.',
     images: {
-      principal: '/img/Accueilimg3.webp',
-      main: '/img/Accueilimg2.webp',
+      principal: '/video/JO2024-2.mp4',
+      main: '/img/JO2024-1.webp',
       secondary1: '/img/Accueilimg1.webp',
       secondary2: '/img/Accueilimg3.webp',
     },
-    myWork: ['Logo design', 'Color theory', 'Typography'],
+    myWork: ['Motion Design', 'Story-telling', 'Typography'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/Photoshop.webp',

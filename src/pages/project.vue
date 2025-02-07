@@ -78,13 +78,13 @@ const countProjects = (filter: string) => {
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-3xl "
+      class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
     >
       <li
         v-for="filter in filters"
         :key="filter"
         @click="toggleFilter(filter)"
-        class="relative cursor-pointer transition-colors duration-500"
+        class="relative cursor-pointer transition-colors duration-500 hover:text-colored"
         :class="{
           'text-colored': activeFilters.includes(filter),
           'text-black': !activeFilters.includes(filter),
@@ -98,7 +98,7 @@ const countProjects = (filter: string) => {
     </ul>
 
     <!-- Project Grid -->
-    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5   xl:gap-0">
+    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5   xl:gap-0">
       <div v-for="(project, index) in filteredProjects" :key="index" :class="project.gridClass">
         <ProjectComp
           :id="project.id"
