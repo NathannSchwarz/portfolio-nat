@@ -1,43 +1,49 @@
 <template>
   <header
     :class="[
-      'fixed flex items-center justify-between p-4 md:p-8 md:py-5 md:pt-4 top-0 md:top-4 z-50 w-full bg-colowhite md:bg-transparent border-b border-black md:border-0 z-50',
+      'fixed flex items-center justify-between p-4 md:p-8 md:py-5 md:pt-4 top-0 md:top-4 z-50 w-full md:border-0 z-50',
       isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
+    <!-- Logo -->
+    <router-link
+      to="/"
+      class="block border p-0.5 pb-0.5 px-5 lg:p-2 lg:pb-1 lg:px-5 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
+      @click="scrollToTop"
+    >
+      <p class="pt-2 md:pt-0 font-lactos text-lg md:text-[1.8vw] xl:text-[1.3vw]">NATHAN SCHWARZ</p>
+    </router-link>
 
-      <!-- Logo -->
-      <router-link to="/" class="block md:border md:p-0.5 md:pb-0.5 md:px-5 lg:p-2 lg:pb-1 lg:px-5 md:border-black md:bg-colowhite md:rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500" @click="scrollToTop">
-        <p class="pt-2 md:pt-0 font-lactos text-2xl md:text-[1.8vw] xl:text-[1.3vw] ">NATHAN SCHWARZ</p>
+    <!-- Navigation Desktop -->
+    <nav class="hidden md:flex space-x-2 md:space-x-6 xl:space-x-8 md:text-[1.8vw] xl:text-[1.3vw]">
+      <router-link
+        to="/"
+        class="font-lactos hover:bg-coloyellow hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem]"
+        @click="scrollToTop"
+      >
+        HOME
       </router-link>
-
-      <!-- Navigation Desktop -->
-      <nav class="hidden md:flex space-x-2 md:space-x-6 xl:space-x-8 md:text-[1.8vw] xl:text-[1.3vw] ">
-        <router-link
-          to="/"
-          class="font-lactos hover:bg-coloyellow hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem] " @click="scrollToTop"
-        >
-          HOME
-        </router-link>
-        <router-link
-          to="/project"
-          class="font-lactos hover:bg-colored hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem] " @click="scrollToTop"
-        >
-          PROJECT
-        </router-link>
-        <router-link
-          to="/contact"
-          class="font-lactos hover:bg-coloblue hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem] " @click="scrollToTop"
-        >
-          CONTACT
-        </router-link>
-      </nav>
-
+      <router-link
+        to="/project"
+        class="font-lactos hover:bg-colored hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem]"
+        @click="scrollToTop"
+      >
+        PROJECT
+      </router-link>
+      <router-link
+        to="/contact"
+        class="font-lactos hover:bg-coloblue hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem]"
+        @click="scrollToTop"
+      >
+        CONTACT
+      </router-link>
+    </nav>
 
     <!-- Menu Mobile -->
     <button
       @click="toggleMenu"
-      class="md:hidden absolute right-7 w-10 h-12 focus:outline-none z-50"
+      class="md:hidden absolute right-5 w-[4rem] h-10 focus:outline-none z-50 rounded-[10rem] px-5 transition-all duration-300"
+      :class="isMenuOpen ? 'border-transparent ' : 'border border-black bg-colowhite'"
     >
       <svg
         viewBox="0 0 74 50"
@@ -73,14 +79,14 @@
 
     <!-- Menu Mobile Content -->
     <div
-      class="md:hidden absolute top-2 right-4 w-44 border border-1 border-black bg-colowhite pt-16 pb-10 px-5 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
+      class="md:hidden absolute top-4 right-5 w-32 border border-1 border-black bg-colowhite pt-10 pb-6 px-5 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
-      <ul class="space-y-8 ">
+      <ul class="space-y-4">
         <li @click="scrollToTop">
           <router-link
             to="/"
-            class="block text-3xl  font-lactos hover:text-coloyellow transition-colors duration-500"
+            class="block text-xl font-lactos hover:text-coloyellow transition-colors duration-500"
           >
             HOME
           </router-link>
@@ -88,7 +94,7 @@
         <li @click="scrollToTop">
           <router-link
             to="/project"
-            class="block text-3xl font-lactos text-right  hover:text-colored transition-colors duration-500"
+            class="block text-xl font-lactos text-right hover:text-colored transition-colors duration-500"
           >
             PROJECT
           </router-link>
@@ -96,7 +102,7 @@
         <li @click="scrollToTop">
           <router-link
             to="/contact"
-            class="block text-3xl font-lactos  hover:text-coloblue transition-colors duration-500"
+            class="block text-xl font-lactos hover:text-coloblue transition-colors duration-500"
           >
             CONTACT
           </router-link>
