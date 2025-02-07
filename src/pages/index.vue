@@ -239,7 +239,7 @@ const scrollToTop = () => {
             </h4>
             <router-link
               to="/contact"
-              class="font-lactos text-[7.8vw] md:text-[4.5vw] xl:text-[3.5vw] mb-44 md:mb-64 text-coloblue relative before:content-[''] before:absolute before:bottom-0 before:right-0 before:h-[8px] before:w-full before:bg-coloblue before:transition-transform before:duration-500 before:origin-left hover:before:scale-x-0 inline-block"
+              class="font-lactos text-[7vw] md:text-[4.5vw] xl:text-[3.5vw] mb-44 md:mb-64 text-coloblue relative before:content-[''] before:absolute before:bottom-0 before:right-0 before:h-[8px] before:w-full before:bg-coloblue before:transition-transform before:duration-500 before:origin-left hover:before:scale-x-0 inline-block"
               @click="scrollToTop"
             >
               CONTACT ME
