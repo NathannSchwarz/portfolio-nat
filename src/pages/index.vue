@@ -89,7 +89,7 @@ const scrollToTop = () => {
   <section class="relative w-screen h-screen">
     <!-- Vidéo -->
     <ReverseLoopVideo />
-    
+
 
     <!-- Dégradé vers le blanc -->
     <div
@@ -146,10 +146,10 @@ const scrollToTop = () => {
         class="absolute top-[115vh] -left-6 w-24 z-0 md:-left-5 md:top-[110vh] md:w-[18vw] lg:top-[110vh] lg:w-[16vw] xl:-left-16 xl:top-[160vh] xl:w-[13vw] animate-spin-slow"
       />
       <FleurPleineRouge
-        class="absolute top-[180rem] -left-6 w-24 z-0 md:left-0 md:top-[360vh] md:w-[20vw] lg:-left-5 lg:top-[410vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
+        class="absolute top-[185rem] -left-6 w-24 z-0 md:left-0 md:top-[360vh] md:w-[20vw] lg:-left-5 lg:top-[410vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
       />
       <FleurBleu
-        class="absolute top-[185rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
+        class="absolute top-[190rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
       />
     </section>
 

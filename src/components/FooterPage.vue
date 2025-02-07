@@ -3,7 +3,7 @@
     <div class="mx-5 pt-12 pb-1 text-colowhite">
       <!-- Citation et cercle pour tablet/desktop -->
       <div class="grid grid-cols-1 md:grid-cols-2 items-center mb-12 md:mb-16">
-        <p class="font-lactos text-base text-coloyellow md:text-2xl xl:text-4xl">
+        <p class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-4xl">
           "DESIGNING WITH FREEDOM MEANS CREATING SOLUTIONS THAT REFLECT AUTHENTICITY, EMBRACE
           INDIVIDUALITY, AND EMPOWER CHOICES FOR A LIMITLESS FUTURE."
         </p>
