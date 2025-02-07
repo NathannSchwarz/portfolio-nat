@@ -2,23 +2,49 @@
 import { ref, onMounted } from 'vue';
 
 const videoRef = ref<HTMLVideoElement | null>(null);
+const isReversing = ref(false);
+let frameRequest: number | null = null;
 
 onMounted(() => {
   const video = videoRef.value;
   if (!video) return;
 
-  // Forcer la lecture automatique même si l'utilisateur essaye de l'arrêter
+  // Forcer l'autoplay sur mobile et desktop
   const ensurePlayback = () => {
     if (video.paused) {
       video.play().catch(() => console.log("Lecture bloquée par le navigateur"));
     }
   };
-
-  // Vérifier toutes les 500ms si la vidéo joue
   setInterval(ensurePlayback, 500);
-
   video.play().catch(() => console.log("Lecture bloquée au démarrage"));
+
+  // Détecter la fin de la vidéo et inverser la lecture
+  video.addEventListener("ended", () => {
+    startReversePlayback();
+  });
 });
+
+const startReversePlayback = () => {
+  const video = videoRef.value;
+  if (!video) return;
+
+  isReversing.value = true;
+
+  const reverseFrame = () => {
+    if (!isReversing.value || !video) return;
+
+    if (video.currentTime <= 0.1) {
+      isReversing.value = false;
+      video.play();
+      return;
+    }
+
+    video.currentTime -= 0.033; // Lecture fluide à ~30 FPS
+    frameRequest = requestAnimationFrame(reverseFrame);
+  };
+
+  frameRequest = requestAnimationFrame(reverseFrame);
+};
 </script>
 
 <template>
