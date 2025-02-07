@@ -39,7 +39,7 @@ const startReversePlayback = () => {
       return;
     }
 
-    video.currentTime -= 0.033; // Lecture fluide à ~30 FPS
+    video.currentTime -= 1; 
     frameRequest = requestAnimationFrame(reverseFrame);
   };
 
