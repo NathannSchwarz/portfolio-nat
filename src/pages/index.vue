@@ -23,7 +23,7 @@ const scrollDown = () => {
   if (screenWidth >= 1750) {
     scrollMultiplier = 1.285
   } else if (screenWidth >= 1024) {
-    scrollMultiplier = 1.15
+    scrollMultiplier = 1.28
   } else if (screenWidth >= 768) {
     scrollMultiplier = 1.05
   } else {
