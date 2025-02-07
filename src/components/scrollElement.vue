@@ -74,15 +74,15 @@ onMounted(() => {
 
   const mm = gsap.matchMedia();
 
-  mm.add("(max-width: 370px)", () => {
+  mm.add("(max-width: 375px)", () => {
     console.log("📱 Mobile mode");
     updateProjects([3, 18, 3, 18, 3], [0, 16, 33, 49, 67]);
     createTextPin(window.innerHeight * 2.7); // Moins long sur mobile
   });
 
-  mm.add("(min-width: 371px) and (max-width: 640px)", () => {
+  mm.add("(min-width: 376px) and (max-width: 640px)", () => {
     console.log("📱 Mobile mode");
-    updateProjects([16, 33, 16, 33, 16], [0, 16, 33, 49, 67]);
+    updateProjects([17, 33, 17, 33, 17], [0, 16, 33, 49, 67]);
     createTextPin(window.innerHeight * 2.7); // Moins long sur mobile
   });
 
