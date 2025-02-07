@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
 import emailjs from 'emailjs-com';
-import FleurBleu from "@/components/icons/FleurBleu.vue";
 import FleurPleineBleu from "@/components/icons/FleurPleineBleu.vue";
 import FleurRouge from "@/components/icons/FleurRouge.vue";
 import FleurPleineRouge from "@/components/icons/FleurPleineRouge.vue";

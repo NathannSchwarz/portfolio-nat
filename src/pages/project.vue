@@ -98,7 +98,7 @@ const countProjects = (filter: string) => {
     </ul>
 
     <!-- Project Grid -->
-    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
+    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-0">
       <div v-for="(project, index) in filteredProjects" :key="index" :class="project.gridClass">
         <ProjectComp
           :id="project.id"

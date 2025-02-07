@@ -107,7 +107,7 @@ const scrollToTop = () => {
         A WEB DESIGNER <br />
         & UX DESIGNER
       </h1>
-      <button class="bg-red flex items-center space-x-6 bg-colowhite p-1 pb-0.5 lg:p-3 px-4 lg:pb-2 lg:px-6 rounded-[10rem] border-2 border-black hover:text-colowhite hover:bg-black transition-colors duration-500" @click="scrollDown">
+      <button class="bg-red flex items-center space-x-6 bg-colowhite p-1 pb-0.5 lg:p-3 px-4 lg:pb-2 lg:px-6 rounded-[10rem] border-2 border-black hover:text-colowhite hover:bg-colored transition-colors duration-500" @click="scrollDown">
         <p class="text-base md:text-lg lg:text-2xl">CHECK OUT MY WORK</p>
         <Arrow class="w-3 lg:w-4"/>
       </button>

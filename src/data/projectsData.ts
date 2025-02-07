@@ -2,12 +2,12 @@ const projects = [
   {
     id: 1,
     title: 'EYE ON ME',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
     imageSrc: '/img/Accueilimg1.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-3',
+    gridClass: 'lg:col-span-1',
     description:
       'This project explores the interaction between modern design and visual storytelling.',
     description2:
@@ -32,12 +32,12 @@ const projects = [
   {
     id: 2,
     title: 'BRANDING PROJECT',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'Example Project',
     category: 'BRANDING',
-    gridClass: 'lg:col-span-2',
+    gridClass: 'lg:col-span-1',
     description: 'A deep dive into branding strategies and visual identity design.',
     description2:
       'Branding requires consistency and clarity. This project was all about building a strong visual language for brands.',
@@ -56,12 +56,12 @@ const projects = [
   {
     id: 3,
     title: 'WEB PROJECT',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEdzaadafzzefezfCT >',
     imageSrc: '/img/Accueilimg3.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
-    gridClass: 'lg:col-span-3',
+    gridClass: 'lg:col-span-1',
     description: 'A web development project showcasing cutting-edge frontend technologies.',
     description2:
       'This project was a challenge in responsive design and optimizing performance for seamless browsing.',
@@ -81,12 +81,12 @@ const projects = [
   {
     id: 4,
     title: 'FULL DESIGN',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-4',
+    gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',

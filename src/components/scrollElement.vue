@@ -16,7 +16,7 @@ const projects = ref([
     imageSrc: '/img/Accueilimg1.webp',
     imageAlt: 'EYE ON ME',
     title: 'EYE ON ME',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = ref([
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'BRANDING PROJECT',
     title: 'BRANDING PROJECT',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projects = ref([
     imageSrc: '/img/Accueilimg3.webp',
     imageAlt: 'WEB PROJECT',
     title: 'WEB PROJECT',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projects = ref([
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'FULL DESIGN',
     title: 'FULL DESIGN',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const projects = ref([
     imageSrc: '/img/Accueilimg2.webp',
     imageAlt: 'FULL DESIGN',
     title: 'FULL DESIGN',
-    subtitle: 'VIEW PROJECT >',
+    subtitle: 'VIEW PROJECT',
   },
 ])
 
@@ -244,10 +244,10 @@ const scrollToTop = () => {
       </p>
       <routerLink to="/project" @click="scrollToTop">
         <button
-          class="text-xs md:text-sm xl:text-lg project-button border-colored border text-colored p-1 px-3 md:p-2 md:px-4 lg:p-3 lg:px-5 rounded-[12rem] hover:text-coloblue hover:border-coloblue transition-colors duration-500 flex space-x-4 items-center mx-auto mt-3 lg:mt-6"
+          class="text-xs md:text-sm xl:text-base project-button border-colored border text-colored p-1 px-3 md:p-2 md:px-4 lg:p-3 lg:px-6 rounded-[12rem] hover:text-coloblue hover:border-coloblue transition-colors duration-500 flex space-x-4 items-center mx-auto mt-3 lg:mt-6"
         >
           <p class="font-unbounded">MY PROJECTS</p>
-          <Arrow class="w-3 md:w-4 xl:w-5 -rotate-90" />
+          <Arrow class="w-3 md:w-4 xl:w-4 -rotate-90" />
         </button>
       </routerLink>
 
