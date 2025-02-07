@@ -3,7 +3,7 @@
     <div class="mx-5 pt-12 pb-1 text-colowhite">
       <!-- Citation et cercle pour tablet/desktop -->
       <div class="grid grid-cols-1 md:grid-cols-2 items-center mb-12 md:mb-16">
-        <p class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-4xl">
+        <p class="font-lactos text-[4vw] text-coloyellow md:text-2xl xl:text-4xl">
           "DESIGNING WITH FREEDOM MEANS CREATING SOLUTIONS THAT REFLECT AUTHENTICITY, EMBRACE
           INDIVIDUALITY, AND EMPOWER CHOICES FOR A LIMITLESS FUTURE."
         </p>
@@ -25,7 +25,7 @@
         <!-- Liens de navigation -->
         <div class="space-y-2">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">PAGES</h3>
-          <ul class="font-unbounded text-sm text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
             <li>
               <router-link
                 to="/"
@@ -56,7 +56,7 @@
         <!-- Réseaux -->
         <div class="ml-16 space-y-2 md:ml-0">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">SOCIAL</h3>
-          <ul class="font-unbounded text-sm text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
             <li>
               <a
                 href="https://www.instagram.com/nvt_vnn/?next=%2F"
@@ -90,7 +90,7 @@
         <!-- Informations de contact -->
         <div class="space-y-2">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">INFORMATION</h3>
-          <ul class="font-unbounded text-sm text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
             <li class="break-words">MONTBELIARD, FRANCE</li>
             <li class="break-words">NATHAN.SCHWARZ04@GMAIL.COM</li>
             <li class="break-words">
