@@ -210,7 +210,7 @@ const scrollToTop = () => {
             PASSIONATED BY DESIGN
           </h4>
           <p
-            class="mx-9 font-unbounded font-light text-sm mb-44 md:text-xl lg:text-lg xl:text-2xl md:w-4/5 lg:w-7/12 xl:w-7/12 md:m-auto lg:text-2xl text-center"
+            class="mx-6 md:mx-9 font-unbounded font-light text-sm mb-44 md:text-xl lg:text-lg xl:text-2xl md:w-4/5 lg:w-7/12 xl:w-6/12 md:m-auto lg:text-2xl text-center"
           >
             In my designs and worldview, <span class="font-medium">freedom</span> is one of my most
             cherished values. After my studies, I aspire to embrace independence

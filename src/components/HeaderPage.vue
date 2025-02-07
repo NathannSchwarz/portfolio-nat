@@ -8,10 +8,10 @@
     <!-- Logo -->
     <router-link
       to="/"
-      class="block border p-0.5 pb-0.5 px-5 lg:p-2 lg:pb-1 lg:px-5 xl:p-3 xl:pb-2 xl:px-6 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
+      class="block border pt-1.5 pb-1  px-4 md:pt-1 md:pb-0.5 lg:p-2 lg:pb-1 lg:px-5 xl:p-3 xl:pb-2 xl:px-6 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
       @click="scrollToTop"
     >
-      <p class="pt-2 md:pt-0 font-lactos text-lg md:text-[1.8vw] xl:text-[1.3vw]">NATHAN SCHWARZ</p>
+      <p class=" font-lactos text-lg md:text-[1.8vw] xl:text-[1.3vw]">NATHAN SCHWARZ</p>
     </router-link>
 
     <!-- Navigation Desktop -->
@@ -79,7 +79,7 @@
 
     <!-- Menu Mobile Content -->
     <div
-      class="md:hidden absolute top-4 right-5 w-32 border border-1 border-black bg-colowhite pt-10 pb-6 px-5 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
+      class="md:hidden absolute top-3 right-5 w-32 border border-1 border-black bg-colowhite pt-10 pb-6 px-5 rounded-3xl shadow-lg transition-all duration-500 ease-in-out transform"
       :class="isMenuOpen ? 'opacity-100' : 'opacity-0 invisible'"
     >
       <ul class="space-y-4">
