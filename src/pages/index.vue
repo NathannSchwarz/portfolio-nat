@@ -97,7 +97,7 @@ const scrollToTop = () => {
 
     <div class="absolute bottom-10 left-5 lg:bottom-20 lg:left-20 text-black font-lactos z-10">
       <h1
-        class="text-[10vw] md:text-[7vw] xl:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent"
+        class="text-[10vw] md:text-[7vw] xl:text-[6rem] leading-none text-stroke-black text-transparent"
       >
         HEY, I'M <br />
         NATHAN SCHWARZ <br />
@@ -281,11 +281,13 @@ h4 {
   -webkit-text-stroke: 1px #f7f4f2;
 }
 
-.text-stroke-black-mobile {
-  -webkit-text-stroke: 1.5px black;
+.text-stroke-black {
+  -webkit-text-stroke: 2px black;
 }
 
-.text-stroke-black {
-  -webkit-text-stroke: 3px black;
+@media (max-width: 768px) {
+  .text-stroke-black {
+    -webkit-text-stroke: 1.5px black;
+  }
 }
 </style>
