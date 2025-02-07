@@ -213,7 +213,7 @@ const scrollToTop = () => {
             In my designs and worldview, <span class="font-medium">freedom</span> is one of my most
             cherished values. After my studies, I aspire to embrace independence
             <span class="font-medium">as my ideal professional path</span>. While I’m aware of its
-            uncertainties, it offers the priceless opportunity to fully control
+            uncertainties, it offers the priceless opportunity to fully control.
           </p>
         </div>
       </section>
