@@ -42,7 +42,7 @@
     <!-- Menu Mobile -->
     <button
       @click="toggleMenu"
-      class="md:hidden absolute right-5 w-[4rem] h-10 focus:outline-none z-50 rounded-[10rem] px-5 transition-all duration-300"
+      class="md:hidden absolute right-5 w-[3.7rem] h-10 focus:outline-none z-50 rounded-full px-4 transition-all duration-300"
       :class="isMenuOpen ? 'border-transparent ' : 'border border-black bg-colowhite'"
     >
       <svg
