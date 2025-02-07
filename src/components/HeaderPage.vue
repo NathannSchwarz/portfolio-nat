@@ -1,14 +1,14 @@
 <template>
   <header
     :class="[
-      'fixed flex items-center justify-between p-4 md:p-8 md:py-5 md:pt-4 top-0 md:top-4 z-50 w-full md:border-0 z-50',
+      'fixed flex items-center justify-between mt-3 md:mt-0 p-4 md:p-8 md:py-5 md:pt-4 top-0 md:top-4 z-50 w-full md:border-0 z-50',
       isHeaderVisible ? 'header-visible' : 'header-hidden',
     ]"
   >
     <!-- Logo -->
     <router-link
       to="/"
-      class="block border p-0.5 pb-0.5 px-5 lg:p-2 lg:pb-1 lg:px-5 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
+      class="block border p-0.5 pb-0.5 px-5 lg:p-2 lg:pb-1 lg:px-5 xl:p-3 xl:pb-2 xl:px-6 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
       @click="scrollToTop"
     >
       <p class="pt-2 md:pt-0 font-lactos text-lg md:text-[1.8vw] xl:text-[1.3vw]">NATHAN SCHWARZ</p>
@@ -18,7 +18,7 @@
     <nav class="hidden md:flex space-x-2 md:space-x-6 xl:space-x-8 md:text-[1.8vw] xl:text-[1.3vw]">
       <router-link
         to="/"
-        class="font-lactos hover:bg-coloyellow hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5 border-black bg-colowhite rounded-[10rem]"
+        class="font-lactos hover:bg-coloyellow hover:text-colowhite transition-colors duration-500 border p-1.5 pb-1 px-5  border-black bg-colowhite rounded-[10rem]"
         @click="scrollToTop"
       >
         HOME
