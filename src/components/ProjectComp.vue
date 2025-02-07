@@ -4,7 +4,7 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-500 ease-in-out xl:w-[40rem] xl:h-[25rem]"
+        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[20rem] md:max-h-[23rem]  xl:w-[40rem] xl:h-[25rem]"
       />
       <div class="hidden xl:block">
         <div
@@ -12,7 +12,7 @@
         >
           <h2 class="text-white text-2xl font-lactos xl:text-7xl self-start">{{ title }}</h2>
           <div
-            class="flex border border-white p-2 px-7 rounded-[10rem] w-6/12 text-white space-x-6 hover:bg-colored transition-colors duration-500"
+            class="flex border border-white p-2 px-7 rounded-[10rem] w-60 text-white space-x-5 hover:bg-colored transition-colors duration-500"
           >
             <p class="text-sm font-unbounded font-light md:text-base self-start">
               {{ subtitle }}
