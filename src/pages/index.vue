@@ -287,7 +287,7 @@ h4 {
 
 @media (max-width: 768px) {
   .text-stroke-black {
-    -webkit-text-stroke: 1.5px black;
+    -webkit-text-stroke: 1px black;
   }
 }
 </style>
