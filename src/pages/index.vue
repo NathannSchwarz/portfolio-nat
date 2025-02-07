@@ -86,20 +86,18 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <section class="relative w-screen h-screen">
-    <!-- Vidéo -->
+  <section class="relative h-screen ">
+
     <ReverseLoopVideo />
 
-
-    <!-- Dégradé vers le blanc -->
     <div
-      class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite"
+      class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite "
     ></div>
 
-    <!-- Titres positionnés en bas à gauche -->
+
     <div class="absolute bottom-10 left-5 lg:bottom-20 lg:left-20 text-black font-lactos z-10">
       <h1
-        class="text-[10vw] lg:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent"
+        class="text-[10vw] md:text-[7vw] xl:text-[6rem] leading-none text-stroke-black-mobile md:text-stroke-black text-transparent"
       >
         HEY, I'M <br />
         NATHAN SCHWARZ <br />
