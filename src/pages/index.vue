@@ -88,7 +88,7 @@ const scrollToTop = () => {
   <section class="relative w-screen h-screen">
     <!-- Vidéo -->
     <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
-      <source src="/video/Micro_Animation_Portfolio_Nathan_SCHWARZ.mp4" type="video/mp4" />
+      <source src="/video/Fleur_1.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
 
