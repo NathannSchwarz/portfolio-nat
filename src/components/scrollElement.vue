@@ -242,7 +242,7 @@ const scrollToTop = () => {
       </h3>
 
       <p
-        class="font-unbounded font-light text-xs md:text-base md:w-9/12 md:m-auto lg:text-lg lg:w-7/12 xl:text-2xl xl:w-7/12 text-center mx-5"
+        class="font-unbounded font-light text-sm md:text-base md:w-9/12 md:m-auto lg:text-lg lg:w-7/12 xl:text-2xl xl:w-7/12 text-center mx-5"
       >
         I bring a unique perspective to every project, blending expertise in
         <span class="font-medium">web design</span>,
