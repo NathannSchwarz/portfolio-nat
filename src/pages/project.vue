@@ -78,7 +78,7 @@ const countProjects = (filter: string) => {
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-base mt-44 gap-3 gap-x-6  md:mt-52 md:text-xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
+      class="flex flex-wrap font-unbounded font-light text-base mt-44 gap-3 gap-x-6 md:mt-52 md:text-xl  md:gap-x-8 lg:text-2xl lg:gap-x-10 lg:mt-96 xl:text-4xl xl:gap-x-14"
     >
       <li
         v-for="filter in filters"
