@@ -51,7 +51,7 @@ const countProjects = (filter: string) => {
 <template>
   <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
     <h1
-      class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-32 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20"
+      class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-28 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20"
     >
       MY WORK
     </h1>
@@ -67,7 +67,7 @@ const countProjects = (filter: string) => {
 
     <!-- Decorative Images -->
     <FleurPleineRouge
-      class="absolute top-[21.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
+      class="absolute top-[20.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
     />
     <FleurPleineYellow
       class="absolute top-20 -right-6 w-[24vw] z-0 md:right-20 md:top-[5rem] md:w-[16vw] lg:right-32 lg:top-24 xl:w-[15vw] xl:top-[10rem] animate-spin-slow"
@@ -78,7 +78,7 @@ const countProjects = (filter: string) => {
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-xl mt-44 gap-4 md:mt-52 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
+      class="flex flex-wrap font-unbounded font-light text-base mt-44 gap-3 gap-x-6  md:mt-52 md:text-xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
     >
       <li
         v-for="filter in filters"

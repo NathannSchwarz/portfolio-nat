@@ -103,7 +103,7 @@ const submitForm = async () => {
       class="absolute top-36 left-2 w-[16vw] z-0 md:top-32 md:left-10 md:w-[14vw] lg:left-16 animate-spin-slow-20"/>
 
       <FleurPleineYellow alt="FleurYellow"
-      class="absolute top-20 right-8 w-[18vw] z-0 md:right-12 md:w-[16vw] lg:right-20 animate-spin-reverse-slow"/>
+      class="absolute top-20 right-4 w-[18vw] z-0 md:right-12 md:w-[16vw] lg:right-20 animate-spin-reverse-slow"/>
 
     <transition name="fade">
        <FleurPleineBleu v-if="!formSubmitted"
@@ -135,7 +135,7 @@ const submitForm = async () => {
 
     <!-- Texte au-dessus -->
     <div v-if="!formSubmitted">
-      <h1 class="text-5xl text-black font-lactos text-center md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-32 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20">
+      <h1 class="text-5xl text-black font-lactos text-center md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-28 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20">
         START A<br>PROJECT
       </h1>
     </div>
