@@ -56,7 +56,7 @@ const countProjects = (filter: string) => {
       MY WORK
     </h1>
     <p
-      class="font-unbounded font-light  text-sm md:text-lg md:w-2/3 lg:text-xl lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
+      class="font-unbounded font-light  text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
     >
       I bring a unique perspective to every project, blending expertise in
       <span class="font-medium">web design</span>,
@@ -67,18 +67,18 @@ const countProjects = (filter: string) => {
 
     <!-- Decorative Images -->
     <FleurPleineRouge
-      class="absolute top-[24.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
+      class="absolute top-[21.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
     />
     <FleurPleineYellow
       class="absolute top-20 -right-6 w-[24vw] z-0 md:right-20 md:top-[5rem] md:w-[16vw] lg:right-32 lg:top-24 xl:w-[15vw] xl:top-[10rem] animate-spin-slow"
     />
     <FleurPleineBleu
-      class="absolute top-[24rem] right-10 w-[20vw] z-0 md:w-[24vw] md:top-[20rem] md:right-20 lg:right-32 lg:top-[25rem] xl:w-[21vw] xl:top-[25rem] xl:right-40 animate-spin-reverse-slow"
+      class="absolute top-[19rem] right-10 w-[20vw] z-0 md:w-[24vw] md:top-[20rem] md:right-20 lg:right-32 lg:top-[25rem] xl:w-[21vw] xl:top-[25rem] xl:right-40 animate-spin-reverse-slow"
     />
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-xl mt-32 gap-4 md:mt-44 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
+      class="flex flex-wrap font-unbounded font-light text-xl mt-44 gap-4 md:mt-52 md:text-2xl md:gap-6 lg:text-2xl lg:gap-10 lg:mt-96 xl:text-4xl xl:gap-14"
     >
       <li
         v-for="filter in filters"
