@@ -134,7 +134,7 @@ const relatedProjects = computed(() => {
           RELATED PROJECTS
         </h4>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 xl:gap-0">
           <router-link
             v-for="(related, index) in relatedProjects"
             :key="index"

@@ -3,7 +3,7 @@
     <div class="mx-5 pt-12 pb-1 text-colowhite">
       <!-- Citation et cercle pour tablet/desktop -->
       <div class="grid grid-cols-1 md:grid-cols-2 items-center mb-12 md:mb-16">
-        <p class="font-lactos text-[4vw] text-coloyellow md:text-2xl xl:text-4xl">
+        <p class="font-lactos text-[4vw] text-coloyellow md:text-[2vw] xl:text-4xl">
           "DESIGNING WITH FREEDOM MEANS CREATING SOLUTIONS THAT REFLECT AUTHENTICITY, EMBRACE
           INDIVIDUALITY, AND EMPOWER CHOICES FOR A LIMITLESS FUTURE."
         </p>
@@ -11,7 +11,7 @@
         <div class="hidden md:flex md:justify-end">
           <router-link to="/contact">
             <p
-              class="bg-coloblue text-xl text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[7rem] md:h-[7rem] md:p-8 lg:text-3xl lg:w-[9rem] lg:h-[9rem] lg:p-12 hover:text-colowhite transition-colors duration-500"
+              class="bg-coloblue text-xl text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[7rem] md:h-[7rem] md:p-8 xl:text-3xl xl:w-[9rem] xl:h-[9rem] xl:p-12 hover:text-colowhite transition-colors duration-500"
               @click="scrollToTop"
             >
               LET'S WORK
@@ -25,7 +25,7 @@
         <!-- Liens de navigation -->
         <div class="space-y-2">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">PAGES</h3>
-          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-sm xl:text-xl">
             <li>
               <router-link
                 to="/"
@@ -56,7 +56,7 @@
         <!-- Réseaux -->
         <div class="ml-16 space-y-2 md:ml-0">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">SOCIAL</h3>
-          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-sm xl:text-xl">
             <li>
               <a
                 href="https://www.instagram.com/nvt_vnn/?next=%2F"
@@ -90,7 +90,7 @@
         <!-- Informations de contact -->
         <div class="space-y-2">
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">INFORMATION</h3>
-          <ul class="font-unbounded text-xs text-black font-medium md:text-base xl:text-xl">
+          <ul class="font-unbounded text-xs text-black font-medium md:text-sm xl:text-xl">
             <li class="break-words">MONTBELIARD, FRANCE</li>
             <li class="break-words">NATHAN.SCHWARZ04@GMAIL.COM</li>
             <li class="break-words">
@@ -110,7 +110,7 @@
         <div class="ml-16 md:hidden md:ml-0">
           <router-link to="/contact">
             <p
-              class="bg-coloblue text-lg text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[8rem] md:h-[8rem] md:p-8 lg:text-4xl lg:w-[11rem] lg:h-[11rem] lg:p-12"
+              class="bg-coloblue text-lg text-center rounded-full flex items-center justify-center w-[6rem] h-[6rem] p-5 font-lactos text-coloyellow animate-spin-slow md:text-2xl md:w-[8rem] md:h-[8rem] md:p-8 xl:text-4xl xl:w-[11rem] xl:h-[11rem] xl:p-12"
               @click="scrollToTop"
             >
               LET'S WORK
