@@ -24,7 +24,7 @@ const relatedProjects = computed(() => {
 </script>
 
 <template>
-  <section class="relative bg-colowhite pb-32 overflow-hidden px-5 pt-24 md:pt-28 lg:pt-32">
+  <section class="relative bg-colowhite pb-32 overflow-hidden px-5 pt-20 md:pt-24 lg:pt-28">
     <div v-if="project">
       <section class="lg:grid lg:grid-cols-12 mb-24 md:mb-28 lg:mb-36">
         <div class="lg:w-10/12 lg:col-span-10">
