@@ -56,7 +56,7 @@ const countProjects = (filter: string) => {
       MY WORK
     </h1>
     <p
-      class="font-unbounded font-light  text-base md:text-lg md:w-2/3 lg:text-xl lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
+      class="font-unbounded font-light  text-sm md:text-lg md:w-2/3 lg:text-xl lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
     >
       I bring a unique perspective to every project, blending expertise in
       <span class="font-medium">web design</span>,
