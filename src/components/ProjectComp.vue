@@ -4,11 +4,11 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[20rem] md:max-h-[23rem] xl:w-[40rem] xl:h-[25rem]"
+        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[90vw] md:max-h-[45vw] lg:max-h-[30vw] xl:h-[20vw]"
       />
       <div class="hidden xl:block">
         <div
-          class="absolute inset-0 bg-black transition-all duration-500 bg-opacity-0 group-hover:bg-opacity-100 opacity-0 group-hover:opacity-100 flex flex-col justify-between p-8 h-full"
+          class="absolute inset-0 bg-black transition-all duration-300 bg-opacity-0 group-hover:bg-opacity-100 opacity-0 group-hover:opacity-100 flex flex-col justify-between p-8 h-full"
         >
           <h2 class="text-white text-2xl font-lactos xl:text-7xl self-start">{{ title }}</h2>
           <div
@@ -23,11 +23,11 @@
       </div>
     </div>
 
-    <h2 class="text-2xl font-lactos xl:text-3xl xl:hidden pt-4">{{ title }}</h2>
+    <h2 class="text-2xl font-lactos  xl:text-4xl xl:hidden pt-4">{{ title }}</h2>
     <div
-      class="flex items-center xl:hidden text-coloblue hover:text-colored transition-colors duration-500 space-x-3 pb-4"
+      class="flex items-center  text-coloblue hover:text-colored xl:hidden transition-colors duration-500 space-x-3 pb-4"
     >
-      <p class="text-sm font-unbounded font-light md:text-base xl:hidden">
+      <p class="text-sm font-unbounded font-light  xl:text-lg">
         {{ subtitle }}
       </p>
       <Arrow class="w-3 -rotate-90" />
