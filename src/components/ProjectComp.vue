@@ -4,7 +4,7 @@
       <img
         :src="imageSrc"
         :alt="imageAlt"
-        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[90vw] md:max-h-[45vw] lg:max-h-[30vw] xl:h-[20vw]"
+        class="w-full object-cover transition-transform duration-500 ease-in-out max-h-[90vw] md:max-h-[40vw] lg:max-h-[30vw] xl:h-[20vw]"
       />
       <div class="hidden xl:block">
         <div
@@ -23,9 +23,9 @@
       </div>
     </div>
 
-    <h2 class="text-2xl font-lactos  xl:text-4xl xl:hidden pt-4">{{ title }}</h2>
+    <h2 class="text-2xl font-lactos  xl:text-4xl  pt-4 xl:hidden">{{ title }}</h2>
     <div
-      class="flex items-center  text-coloblue hover:text-colored xl:hidden transition-colors duration-500 space-x-3 pb-4"
+      class="flex items-center  text-coloblue hover:text-colored  transition-colors duration-500 space-x-3 pb-4 xl:hidden"
     >
       <p class="text-sm font-unbounded font-light  xl:text-lg">
         {{ subtitle }}
