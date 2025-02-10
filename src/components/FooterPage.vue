@@ -92,7 +92,9 @@
           <h3 class="font-lactos text-xl text-coloyellow md:text-2xl xl:text-3xl">INFORMATION</h3>
           <ul class="font-unbounded text-xs text-black font-medium md:text-sm xl:text-xl">
             <li class="break-words">MONTBELIARD, FRANCE</li>
-            <li class="break-words">NATHAN.SCHWARZ04@GMAIL.COM</li>
+            <li class="break-words hover:text-colowhite transition-colors duration-500 underline">
+              <a href="mailto:nathan.schwarz04@gmail.com">NATHAN.SCHWARZ04@GMAIL.COM</a>
+            </li>
             <li class="break-words">
               <a
                 href="/CV_NATHAN_SCHWARZ.pdf"

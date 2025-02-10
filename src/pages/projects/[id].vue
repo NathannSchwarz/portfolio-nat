@@ -74,10 +74,10 @@ const relatedProjects = computed(() => {
           </div>
         </div>
       </section>
-      <section class="-mx-4 mx-auto">
+      <section class="mx-auto md:-mx-5">
         <component
           :is="project.images.principal.endsWith('.mp4') ? 'video' : 'img'"
-          class="w-full md:h-[55vw] object-cover mb-0.5 lg:mb-1 pointer-events-none touch-none"
+          class="w-full md:h-[55vw] object-cover mb-0.5 lg:mb-1 pointer-events-none touch-none "
           :src="project.images.principal"
           alt="Project Last Image"
           v-bind="
