@@ -118,7 +118,7 @@ const relatedProjects = computed(() => {
 
         <component
           :is="project.images.secondary2.endsWith('.mp4') ? 'video' : 'img'"
-          class="w-full md:h-[45vw] object-cover mb-16 md:mb-20 lg:mb-40 pointer-events-none touch-none"
+          class="w-full md:h-[55vw] object-cover mb-16 md:mb-20 lg:mb-40 pointer-events-none touch-none"
           :src="project.images.secondary2"
           alt="Project Last Image"
           v-bind="
