@@ -60,7 +60,7 @@ const relatedProjects = computed(() => {
             <h2
               class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-xl xl:text-2xl mb-3 md:mb-4 lg:mb-5"
             >
-              LOGICIEL UTILISÉ
+              SOFTWARE USED
             </h2>
             <div class="grid grid-cols-4 gap-y-2 lg:gap-y-4">
               <img
