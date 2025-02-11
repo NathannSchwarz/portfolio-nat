@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/projects/${id}`" class="flex flex-col group" @click="scrollToTop">
-    <div class="relative w-full overflow-hidden transition-all duration-500 ease-in-out">
+    <div class="relative w-full overflow-hidden transition-all duration-500 ease-in-out rounded-lg  group-hover:rounded-2xl">
       <img
         :src="imageSrc"
         :alt="imageAlt"

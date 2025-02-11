@@ -116,7 +116,7 @@ const scrollToTop = () => {
       <img
         src="/img/perso2.webp"
         alt="imgaccueil3"
-        class="m-auto  mt-72 object-cover h-[62vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[30%] xl:mt-[40vh] xl:mb-[20vh]"
+        class="m-auto  mt-72  rounded-xl object-cover h-[62vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[30%] xl:mt-[40vh] xl:mb-[20vh]"
       />
 
       <!-- Bouton Arrow -->
@@ -188,7 +188,7 @@ const scrollToTop = () => {
         class="w-full h-auto lg:w-screen lg:h-screen flex-none bg-coloyellow flex flex-col justify-center items-center border-t border-black"
       >
         <div class="relative mt-32 mx-5 mb-10 md:mb-16 md:mt-44 md:mb-16 lg:mt-2">
-          <img src="/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-7/12 lg:w-5/12" />
+          <img src="/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-7/12 lg:w-5/12 rounded-xl" />
           <h3
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10.5vw] lg:text-[7.5vw] xl:text-[8vw] font-lactos leading-[1.1] text-center text-coloblue w-full"
           >
@@ -228,7 +228,7 @@ const scrollToTop = () => {
           <img
             src="/img/Accueilimg2.webp"
             alt="Accueilimg2"
-            class="mx-auto md:w-7/12 lg:w-5/12 xl:w-4/12 mb-10 md:mb-12 lg:mb-14"
+            class="mx-auto md:w-7/12 lg:w-5/12 xl:w-4/12 mb-10 md:mb-12 lg:mb-14 rounded-xl"
           />
           <div class="text-center xl:mt-52">
             <h4

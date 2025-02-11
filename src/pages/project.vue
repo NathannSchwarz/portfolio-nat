@@ -49,7 +49,7 @@ const countProjects = (filter: string) => {
 </script>
 
 <template>
-  <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
+  <section class="relative bg-colowhite pb-32  overflow-hidden px-5">
     <h1
       class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-28 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20"
     >

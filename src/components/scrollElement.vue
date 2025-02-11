@@ -9,6 +9,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const projects = ref([
   {
+    id: 'trainingmanual',
+    speed: 1.0,
+    xPercent: 30,
+    yPercent: 70,
+    imageSrc: '/img/trainingmanual/manual1.webp',
+    imageAlt: 'TRAINING MANUAL',
+    title: 'TRAINING MANUAL',
+    subtitle: 'VIEW PROJECT',
+  },
+  {
     id: 'sae203',
     speed: 0.8,
     xPercent: 30,
@@ -28,16 +38,7 @@ const projects = ref([
     title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
   },
-  {
-    id: 'trainingmanual',
-    speed: 1.0,
-    xPercent: 30,
-    yPercent: 70,
-    imageSrc: '/img/trainingmanual/manual1.webp',
-    imageAlt: 'TRAINING MANUAL',
-    title: 'TRAINING MANUAL',
-    subtitle: 'VIEW PROJECT',
-  },
+
   {
     id: 'xeesartist',
     speed: 1.1,
