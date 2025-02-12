@@ -75,8 +75,6 @@ const projects = [
     ],
   },
 
-
-
   {
     id: 'feater',
     title: 'FEATER',
@@ -145,6 +143,32 @@ const projects = [
       main: '/img/sae203/sae1.webp',
       secondary1: '/img/sae203/sae2.webp',
       secondary2: '/img/sae203/sae3.webp',
+    },
+    myWork: ['UI/UX', 'Illustration', 'Animation'],
+    softwareImages: [
+      // 🔥 Ajout de plusieurs images de logiciels utilisés
+      '/img/logiciel/vscode.png',
+      '/img/logiciel/vue3.png',
+      '/img/logiciel/tailwind.png',
+    ],
+  },
+  {
+    id: 'eyeonme',
+    title: 'EYE ON ME',
+    subtitle: 'VIEW PROJECT',
+    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    imageSrc: '/img/eyeonme/eyeonme.png',
+    imageAlt: 'Example Project',
+    category: 'WEB SITE',
+    gridClass: 'lg:col-span-1',
+    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
+    description2:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    images: {
+      principal: '',
+      main: '/img/eyeonme/eyeonme2.webp',
+      secondary1: '/img/eyeonme/eyeonme1.webp',
+      secondary2: '/video/eyeonme.mp4',
     },
     myWork: ['UI/UX', 'Illustration', 'Animation'],
     softwareImages: [

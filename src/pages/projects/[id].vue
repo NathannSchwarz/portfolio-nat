@@ -76,10 +76,11 @@ const relatedProjects = computed(() => {
       </section>
       <section class="mx-auto md:-mx-5">
         <component
+          v-if="project.images.principal"
           :is="project.images.principal.endsWith('.mp4') ? 'video' : 'img'"
-          class="w-full md:h-[55vw] object-cover mb-0.5 lg:mb-1 pointer-events-none touch-none "
+          class="w-full md:h-[55vw] object-cover mb-0.5 lg:mb-1 pointer-events-none touch-none rounded-lg md:rounded-none"
           :src="project.images.principal"
-          alt="Project Last Image"
+          alt="Project First Image"
           v-bind="
             project.images.principal.endsWith('.mp4')
               ? { autoplay: true, loop: true, muted: true, playsinline: true }
@@ -90,12 +91,12 @@ const relatedProjects = computed(() => {
         <!-- ✅ Images spécifiques pour chaque projet -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5 md:gap-1">
           <img
-            class="w-full md:h-[45vw] object-cover"
+            class="w-full md:h-[45vw] object-cover rounded-lg md:rounded-none"
             :src="project.images.main"
             alt="Project Main Image"
           />
           <img
-            class="w-full md:h-[45vw] object-cover"
+            class="w-full md:h-[45vw] object-cover rounded-lg md:rounded-none"
             :src="project.images.secondary1"
             alt="Project Secondary Image"
           />
@@ -118,7 +119,7 @@ const relatedProjects = computed(() => {
 
         <component
           :is="project.images.secondary2.endsWith('.mp4') ? 'video' : 'img'"
-          class="w-full md:h-[55vw] object-cover mb-16 md:mb-20 lg:mb-40 pointer-events-none touch-none"
+          class="w-full md:h-[55vw] object-cover mb-16 md:mb-20 lg:mb-40 pointer-events-none touch-none rounded-lg md:rounded-none"
           :src="project.images.secondary2"
           alt="Project Last Image"
           v-bind="
