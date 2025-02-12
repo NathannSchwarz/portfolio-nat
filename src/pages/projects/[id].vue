@@ -21,6 +21,13 @@ const relatedProjects = computed(() => {
     (p) => p.category === project.value?.category && p.id !== project.value?.id,
   )
 })
+
+const limitedRelatedProjects = computed(() => {
+  if (!relatedProjects.value.length) return []
+  return relatedProjects.value
+    .sort(() => Math.random() - 0.5) // Mélange aléatoire
+    .slice(0, 3) // Prend les 3 premiers
+})
 </script>
 
 <template>
@@ -130,14 +137,14 @@ const relatedProjects = computed(() => {
         />
       </section>
 
-      <section v-if="relatedProjects.length" class="mt-20">
+      <section v-if="limitedRelatedProjects.length" class="mt-20">
         <h4 class="text-3xl text-black font-lactos md:text-[2rem] lg:text-[3rem] mb-6">
           RELATED PROJECTS
         </h4>
 
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 xl:gap-0">
           <router-link
-            v-for="(related, index) in relatedProjects"
+            v-for="(related, index) in limitedRelatedProjects"
             :key="index"
             :to="`/projects/${related.id}`"
           >

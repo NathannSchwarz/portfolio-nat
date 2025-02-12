@@ -22,6 +22,7 @@ const projects = [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
       '/img/logiciel/Indesign.png',
+      '/img/logiciel/figma.png',
     ],
   },
   {
@@ -45,8 +46,9 @@ const projects = [
     myWork: ['UI/UX', 'Illustration', 'Animation'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/wordpress.webp',
+      '/img/logiciel/wordpress.png',
       '/img/logiciel/AfterEffect.png',
+      '/img/logiciel/figma.png',
     ],
   },
   {
@@ -99,6 +101,7 @@ const projects = [
       '/img/logiciel/vscode.png',
       '/img/logiciel/vue3.png',
       '/img/logiciel/tailwind.png',
+      '/img/logiciel/figma.png',
     ],
   },
   {
@@ -124,6 +127,7 @@ const projects = [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
       '/img/logiciel/AfterEffect.png',
+      '/img/logiciel/figma.png',
     ],
   },
   {
@@ -150,6 +154,7 @@ const projects = [
       '/img/logiciel/vscode.png',
       '/img/logiciel/vue3.png',
       '/img/logiciel/tailwind.png',
+      '/img/logiciel/figma.png',
     ],
   },
   {
@@ -159,7 +164,7 @@ const projects = [
     subtitleid: 'VIEW PROJEfzzefezfCT >',
     imageSrc: '/img/eyeonme/eyeonme.png',
     imageAlt: 'Example Project',
-    category: 'WEB SITE',
+    category: 'GRAPHIC DESIGN',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
@@ -173,9 +178,7 @@ const projects = [
     myWork: ['UI/UX', 'Illustration', 'Animation'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/vscode.png',
-      '/img/logiciel/vue3.png',
-      '/img/logiciel/tailwind.png',
+      '/img/logiciel/Photoshop.webp',
     ],
   },
 ]
