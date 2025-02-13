@@ -36,23 +36,34 @@ const limitedRelatedProjects = computed(() => {
       <section class="lg:grid lg:grid-cols-12 mb-24 md:mb-28 lg:mb-36">
         <div class="lg:w-10/12 lg:col-span-10">
           <h1
-            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[7rem] xl:text-[8rem] pt-8 md:pt-12 lg:pt-16 pb-8"
+            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[7rem] xl:text-[8rem] pt-8 md:pt-12 lg:pt-12 pb-8"
           >
             {{ project.title }}
           </h1>
           <h2
-            class="text-black font-unbounded font-semibold text-lg md:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-10"
+            class="text-black font-unbounded font-semibold text-lg md:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8"
           >
             {{ project.subtitleid }}
           </h2>
           <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-4/5"
+            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8 lg:w-4/5"
+            v-html="project.description"
+          ></p>
+
+          <a
+            v-if="project.externalLink"
+            :href="project.externalLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-colored hover:text-coloblue text-sm md:text-base xl:text-xl font-semibold font-unbounded transition-colors duration-500"
           >
-            {{ project.description }}
-          </p>
+            {{ project.externalLinktext }}
+          </a>
         </div>
 
-        <div class="flex lg:flex-col lg:mt-14 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2">
+        <div
+          class="flex lg:flex-col mt-10 lg:mt-14 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2"
+        >
           <div>
             <h2
               class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-xl xl:text-2xl mb-3 md:mb-4 lg:mb-5"
@@ -63,7 +74,7 @@ const limitedRelatedProjects = computed(() => {
               <li v-for="(item, index) in project.myWork" :key="index">{{ item }}</li>
             </ul>
           </div>
-          <div class="lg:mt-10">
+          <div class="lg:mt-14">
             <h2
               class="text-black font-unbounded font-semibold text-base md:text-lg lg:text-xl xl:text-2xl mb-3 md:mb-4 lg:mb-5"
             >
@@ -95,6 +106,20 @@ const limitedRelatedProjects = computed(() => {
           "
         />
 
+        <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
+          <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
+            <h3
+              class="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"
+            >
+              WHAT I DID
+            </h3>
+            <p
+              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
+              v-html="project.description2"
+            ></p>
+          </div>
+        </div>
+
         <!-- ✅ Images spécifiques pour chaque projet -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5 md:gap-1">
           <img
@@ -118,9 +143,8 @@ const limitedRelatedProjects = computed(() => {
             </h3>
             <p
               class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
-            >
-              {{ project.description2 }}
-            </p>
+              v-html="project.description3"
+            ></p>
           </div>
         </div>
 

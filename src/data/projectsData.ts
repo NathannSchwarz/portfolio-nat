@@ -3,23 +3,27 @@ const projects = [
     id: 'trainingmanual',
     title: 'TRAINING MANUAL',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEdzaadafzzefezfCT >',
+    subtitleid: 'FASHION AND CLOTHING : BEGINNERS GUIDE',
     imageSrc: '/img/trainingmanual/manual1.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
-    description: 'A web development project showcasing cutting-edge frontend technologies.',
+    description:
+      'During my<strong class="font-semibold"> semester in Canada</strong>, in my second year of BUT, I had the opportunity to deepen my skills in InDesign by designing a <strong class="font-semibold">36-page book</strong> about fashion and clothing. The book starts with an introduction to fashion before guiding the reader through <strong class="font-semibold"> five key chapters.</strong>',
     description2:
-      'This project was a challenge in responsive design and optimizing performance for seamless browsing.',
+      'The first, <strong class="font-semibold">The Basics of Personal Style</strong>, provides a global understanding of body shapes to help define one’s own style while avoiding common mistakes. Next comes <strong class="font-semibold">Color Mixing Rules</strong>, a chapter dedicated to the fundamentals of color theory: learning how to mix colors, understanding their harmony, and mastering Pantone shades. The third chapter immerses the reader <strong class="font-semibold"> in the world of materials </strong>, from natural to synthetic, explaining how each one works and how it is used.',
+    description3:
+      'The book continues with a chapter on <strong class="font-semibold">garment care</strong>: how to extend their lifespan, choose the right washing cycle, repair clothes, and prioritize quality over quantity. Finally, the book concludes with a crucial chapter: <strong class="font-semibold">Ethical Fashion</strong>. It highlights the issues of <strong class="font-semibold">fast fashion versus slow fashion</strong>, raising awareness of their impacts and emphasizing the importance of recycling and second-hand shopping. To this day, it remains the project I am most proud of.',
     images: {
       principal: '/video/manual.mp4',
       main: '/img/trainingmanual/manual3.webp',
       secondary1: '/img/trainingmanual/manual2.webp',
       secondary2: '/img/trainingmanual/manual1.webp',
     },
-    myWork: ['Frontend', 'UX/UI Design', 'Web Animation'],
+    myWork: ['Print Design', 'Prototyping'],
     softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
       '/img/logiciel/Indesign.png',
       '/img/logiciel/figma.png',
@@ -36,6 +40,8 @@ const projects = [
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description3:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '/img/xees/xees4.webp',
@@ -64,6 +70,8 @@ const projects = [
       'This project explores the interaction between modern design and visual storytelling.',
     description2:
       'In this project, I focused on creating a seamless user experience by integrating motion design and branding strategies.',
+    description3:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '/img/femme/Femme2.webp',
       main: '/img/femme/Femme7.webp',
@@ -88,6 +96,8 @@ const projects = [
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description3:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '/img/Feater/Feater3.webp',
@@ -116,6 +126,8 @@ const projects = [
     description: 'A deep dive into branding strategies and visual identity design.',
     description2:
       'Branding requires consistency and clarity. This project was all about building a strong visual language for brands.',
+    description3:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '/video/JO2024-2.mp4',
       main: '/img/jo2024/JO2024-4.webp',
@@ -141,6 +153,8 @@ const projects = [
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description3:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '/video/sae4.mp4',
@@ -168,6 +182,8 @@ const projects = [
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
+      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description3:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
       principal: '',
