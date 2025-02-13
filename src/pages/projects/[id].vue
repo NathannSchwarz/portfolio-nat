@@ -106,7 +106,10 @@ const limitedRelatedProjects = computed(() => {
           "
         />
 
-        <div class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
+        <div
+          v-if="project.description2"
+          class="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40"
+        >
           <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
             <h3
               class="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7"

@@ -189,12 +189,8 @@ const projects = [
     imageSrc: '/img/eyeonme/eyeonme.png',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
-    description2:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     description3:
       'Designing a complete experience involves a strategic mix of creativity and technical execution.',
     images: {
