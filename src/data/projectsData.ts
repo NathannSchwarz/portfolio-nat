@@ -11,11 +11,11 @@ const projects = [
     externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description:
-      'During my<strong class="font-semibold"> semester in Canada</strong>, in my second year of BUT, I had the opportunity to deepen my skills in InDesign by designing a <strong class="font-semibold">36-page book</strong> about fashion and clothing. The book starts with an introduction to fashion before guiding the reader through <strong class="font-semibold"> five key chapters.</strong>',
+      'During my<strong> semester in Canada</strong>, in my second year of BUT, I had the opportunity to deepen my skills in InDesign by designing a <strong >36-page book</strong> about fashion and clothing. The book starts with an introduction to fashion before guiding the reader through <strong > five key chapters.</strong>',
     description2:
-      'The first, <strong class="font-semibold">The Basics of Personal Style</strong>, provides a global understanding of body shapes to help define one’s own style while avoiding common mistakes. Next comes <strong class="font-semibold">Color Mixing Rules</strong>, a chapter dedicated to the fundamentals of color theory: learning how to mix colors, understanding their harmony, and mastering Pantone shades. The third chapter immerses the reader <strong class="font-semibold"> in the world of materials </strong>, from natural to synthetic, explaining how each one works and how it is used.',
+      'The first, <strong >The Basics of Personal Style</strong>, provides a global understanding of body shapes to help define one’s own style while avoiding common mistakes. Next comes <strong >Color Mixing Rules</strong>, a chapter dedicated to the fundamentals of color theory: learning how to mix colors, understanding their harmony, and mastering Pantone shades. The third chapter immerses the reader <strong > in the world of materials </strong>, from natural to synthetic, explaining how each one works and how it is used.',
     description3:
-      'The book continues with a chapter on <strong class="font-semibold">garment care</strong>: how to extend their lifespan, choose the right washing cycle, repair clothes, and prioritize quality over quantity. Finally, the book concludes with a crucial chapter: <strong class="font-semibold">Ethical Fashion</strong>. It highlights the issues of <strong class="font-semibold">fast fashion versus slow fashion</strong>, raising awareness of their impacts and emphasizing the importance of recycling and second-hand shopping. To this day, it remains the project I am most proud of.',
+      'The book continues with a chapter on <strong >garment care</strong>: how to extend their lifespan, choose the right washing cycle, repair clothes, and prioritize quality over quantity. Finally, the book concludes with a crucial chapter: <strong >Ethical Fashion</strong>. It highlights the issues of <strong >fast fashion versus slow fashion</strong>, raising awareness of their impacts and emphasizing the importance of recycling and second-hand shopping. To this day, it remains the project I am most proud of.',
     images: {
       principal: '/video/manual.mp4',
       main: '/img/trainingmanual/manual3.webp',
@@ -37,6 +37,8 @@ const projects = [
     imageSrc: '/img/xees/xees4.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
@@ -65,6 +67,8 @@ const projects = [
     imageSrc: '/img/femme/Femme7.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description:
       'This project explores the interaction between modern design and visual storytelling.',
@@ -93,6 +97,8 @@ const projects = [
     imageSrc: '/img/Feater/Feater3.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
@@ -122,6 +128,8 @@ const projects = [
     imageSrc: '/img/jo2024/JO2024-3.jpg',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'A deep dive into branding strategies and visual identity design.',
     description2:
@@ -150,6 +158,8 @@ const projects = [
     imageSrc: '/img/sae203/sae2.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
@@ -179,6 +189,8 @@ const projects = [
     imageSrc: '/img/eyeonme/eyeonme.png',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
+    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
+    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:

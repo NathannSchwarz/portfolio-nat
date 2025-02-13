@@ -36,7 +36,7 @@ const limitedRelatedProjects = computed(() => {
       <section class="lg:grid lg:grid-cols-12 mb-24 md:mb-28 lg:mb-36">
         <div class="lg:w-10/12 lg:col-span-10">
           <h1
-            class="text-5xl text-black font-lactos md:text-[6rem] lg:text-[7rem] xl:text-[8rem] pt-8 md:pt-12 lg:pt-12 pb-8"
+            class="text-5xl text-black font-lactos md:text-[5rem] lg:text-[5.5rem] xl:text-[7rem] pt-8 md:pt-12 lg:pt-12 pb-8"
           >
             {{ project.title }}
           </h1>
@@ -46,7 +46,7 @@ const limitedRelatedProjects = computed(() => {
             {{ project.subtitleid }}
           </h2>
           <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8 lg:w-4/5"
+            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8 lg:w-4/5 xl:w-9/12"
             v-html="project.description"
           ></p>
 
@@ -62,7 +62,7 @@ const limitedRelatedProjects = computed(() => {
         </div>
 
         <div
-          class="flex lg:flex-col mt-10 lg:mt-14 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2"
+          class="flex lg:flex-col mt-10 lg:mt-10 gap-[5vw] md:gap-[7vw] lg:gap-[2vw] lg:col-span-2"
         >
           <div>
             <h2
