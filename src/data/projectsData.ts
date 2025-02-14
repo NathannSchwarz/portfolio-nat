@@ -64,7 +64,7 @@ const projects = [
     id: 'watergirl',
     title: 'WATER GIRL',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'VISUAL MADE WITH AI',
     imageSrc: '/img/femme/Femme7.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
