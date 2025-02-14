@@ -11,7 +11,7 @@ const projects = [
     externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
     description:
-      'During my<strong> semester in Canada</strong>, in my second year of BUT, I had the opportunity to deepen my skills in InDesign by designing a <strong >36-page book</strong> about fashion and clothing. The book starts with an introduction to fashion before guiding the reader through <strong > five key chapters.</strong>',
+      'During my<strong > semester in Canada</strong>, in my second year of BUT, I had the opportunity to deepen my skills in InDesign by designing a <strong >36-page book</strong> about fashion and clothing. The book starts with an introduction to fashion before guiding the reader through <strong > five key chapters.</strong>',
     description2:
       'The first, <strong >The Basics of Personal Style</strong>, provides a global understanding of body shapes to help define one’s own style while avoiding common mistakes. Next comes <strong >Color Mixing Rules</strong>, a chapter dedicated to the fundamentals of color theory: learning how to mix colors, understanding their harmony, and mastering Pantone shades. The third chapter immerses the reader <strong > in the world of materials </strong>, from natural to synthetic, explaining how each one works and how it is used.',
     description3:
@@ -33,25 +33,26 @@ const projects = [
     id: 'xeesartist',
     title: 'XEES ARTIST',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'WEB SITE FOR AN CONTEMPORARY ARTIST',
     imageSrc: '/img/xees/xees4.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
+    externalLink: 'https://xeesartist.schwarznathan.fr/',
+    externalLinktext: 'LINK TO THE SITE',
     gridClass: 'lg:col-span-1',
-    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
+    description:
+      'This project, carried out during my semester in Canada, was our <strong>first opportunity to work with an external client outside of school</strong>. For this project, I had <strong>complete creative freedom</strong>. Given his <strong>complex artistic style</strong>, I decided to go for a <strong>minimalist artistic direction</strong>.',
     description2:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+      'The goal of the website is to <strong>resemble a museum</strong>: elements are placed in an <strong>apparently random yet structured way</strong> on the screen, mimicking an exhibition layout. The website’s background features the artist’s <strong>very first artistic style, dating back more than three years</strong>. Although he no longer practices this style, he <strong>remains deeply attached to it</strong> and appreciated the idea of incorporating a <strong>nod to his early works</strong> into his site.</p>',
     description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+      'As for the content, I structured the homepage around his <strong>current artistic styles</strong>. First, <strong>Matière Vive</strong>, his <strong>most fully developed style</strong>, which he actively practices today and considers <strong>the core of his artistic journey</strong>. Next, <strong>Harmonie Chaotique</strong> represents an <strong>experimental phase</strong>—somewhere between <strong>exploration and refinement</strong>—aiming to <strong>add complexity to his work</strong>. Finally, <strong>Connexions</strong>',
     images: {
       principal: '/img/xees/xees4.webp',
       main: '/img/xees/xees3.webp',
       secondary1: '/img/xees/xees5.webp',
       secondary2: '/video/xees.mp4',
     },
-    myWork: ['UI/UX', 'Illustration', 'Animation'],
+    myWork: ['UI/UX', 'Prototype', 'Development'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/wordpress.png',

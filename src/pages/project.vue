@@ -49,25 +49,24 @@ const countProjects = (filter: string) => {
 </script>
 
 <template>
-  <section class="relative bg-colowhite pb-32  overflow-hidden px-5">
+  <section class="relative bg-colowhite pb-32 overflow-hidden px-5">
     <h1
       class="text-5xl text-black font-lactos md:text-[7rem] lg:text-[8rem] xl:text-[10rem] pt-28 md:pt-36 lg:pt-40 z-10 relative pb-8 lg:pb-20"
     >
       MY WORK
     </h1>
     <p
-      class="font-unbounded font-light  text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
+      class="font-unbounded font-light text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
     >
-      I bring a unique perspective to every project, blending expertise in
-      <span class="font-medium">web design</span>,
-      <span class="font-medium">motion design</span> with a passion for creativity. I’m committed to
-      creating meaningful, impactful designs.<br />
-      Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
+      I specialize in <span class="font-semibold">web design, motion design, and graphic design </span>, creating visuals that are both
+      functional and engaging. Whether it’s building <span class="font-semibold">websites, crafting animations, or designing for
+      print,</span>  my goal is to combine clarity and creativity to bring ideas to life in a way that <span class="font-semibold"> makes
+      sense and resonates.</span>
     </p>
 
     <!-- Decorative Images -->
     <FleurPleineRouge
-      class="absolute top-[20.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem]  animate-spin-slow-20"
+      class="absolute top-[20.5rem] left-2 w-[18vw] z-0 md:top-[27rem] md:left-10 md:w-[14vw] lg:left-20 lg:top-[32rem] xl:w-[12vw] xl:top-[35rem] animate-spin-slow-20"
     />
     <FleurPleineYellow
       class="absolute top-20 -right-6 w-[24vw] z-0 md:right-20 md:top-[5rem] md:w-[16vw] lg:right-32 lg:top-24 xl:w-[15vw] xl:top-[10rem] animate-spin-slow"
@@ -78,7 +77,7 @@ const countProjects = (filter: string) => {
 
     <!-- Filter Buttons -->
     <ul
-      class="flex flex-wrap font-unbounded font-light text-base mt-44 gap-3 gap-x-6 md:mt-52 md:text-xl  md:gap-x-8 lg:text-2xl lg:gap-x-10 lg:mt-96 xl:text-4xl xl:gap-x-14"
+      class="flex flex-wrap font-unbounded font-light text-base mt-44 gap-3 gap-x-6 md:mt-52 md:text-xl md:gap-x-8 lg:text-2xl lg:gap-x-10 lg:mt-96 xl:text-4xl xl:gap-x-14"
     >
       <li
         v-for="filter in filters"
@@ -98,7 +97,9 @@ const countProjects = (filter: string) => {
     </ul>
 
     <!-- Project Grid -->
-    <section class="mt-10 md:mt-14 lg:mt-16 xl:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-y-10 xl:gap-0 xl:-mx-5">
+    <section
+      class="mt-10 md:mt-14 lg:mt-16 xl:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-y-10 xl:gap-0 xl:-mx-5"
+    >
       <div v-for="(project, index) in filteredProjects" :key="index" :class="project.gridClass">
         <ProjectComp
           :id="project.id"

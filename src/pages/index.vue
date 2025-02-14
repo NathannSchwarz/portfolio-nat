@@ -86,14 +86,12 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <section class="relative h-screen ">
-
+  <section class="relative h-screen">
     <ReverseLoopVideo />
 
     <div
-      class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite "
+      class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-[#F5F5F5] to-colowhite"
     ></div>
-
 
     <div class="absolute bottom-10 left-5 lg:bottom-20 lg:left-20 text-black font-lactos z-10">
       <h1
@@ -104,9 +102,12 @@ const scrollToTop = () => {
         A WEB DESIGNER <br />
         & MOTION DESIGNER
       </h1>
-      <button class="bg-red flex items-center space-x-6 bg-colowhite p-1 pb-0.5 lg:p-3 px-4 lg:pb-2 lg:px-6 rounded-[10rem] border border-black hover:text-colowhite hover:bg-colored transition-colors duration-500" @click="scrollDown">
+      <button
+        class="bg-red flex items-center space-x-6 bg-colowhite p-1 pb-0.5 lg:p-3 px-4 lg:pb-2 lg:px-6 rounded-[10rem] border border-black hover:text-colowhite hover:bg-colored transition-colors duration-500"
+        @click="scrollDown"
+      >
         <p class="text-base md:text-lg lg:text-2xl">CHECK OUT MY WORK</p>
-        <Arrow class="w-3 lg:w-4"/>
+        <Arrow class="w-3 lg:w-4" />
       </button>
     </div>
   </section>
@@ -116,7 +117,7 @@ const scrollToTop = () => {
       <img
         src="/img/perso2.webp"
         alt="imgaccueil3"
-        class="m-auto  mt-72  rounded-xl object-cover h-[62vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[30%] xl:mt-[40vh] xl:mb-[20vh]"
+        class="m-auto mt-72 rounded-xl object-cover h-[62vh] md:w-[40vw] md:mt-[30rem] md:h-full lg:object-fill lg:mt-[40vh] lg:mb-[50vh] lg:w-[30vw] xl:w-[30%] xl:mt-[40vh] xl:mb-[20vh]"
       />
 
       <!-- Bouton Arrow -->
@@ -188,7 +189,11 @@ const scrollToTop = () => {
         class="w-full h-auto lg:w-screen lg:h-screen flex-none bg-coloyellow flex flex-col justify-center items-center border-t border-black"
       >
         <div class="relative mt-32 mx-5 mb-10 md:mb-16 md:mt-44 md:mb-16 lg:mt-2">
-          <img src="/img/Accueilimg1.webp" alt="Accueilimg1" class="mx-auto md:w-7/12 lg:w-5/12 rounded-xl" />
+          <img
+            src="/img/Accueilimg1.webp"
+            alt="Accueilimg1"
+            class="mx-auto md:w-7/12 lg:w-5/12 rounded-xl"
+          />
           <h3
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10.5vw] lg:text-[7.5vw] xl:text-[8vw] font-lactos leading-[1.1] text-center text-coloblue w-full"
           >
@@ -208,12 +213,12 @@ const scrollToTop = () => {
             PASSIONATED BY DESIGN
           </h4>
           <p
-            class="mx-8 md:mx-9 font-unbounded font-light text-xs mb-44 md:text-base lg:text-lg xl:text-2xl md:w-9/12 lg:w-7/12 xl:w-6/12 md:m-auto lg:text-2xl text-center"
+            class="mx-8 md:mx-9 font-unbounded font-light text-xs mb-44 md:text-base lg:text-lg xl:text-2xl md:w-9/12 lg:w-7/12 xl:w-7/12 md:m-auto lg:text-2xl text-center"
           >
-            In my designs and worldview, <span class="font-medium">freedom</span> is one of my most
+            In my designs and worldview,<span class="font-medium">freedom</span> is one of my most
             cherished values. After my studies, I aspire to embrace independence
             <span class="font-medium">as my ideal professional path</span>. While I’m aware of its
-            uncertainties, it offers the priceless opportunity to fully control.
+            uncertainties, it offers the priceless opportunity to fully control my creative vision.
           </p>
         </div>
       </section>
