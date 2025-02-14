@@ -116,32 +116,7 @@ const projects = [
       '/img/logiciel/figma.png',
     ],
   },
-  {
-    id: 'jo2024',
-    title: 'JO 2024',
-    subtitle: 'VIEW PROJECT',
-    subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',
-    imageSrc: '/img/jo2024/JO2024-3.jpg',
-    imageAlt: 'Example Project',
-    category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-1',
-    description: `<p>Created in <strong>After Effects</strong>, this animation explores a theme of my choosing: the <strong>visual identity</strong> of the <strong>Paris 2024 Olympic Games</strong>. This identity is not only <strong>powerful</strong> in its message but also deeply woven into the fabric of the city itself.</p>`,
-    description2: `<p>The animation, inspired by the <strong>dynamic promotional work</strong> done for the Olympics, showcases <strong>Paris</strong> in all its glory, highlighting three of its most <strong>iconic landmarks</strong>—the <strong>Pompidou Center</strong>, the <strong>Sacré-Cœur</strong>, and the <strong>Eiffel Tower</strong>—symbols of the <strong>City of Light</strong>'s rich heritage.</p>`,
-    description3: `<p>In this project, I dedicated significant time to enhancing my skills in <strong>After Effects</strong>. This deep dive allowed me to gain a more <strong>professional perspective</strong> on the software, inspired by <strong>concrete projects</strong> created for the Olympics.</p>`,
-    images: {
-      principal: '/video/JO2024-2.mp4',
-      main: '/img/jo2024/JO2024-4.webp',
-      secondary1: '/img/jo2024/JO2024-1.jpg',
-      secondary2: '/img/jo2024/JO2024-3.jpg',
-    },
-    myWork: ['Motion Design', 'Story-Boarding', 'Typography'],
-    softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/Photoshop.webp',
-      '/img/logiciel/AfterEffect.png',
-      '/img/logiciel/figma.png',
-    ],
-  },
+
   /* {
     id: 'sae203',
     title: 'SAE 203',
@@ -197,6 +172,32 @@ const projects = [
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
+    ],
+  },
+  {
+    id: 'jo2024',
+    title: 'JO 2024',
+    subtitle: 'VIEW PROJECT',
+    subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',
+    imageSrc: '/img/jo2024/JO2024-3.jpg',
+    imageAlt: 'Example Project',
+    category: 'GRAPHIC DESIGN',
+    gridClass: 'lg:col-span-1',
+    description: `<p>Created in <strong>After Effects</strong>, this animation explores a theme of my choosing: the <strong>visual identity</strong> of the <strong>Paris 2024 Olympic Games</strong>. This identity is not only <strong>powerful</strong> in its message but also deeply woven into the fabric of the city itself.</p>`,
+    description2: `<p>The animation, inspired by the <strong>dynamic promotional work</strong> done for the Olympics, showcases <strong>Paris</strong> in all its glory, highlighting three of its most <strong>iconic landmarks</strong>—the <strong>Pompidou Center</strong>, the <strong>Sacré-Cœur</strong>, and the <strong>Eiffel Tower</strong>—symbols of the <strong>City of Light</strong>'s rich heritage.</p>`,
+    description3: `<p>In this project, I dedicated significant time to enhancing my skills in <strong>After Effects</strong>. This deep dive allowed me to gain a more <strong>professional perspective</strong> on the software, inspired by <strong>concrete projects</strong> created for the Olympics.</p>`,
+    images: {
+      principal: '/video/JO2024-2.mp4',
+      main: '/img/jo2024/JO2024-4.webp',
+      secondary1: '/img/jo2024/JO2024-1.jpg',
+      secondary2: '/img/jo2024/JO2024-3.jpg',
+    },
+    myWork: ['Motion Design', 'Story-Boarding', 'Typography'],
+    softwareImages: [
+      // 🔥 Ajout de plusieurs images de logiciels utilisés
+      '/img/logiciel/Photoshop.webp',
+      '/img/logiciel/AfterEffect.png',
+      '/img/logiciel/figma.png',
     ],
   },
 ]

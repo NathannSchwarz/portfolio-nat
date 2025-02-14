@@ -58,10 +58,8 @@ const countProjects = (filter: string) => {
     <p
       class="font-unbounded font-light text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
     >
-      I specialize in <span class="font-normal">web design</span>,<span class="font-normal"> motion design</span>, and <span class="font-normal">graphic design</span> , creating visuals that are both
-      functional and engaging. Whether it’s building <span class="font-normal">websites </span>, <span class="font-normal">crafting animations</span>, or<span class="font-normal"> designing for
-      print,</span>  my goal is to combine clarity and creativity to bring ideas to life in a way that <span class="font-normal"> makes
-      sense and resonates.</span>
+      Every project is an opportunity to refine ideas, explore new perspectives, and craft unique design solutions that blend <span class="font-normal">creativity</span> and <span class="font-normal">functionality</span>. From concept to execution, I strive to create visuals that not only look great but also <span class="font-normal">serve a purpose</span>.
+
     </p>
 
     <!-- Decorative Images -->

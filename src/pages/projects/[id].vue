@@ -80,7 +80,7 @@ const limitedRelatedProjects = computed(() => {
             >
               SOFTWARE USED
             </h2>
-            <div class="grid grid-cols-4 gap-y-2 lg:gap-y-4">
+            <div class="grid grid-cols-4 gap-y-2 lg:gap-y-4 ">
               <img
                 v-for="(image, index) in project.softwareImages"
                 :key="index"

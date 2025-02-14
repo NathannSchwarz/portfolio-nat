@@ -147,7 +147,7 @@ const scrollToTop = () => {
         class="absolute top-[190rem] -left-6 w-24 z-0 md:left-0 md:top-[360vh] md:w-[20vw] lg:-left-5 lg:top-[410vh] lg:w-[18vw] xl:top-[465vh] xl:w-[15vw] animate-spin-slow"
       />
       <FleurBleu
-        class="absolute top-[190rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[505vh] xl:w-[13vw] animate-spin-reverse"
+        class="absolute top-[190rem] -right-4 w-28 z-0 md:-right-10 md:top-[375vh] md:w-[19vw] lg:-right-10 lg:top-[430vh] lg:w-[16vw] xl:top-[485vh] xl:w-[13vw] animate-spin-reverse"
       />
     </section>
 
@@ -202,14 +202,14 @@ const scrollToTop = () => {
 
         <div class="text-center flex flex-col gap-4 md:gap-6 items-center">
           <h4
-            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right lg:pr-40 xl:pr-72 text-stroke-black"
+            class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-right lg:pr-80 xl:pr-[30rem] text-stroke-black"
           >
-            UNIQUE WEB DESIGNER
+            CREATIVE THINKER
           </h4>
           <h4
             class="text-[7.8vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] font-lactos leading-[1.1] text-coloyellow text-center md:text-left lg:pl-40 xl:pl-72 text-stroke-black"
           >
-            PASSIONATED BY DESIGN
+            INDEPENDENT DESIGNER
           </h4>
           <p
             class="mx-8 md:mx-9 font-unbounded font-light text-xs mb-44 md:text-base lg:text-lg xl:text-2xl md:w-9/12 lg:w-7/12 xl:w-7/12 md:m-auto lg:text-2xl text-center"
@@ -224,15 +224,15 @@ const scrollToTop = () => {
 
       <!-- SECTION 2 : CONTACT ME -->
       <section
-        class="w-full h-auto lg:w-screen lg:h-screen flex-none bg-coloyellow flex items-center justify-center border-b border-black"
+        class="w-full h-auto lg:w-screen lg:h-screen flex-none bg-coloyellow flex items-center justify-center border-b border-black "
       >
         <div
-          class="relative mx-5 flex flex-col items-center justify-center md:mt-56 lg:mt-48 xl:flex-row lg:mr-20 xl:mt-12"
+          class="relative mx-5 flex flex-col items-center justify-center md:mt-56 lg:mt-48 xl:flex-row xl:mr-36 xl:mt-12"
         >
           <img
             src="/img/Accueilimg2.webp"
             alt="Accueilimg2"
-            class="mx-auto md:w-7/12 lg:w-5/12 xl:w-4/12 mb-10 md:mb-12 lg:mb-14 rounded-xl"
+            class="object-cover mx-auto md:w-7/12 lg:w-[40vw] lg:h-[33vh] xl:h-full xl:w-4/12 mb-10 md:mb-12 lg:mb-14 rounded-xl"
           />
           <div class="text-center xl:mt-52">
             <h4
