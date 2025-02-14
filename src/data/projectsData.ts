@@ -68,22 +68,17 @@ const projects = [
     imageSrc: '/img/femme/Femme7.webp',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
-    description:
-      'This project explores the interaction between modern design and visual storytelling.',
-    description2:
-      'In this project, I focused on creating a seamless user experience by integrating motion design and branding strategies.',
-    description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description: `<p>This personal project is based on <strong>research</strong> and <strong>experimentation</strong>, with the goal of exploring <strong>Photoshop's generative AI</strong> in depth. Through <strong>trials</strong>, <strong>tests</strong>, <strong>failures</strong>, and <strong>refinements</strong>, this project has allowed me to sharpen my understanding of <strong>AI tools</strong> and master their use in my <strong>daily workflow</strong>.</p>`,
+    description2: `<p>The visual concept revolves around <strong>water</strong>. The <strong>main figure</strong>, as well as the surrounding <strong>environment</strong>, is set in a <strong>marine-inspired atmosphere</strong>, where various elements enhance the composition. Each visual was designed to <strong>create an immersive experience</strong>, playing with <strong>aquatic textures</strong> and <strong>lighting</strong> to emphasize <strong>depth</strong> and <strong>movement</strong>.</p>`,
+    description3: `<p>This work could seamlessly fit into <strong>an art exhibition</strong> or <strong>an advertising campaign</strong>, showcasing the <strong>creative possibilities</strong> offered by <strong>AI in visual design</strong>. It serves as a reflection on how these tools can be used <strong>not just for generating images</strong>, but also to <strong>enhance</strong> and <strong>push creative processes further</strong>.</p>`,
     images: {
       principal: '/img/femme/Femme2.webp',
       main: '/img/femme/Femme7.webp',
       secondary1: '/img/femme/Femme8.webp',
       secondary2: '/img/femme/Femme4.webp',
     },
-    myWork: ['Personal work', 'Visual identity'],
+    myWork: ['Personal work', 'AI experiment'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
@@ -95,7 +90,7 @@ const projects = [
     title: 'FEATER',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VIEW PROJEfzzefezfCT >',
-    imageSrc: '/img/Feater/Feater3.webp',
+    imageSrc: '/img/Feater/Feater2.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
     externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',

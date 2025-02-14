@@ -246,10 +246,10 @@ const scrollToTop = () => {
         class="font-unbounded font-light text-xs md:text-base md:w-9/12 md:m-auto lg:text-lg lg:w-7/12 xl:text-2xl xl:w-7/12 text-center mx-5"
       >
         I bring a unique perspective to every project, blending expertise in
-        <span class="font-medium">web design</span>,
-        <span class="font-medium">motion design</span> with a passion for creativity. I’m committed
+        <span class="font-normal">web design</span>,
+        <span class="font-normal">motion design</span> with a passion for creativity. I’m committed
         to creating meaningful, impactful designs. <br />
-        Let’s collaborate <span class="font-medium">to bring your vision to life</span>.
+        Let’s collaborate <span class="font-normal">to bring your vision to life</span>.
       </p>
       <routerLink to="/project" @click="scrollToTop">
         <button

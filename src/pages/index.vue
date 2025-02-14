@@ -215,9 +215,9 @@ const scrollToTop = () => {
           <p
             class="mx-8 md:mx-9 font-unbounded font-light text-xs mb-44 md:text-base lg:text-lg xl:text-2xl md:w-9/12 lg:w-7/12 xl:w-7/12 md:m-auto lg:text-2xl text-center"
           >
-            In my designs and worldview,<span class="font-medium">freedom</span> is one of my most
+            In my designs and worldview,<span class="font-normal"> freedom</span> is one of my most
             cherished values. After my studies, I aspire to embrace independence
-            <span class="font-medium">as my ideal professional path</span>. While I’m aware of its
+            <span class="font-normal">as my ideal professional path</span>. While I’m aware of its
             uncertainties, it offers the priceless opportunity to fully control my creative vision.
           </p>
         </div>
