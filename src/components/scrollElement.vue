@@ -65,11 +65,6 @@ const projects = ref([
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
-  // ⚡ Attendre que la page ait bien chargé avant de rafraîchir GSAP
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 200);
-
   // ⚡ Supprime tous les anciens ScrollTrigger pour éviter les bugs
   ScrollTrigger.getAll().forEach((t) => t.kill());
   ScrollTrigger.refresh();
