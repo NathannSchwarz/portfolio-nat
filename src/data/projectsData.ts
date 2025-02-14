@@ -89,25 +89,25 @@ const projects = [
     id: 'feater',
     title: 'FEATER',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'FIRST YEAR END PROJECT',
     imageSrc: '/img/Feater/Feater2.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
+    externalLink:
+      'https://www.figma.com/design/oFnOWX3NUxvtXrcpbW8wdE/Maquette-mobile-projet-S2?node-id=310-2490&t=UUwcL60x2iKrFzyr-1',
+    externalLinktext: 'LINK TO THE FIGMA',
     gridClass: 'lg:col-span-1',
-    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
-    description2:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
-    description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description: `<p><strong>Feater</strong> was a second-year group project and an opportunity to <strong>combine all the skills we acquired</strong> in our first year into an ambitious project. It is a <strong>web application dedicated to sports</strong>, allowing users to <strong>share sports events</strong> and meet new people through shared activities.</p>`,
+    description2: `<p>From <strong>January to June</strong>, this project provided us with valuable experience in the <strong>research, testing, and validation phases</strong> of a web interface. We designed <strong>the entire project’s visual identity</strong>, including extensive <strong>logo research</strong>, involving multiple iterations to refine the branding.</p>`,
+    description3: `<p>On the development side, the coding aspect was a real challenge, but it allowed me to strengthen my skills in <strong>Tailwind</strong> and <strong>Vue 3</strong>. The project includes a user authentication system, both traditional and via <strong>Google Authentication</strong>. It also features a dynamic sorting system for different sports categories, improving user navigation, along with an interactive map to easily locate nearby sports events.</p>`,
+
     images: {
-      principal: '/img/Feater/Feater3.webp',
+      principal: '/img/Feater/Feater5.webp',
       main: '/img/Feater/Feater4.webp',
       secondary1: '/img/Feater/Feater2.webp',
       secondary2: '/img/Feater/Feater1.webp',
     },
-    myWork: ['UI/UX', 'Illustration', 'Animation'],
+    myWork: ['UI/UX', 'Prototype', 'Development', 'Branding'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/vscode.png',
@@ -120,25 +120,21 @@ const projects = [
     id: 'jo2024',
     title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',
     imageSrc: '/img/jo2024/JO2024-3.jpg',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
     gridClass: 'lg:col-span-1',
-    description: 'A deep dive into branding strategies and visual identity design.',
-    description2:
-      'Branding requires consistency and clarity. This project was all about building a strong visual language for brands.',
-    description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+    description: `<p>Created in <strong>After Effects</strong>, this animation explores a theme of my choosing: the <strong>visual identity</strong> of the <strong>Paris 2024 Olympic Games</strong>. This identity is not only <strong>powerful</strong> in its message but also deeply woven into the fabric of the city itself.</p>`,
+    description2: `<p>The animation, inspired by the <strong>dynamic promotional work</strong> done for the Olympics, showcases <strong>Paris</strong> in all its glory, highlighting three of its most <strong>iconic landmarks</strong>—the <strong>Pompidou Center</strong>, the <strong>Sacré-Cœur</strong>, and the <strong>Eiffel Tower</strong>—symbols of the <strong>City of Light</strong>'s rich heritage.</p>`,
+    description3: `<p>In this project, I dedicated significant time to enhancing my skills in <strong>After Effects</strong>. This deep dive allowed me to gain a more <strong>professional perspective</strong> on the software, inspired by <strong>concrete projects</strong> created for the Olympics.</p>`,
     images: {
       principal: '/video/JO2024-2.mp4',
       main: '/img/jo2024/JO2024-4.webp',
       secondary1: '/img/jo2024/JO2024-1.jpg',
       secondary2: '/img/jo2024/JO2024-3.jpg',
     },
-    myWork: ['Motion Design', 'Story-telling', 'Typography'],
+    myWork: ['Motion Design', 'Story-Boarding', 'Typography'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',
@@ -146,16 +142,17 @@ const projects = [
       '/img/logiciel/figma.png',
     ],
   },
-  {
+  /* {
     id: 'sae203',
     title: 'SAE 203',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'LINES & LIGHTS, EXHIBITION ON WALTER GROPIUS',
     imageSrc: '/img/sae203/sae2.webp',
     imageAlt: 'Example Project',
     category: 'WEB SITE',
-    externalLink: 'https://heyzine.com/flip-book/4726646efe.html#page/1',
-    externalLinktext: 'LINK TO THE BOOK',
+    externalLink:
+      'https://www.figma.com/design/n3dBMuNfn7oQRcFvJi3iql/SAE-203---Nathan-Schwarz-MMI-C2?node-id=0-1&t=lFZbsztXa30Z7hyd-1',
+    externalLinktext: 'LINK TO THE FIGMA',
     gridClass: 'lg:col-span-1',
     description: 'An all-in-one design experience blending UX/UI and motion graphics.',
     description2:
@@ -168,7 +165,7 @@ const projects = [
       secondary1: '/img/sae203/sae2.webp',
       secondary2: '/img/sae203/sae3.webp',
     },
-    myWork: ['UI/UX', 'Illustration', 'Animation'],
+    myWork: ['UI/UX', 'Prototype', 'Development'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/vscode.png',
@@ -176,26 +173,27 @@ const projects = [
       '/img/logiciel/tailwind.png',
       '/img/logiciel/figma.png',
     ],
-  },
+  }, */
   {
     id: 'eyeonme',
     title: 'EYE ON ME',
     subtitle: 'VIEW PROJECT',
-    subtitleid: 'VIEW PROJEfzzefezfCT >',
+    subtitleid: 'VISUAL MADE WITH AI',
     imageSrc: '/img/eyeonme/eyeonme.png',
     imageAlt: 'Example Project',
     category: 'GRAPHIC DESIGN',
     gridClass: 'lg:col-span-1',
-    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
+    description:
+      '<p>This surreal image depicts a <strong>human eye</strong> in extreme close-up, but with an intriguing twist: at the center of the <strong>iris</strong>, where the pupil should be, stands a <strong>white human silhouette</strong> in an indoor environment.</p>',
     description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
+      '<p> The iris, radiating a vibrant pattern of <strong>blue, gold, and brown</strong>, gives the impression of a luminous vortex drawing toward the central figure. The silhouette appears to be standing in a <strong>corridor</strong> or a <strong>room</strong>, illuminated by an intense light. The overall effect of the image is both <strong>hypnotic</strong> and <strong>mysterious</strong>, blending organic elements (the eye) with <strong>dreamlike</strong> and <strong>symbolic</strong> components (the figure and the radiant light).</p>',
     images: {
       principal: '',
       main: '/img/eyeonme/eyeonme2.webp',
       secondary1: '/img/eyeonme/eyeonme1.webp',
       secondary2: '/video/eyeonme.mp4',
     },
-    myWork: ['UI/UX', 'Illustration', 'Animation'],
+    myWork: ['Personal work', 'AI experiment'],
     softwareImages: [
       // 🔥 Ajout de plusieurs images de logiciels utilisés
       '/img/logiciel/Photoshop.webp',

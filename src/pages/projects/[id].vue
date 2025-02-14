@@ -124,7 +124,7 @@ const limitedRelatedProjects = computed(() => {
         </div>
 
         <!-- ✅ Images spécifiques pour chaque projet -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5 md:gap-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0.5 ">
           <img
             class="w-full md:h-[45vw] object-cover rounded-lg md:rounded-none"
             :src="project.images.main"

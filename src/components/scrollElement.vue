@@ -19,13 +19,23 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
   {
-    id: 'sae203',
+    id: 'xeesartist',
+    speed: 1.1,
+    xPercent: 60,
+    yPercent: 95,
+    imageSrc: '/img/xees/xees4.webp',
+    imageAlt: 'XEES ARTIST',
+    title: 'XEES ARTIST',
+    subtitle: 'VIEW PROJECT',
+  },
+  {
+    id: 'watergirl',
     speed: 0.8,
     xPercent: 30,
     yPercent: 10,
-    imageSrc: '/img/sae203/sae2.webp',
+    imageSrc: '/img/femme/Femme7.webp',
     imageAlt: 'sae203',
-    title: 'SAE 203',
+    title: 'WATER GIRL',
     subtitle: 'VIEW PROJECT',
   },
   {
@@ -39,16 +49,7 @@ const projects = ref([
     subtitle: 'VIEW PROJECT',
   },
 
-  {
-    id: 'xeesartist',
-    speed: 1.1,
-    xPercent: 60,
-    yPercent: 95,
-    imageSrc: '/img/xees/xees4.webp',
-    imageAlt: 'XEES ARTIST',
-    title: 'XEES ARTIST',
-    subtitle: 'VIEW PROJECT',
-  },
+
   {
     id: 'feater',
     speed: 1.1,
