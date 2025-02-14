@@ -56,7 +56,7 @@ const countProjects = (filter: string) => {
       MY WORK
     </h1>
     <p
-      class="font-unbounded font-light text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16"
+      class="font-unbounded font-light text-xs md:text-base md:w-2/3 lg:text-lg lg:w-8/12 xl:text-2xl xl:w-7/12 -mt-4 md:-mt-6 lg:-mt-16 leading-[2vh] xl:leading-[3.6vh]"
     >
       Every project is an opportunity to refine ideas, explore new perspectives, and craft unique design solutions that blend <span class="font-normal">creativity</span> and <span class="font-normal">functionality</span>. From concept to execution, I strive to create visuals that not only look great but also <span class="font-normal">serve a purpose</span>.
 

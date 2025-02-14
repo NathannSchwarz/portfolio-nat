@@ -46,7 +46,7 @@ const limitedRelatedProjects = computed(() => {
             {{ project.subtitleid }}
           </h2>
           <p
-            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8 lg:w-4/5 xl:w-9/12"
+            class="font-unbounded font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-8 lg:w-4/5 xl:w-9/12 xl:leading-[3.6vh]"
             v-html="project.description"
           ></p>
 
@@ -117,7 +117,7 @@ const limitedRelatedProjects = computed(() => {
               WHAT I DID
             </h3>
             <p
-              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
+              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
               v-html="project.description2"
             ></p>
           </div>
@@ -145,7 +145,7 @@ const limitedRelatedProjects = computed(() => {
               WHAT I DID
             </h3>
             <p
-              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4"
+              class="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
               v-html="project.description3"
             ></p>
           </div>
