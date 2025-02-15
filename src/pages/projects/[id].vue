@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import projects from '@/data/projectsData' // ✅ Importation des projets
+import { useHead } from '@unhead/vue'
 import ProjectComp from '@/components/ProjectComp.vue'
 
 const route = useRoute()
@@ -27,6 +28,15 @@ const limitedRelatedProjects = computed(() => {
   return relatedProjects.value
     .sort(() => Math.random() - 0.5) // Mélange aléatoire
     .slice(0, 3) // Prend les 3 premiers
+})
+
+// 🏆 Mise à jour dynamique du titre de la page
+const pageTitle = computed(() => {
+  return project.value ? `NATHAN SCHWARZ - ${project.value.titlebar}` : "NATHAN SCHWARZ - Projet"
+})
+
+useHead({
+  title: pageTitle
 })
 </script>
 

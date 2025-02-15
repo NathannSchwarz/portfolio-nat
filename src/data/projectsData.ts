@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 'trainingmanual',
+    titlebar: 'Trainingmanual',
     title: 'TRAINING MANUAL',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'FASHION AND CLOTHING : BEGINNERS GUIDE',
@@ -31,6 +32,7 @@ const projects = [
   },
   {
     id: 'xeesartist',
+    titlebar: 'Xeesartist',
     title: 'XEES ARTIST',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'WEB SITE FOR AN CONTEMPORARY ARTIST',
@@ -62,6 +64,7 @@ const projects = [
   },
   {
     id: 'watergirl',
+    titlebar: 'Watergirl',
     title: 'WATER GIRL',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VISUAL MADE WITH AI',
@@ -87,6 +90,7 @@ const projects = [
 
   {
     id: 'feater',
+    titlebar: 'Feater',
     title: 'FEATER',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'FIRST YEAR END PROJECT',
@@ -151,6 +155,7 @@ const projects = [
   }, */
   {
     id: 'eyeonme',
+    titlebar: 'Eyeonme',
     title: 'EYE ON ME',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VISUAL MADE WITH AI',
@@ -176,6 +181,7 @@ const projects = [
   },
   {
     id: 'jo2024',
+    titlebar: 'JO2024',
     title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',

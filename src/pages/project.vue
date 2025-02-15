@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
+import { useHead } from '@unhead/vue'
 import ProjectComp from '@/components/ProjectComp.vue'
 import FleurPleineBleu from '@/components/icons/FleurPleineBleu.vue'
 import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
@@ -46,7 +47,14 @@ const countProjects = (filter: string) => {
   }
   return projects.filter((project) => project.category === filter).length
 }
+
+// Définir le titre de la page
+useHead({
+  title: "NATHAN SCHWARZ - Work"
+})
+
 </script>
+
 
 <template>
   <section class="relative bg-colowhite pb-32 overflow-hidden px-5">

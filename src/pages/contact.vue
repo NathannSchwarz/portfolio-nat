@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
 import emailjs from 'emailjs-com';
+import { useHead } from '@unhead/vue'
 import FleurPleineBleu from "@/components/icons/FleurPleineBleu.vue";
 import FleurRouge from "@/components/icons/FleurRouge.vue";
 import FleurPleineRouge from "@/components/icons/FleurPleineRouge.vue";
@@ -91,7 +92,12 @@ const submitForm = async () => {
           firstErrorField.scrollIntoView({ behavior: 'smooth' });
         }
       }
-    };
+};
+
+// Définir le titre de la page
+useHead({
+  title: "NATHAN SCHWARZ - Contact"
+})
 </script>
 
 <template>
