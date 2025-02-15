@@ -6,6 +6,7 @@ import FleurPleineRouge from '@/components/icons/FleurPleineRouge.vue'
 import FleurPleineYellow from '@/components/icons/FleurPleineYellow.vue'
 import ScrollE from '@/components/scrollElement.vue'
 import ReverseLoopVideo from '@/components/ReverseLoopVideo.vue'
+import { useHead } from '@unhead/vue'
 
 // Imports de GSAP et enregistrement des plugins
 import { gsap } from 'gsap'
@@ -83,6 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
 }
+
+// Définir le titre de la page
+useHead({
+  title: "NATHAN SCHWARZ"
+})
 </script>
 
 <template>
