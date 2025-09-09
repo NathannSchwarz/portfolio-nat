@@ -1,3 +1,6 @@
+// Cache-busting pour les images spécifiques
+const cacheBuster = `?v=${Date.now()}`
+
 const projects = [
   {
     id: 'trainingmanual',
@@ -36,7 +39,7 @@ const projects = [
     title: 'I-ACTIV',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VISUAL IDENTITY, MOTION DESIGN, AND WEB SUPPORT',
-    imageSrc: '/img/iactiv/iactiv_mockups_5.webp',
+    imageSrc: `/img/iactiv/iactiv_mockups_5.webp${cacheBuster}`,
     imageAlt: 'Example Project',
     category: 'BRANDING',
     externalLink: 'https://i-activ.fr/',
@@ -74,7 +77,7 @@ const projects = [
     title: 'CHATEAU DE MONTBELIARD',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'MONTBÉLIARD CASTLE : REOPENING VISUAL IDENTITY',
-    imageSrc: '/img/sae403/sae_403_mockups_6.webp',
+    imageSrc: `/img/sae403/sae_403_mockups_6.webp${cacheBuster}`,
     imageAlt: 'Example Project',
     category: 'BRANDING',
     externalLink: 'https://wurtemberg.tonymoretti.fr/',
