@@ -36,7 +36,7 @@ const projects = [
     title: 'I-ACTIV',
     subtitle: 'VIEW PROJECT',
     subtitleid: 'VISUAL IDENTITY, MOTION DESIGN, AND WEB SUPPORT',
-    imageSrc: '/iactiv/iactiv_mockups_5.webp',
+    imageSrc: '/img/iactiv/iactiv_mockups_5.webp',
     imageAlt: 'Example Project',
     category: 'BRANDING',
     externalLink: 'https://i-activ.fr/',
