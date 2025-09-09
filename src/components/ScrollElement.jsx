@@ -65,7 +65,7 @@ const initialProjects = [
     id: 'i-activ',
     speed: 1.1,
 
-    imageSrc: '/public/img/iactiv/iactiv_mockups_5.webp',
+    imageSrc: '/img/iactiv/iactiv_mockups_5.webp',
     imageAlt: 'I-ACTIV',
     title: 'I-ACTIV',
     subtitle: 'VIEW PROJECT',
@@ -74,7 +74,7 @@ const initialProjects = [
     id: 'Chateaudemontbéliard',
     speed: 0.8,
 
-    imageSrc: '/public/img/sae403/sae_403_mockups_6.webp',
+    imageSrc: '/img/sae403/sae_403_mockups_6.webp',
     imageAlt: 'sae403',
     title: 'CHATEAU DE WURTEMBERG',
     subtitle: 'VIEW PROJECT',
@@ -83,7 +83,7 @@ const initialProjects = [
     id: 'jo2024',
     speed: 0.9,
 
-    imageSrc: 'img/jo2024/JO2024-3.jpg',
+    imageSrc: '/img/jo2024/JO2024-3.jpg',
     imageAlt: 'JO 2024',
     title: 'JO 2024',
     subtitle: 'VIEW PROJECT',
