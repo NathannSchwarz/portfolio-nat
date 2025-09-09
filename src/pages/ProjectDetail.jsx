@@ -118,11 +118,11 @@ function ProjectDetail() {
       {project.description2 && (
         <div className="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
           <div className="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
-            <h3 className="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
+            <h3 className="text-black mx-5 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
               WHAT I DID
             </h3>
             <p
-              className="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
+              className="font-unbounded mx-5 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
               dangerouslySetInnerHTML={{ __html: project.description2 }}
             />
           </div>
@@ -149,11 +149,11 @@ function ProjectDetail() {
       {project.description3 && (
         <div className="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
           <div className="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
-            <h3 className="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
+            <h3 className="text-black mx-5 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
               WHAT I DID
             </h3>
             <p
-              className="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
+              className="font-unbounded mx-5 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
               dangerouslySetInnerHTML={{ __html: project.description3 }}
             />
           </div>
@@ -203,11 +203,11 @@ function ProjectDetail() {
       {project.description4 && (
         <div className="md:grid md:grid-cols-12 mt-16 md:mt-32 lg:mt-40 mb-16 md:mb-20 lg:mb-40">
           <div className="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-12">
-            <h3 className="text-black mx-4 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
+            <h3 className="text-black mx-5 font-unbounded font-semibold text-lg md:text-xl lg:text-xl xl:text-2xl mb-4 md:mb-5 lg:mb-7">
               WHAT I DID
             </h3>
             <p
-              className="font-unbounded mx-4 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
+              className="font-unbounded mx-5 font-light text-base md:text-lg lg:text-xl xl:text-2xl mb-10 md:mb-12 lg:w-3/4 xl:leading-[3.6vh]"
               dangerouslySetInnerHTML={{ __html: project.description4 }}
             />
           </div>
