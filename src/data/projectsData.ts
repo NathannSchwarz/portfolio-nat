@@ -31,6 +31,108 @@ const projects = [
     ],
   },
   {
+    id: 'i-activ',
+    titlebar: 'I-Activ',
+    title: 'I-ACTIV',
+    subtitle: 'VIEW PROJECT',
+    subtitleid: 'VISUAL IDENTITY, MOTION DESIGN, AND WEB SUPPORT',
+    imageSrc: '/public/img/iactiv/iactiv_mockups_5.webp',
+    imageAlt: 'Example Project',
+    category: 'BRANDING',
+    externalLink: 'https://i-activ.fr/',
+    externalLinktext: 'LINK TO THE SITE',
+    gridClass: 'lg:col-span-1',
+    description:
+      'During my <strong>internship at I-Activ</strong>, an AI-focused company, I worked as the <strong>in-house designer</strong> alongside the director—my brother—in a high-trust, high-standards setting. I led the brand’s <strong>visual identity</strong> end to end, from early research to deployment across print, motion, and web.',
+    description2:
+      'The logo reflects that direction: a simple mark read as both an <strong>hourglass</strong> (time saved) and an <strong>infinity symbol</strong> (boundless potential). Drawn with continuous curves and softened angles, it remains clear at small sizes and suits interface use. I delivered the vector master and clear-space rules, solid and gradient variants, a square app icon, and a <strong>volumetric version</strong> for hero visuals and mockups.',
+    description3:
+      'On the print side, I designed the <strong>business cards</strong> through several iterations. Early proposals were too demonstrative and effect-driven; feedback sessions with the team led to a <strong>more restrained version</strong> that foregrounds the symbol and clarifies the information hierarchy. The final result features precise layout, measured use of gradients, and <strong>immediate readability</strong> of contact details tailored for real-world use.',
+    description4:
+      'Beyond the deliverables, the project taught me to <strong>structure my process</strong> and to collaborate effectively with <strong>internal clients</strong>. I documented each decision, articulated visual trade-offs, and organized approvals to keep a fast iteration pace without losing the big picture. By the end of the internship, the identity was established, the key assets were produced, and the brand had a <strong>coherent, extensible system</strong> that is immediately recognizable on screen and in print.',
+    images: {
+      principal: '/public/video/Accueil_Aniamtion_V2.mp4',
+      main: '/public/img/iactiv/iactiv_mockups_5.webp',
+      secondary1: '/public/img/iactiv/iactiv_mockups_9.webp',
+      secondary2: '/public/img/iactiv/iactiv_mockups_7.webp',
+      secondary3: '/public/img/iactiv/iactiv_mockups_6.webp',
+      secondary4: '/public/img/iactiv/iactiv_mockups_8.webp',
+      main2: '/public/img/iactiv/iactiv_mockups_3.webp',
+    },
+    myWork: ['Branding', 'Print Design', 'Prototyping', , 'UI/UX', 'Development'],
+    softwareImages: [
+      '/img/logiciel/Photoshop.webp',
+      '/img/logiciel/AfterEffect.png',
+      '/public/img/logiciel/Illustrator.png',
+      '/img/logiciel/figma.png',
+      '/public/img/logiciel/Cursor.webp',
+    ],
+  },
+  {
+    id: 'Chateaudemontbéliard',
+    titlebar: 'Chateaudemontbéliard',
+    title: 'CHATEAU DE MONTBELIARD',
+    subtitle: 'VIEW PROJECT',
+    subtitleid: 'MONTBÉLIARD CASTLE : REOPENING VISUAL IDENTITY',
+    imageSrc: '/public/img/sae403/sae_403_mockups_6.webp',
+    imageAlt: 'Example Project',
+    category: 'BRANDING',
+    externalLink: 'https://wurtemberg.tonymoretti.fr/',
+    externalLinktext: 'LINK TO THE SITE',
+    gridClass: 'lg:col-span-1',
+    description:
+      'The Château de Montbéliard is entering a new era: renamed <strong>Museum of the Castle of the Dukes of Württemberg</strong>, it is pairing its renovation with a <strong>contemporary identity</strong> and a multi-year communication strategy.',
+    description2:
+      'In the public realm, the campaign appears through <strong>MUPI posters</strong>, flyers, and invitation cards. Each asset stages a character built from <strong>collage</strong> (historic head, contemporary clothing), a crown sketched in chalk as a nod to the princely heritage, and the <strong>yellow line</strong> that structures the information. Headlines highlight the slogan <strong>“Explore the eras”</strong> and the new historical circuit to combine emotion, clarity, and a territorial call to action.',
+    description3:
+      'On the web, the <strong>landing page</strong> acts as the editorial entry point and surfaces key information: an <strong>interactive map</strong> of the spaces, an explanation of the new historical route, an events calendar, a <strong>countdown</strong> to opening, historical milestones, and highlights of the major transformations, together with an invitation to (re)discover Montbéliard through the museum. The page embeds the <strong>animated signature</strong> to assert a strong identity from the first screen.',
+    description4:
+      'The campaign establishes an <strong>immediately recognizable</strong> art direction that extends the official guidelines while making them more expressive and accessible to the public. It builds momentum toward <strong>2028</strong>, structures the messaging around the museum’s transformation, and enables <strong>multi-channel</strong> distribution with a single <strong>visual grammar</strong>.',
+    images: {
+      principal: '/public/img/sae403/sae_403_mockups_5.webp',
+      main: '/public/img/sae403/sae_403_mockups_4.webp',
+      secondary1: '/public/img/sae403/sae_403_mockups_7.webp',
+      secondary2: '/public/img/sae403/sae_403_mockups_3.webp',
+      secondary3: '/public/img/sae403/sae_403_mockups_2.webp',
+      secondary4: '/public/img/sae403/sae_403_mockups_1.webp',
+      main2: '/public/img/sae403/sae_403_mockups_6.webp',
+    },
+    myWork: ['Branding', 'Print Design', 'Prototyping', , 'UI/UX', 'Development'],
+    softwareImages: [
+      '/img/logiciel/Photoshop.webp',
+      '/img/logiciel/AfterEffect.png',
+      '/img/logiciel/wordpress.png',
+      '/img/logiciel/figma.png',
+    ],
+  },
+  {
+    id: 'jo2024',
+    titlebar: 'JO2024',
+    title: 'JO 2024',
+    subtitle: 'VIEW PROJECT',
+    subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',
+    imageSrc: '/img/jo2024/JO2024-3.jpg',
+    imageAlt: 'Example Project',
+    category: 'GRAPHIC DESIGN',
+    gridClass: 'lg:col-span-1',
+    description: `<p>Created in After Effects, this animation explores a theme of my choosing: the <strong>visual identity</strong> of the <strong>Paris 2024 Olympic Games</strong>. This identity is not only <strong>powerful</strong> in its message but also deeply woven into the fabric of the city itself.</p>`,
+    description2: `<p>The animation, inspired by the <strong>dynamic promotional work</strong> done for the Olympics, showcases <strong>Paris</strong> in all its glory, highlighting three of its most iconic landmarks—the <strong>Pompidou Center</strong>, the <strong>Sacré-Cœur</strong>, and the <strong>Eiffel Tower</strong>—symbols of the <strong>City of Light</strong>'s rich heritage.</p>`,
+    description3: `<p>In this project, I dedicated significant time to enhancing my skills in <strong>After Effects</strong>. This deep dive allowed me to gain a more <strong>professional perspective</strong> on the software, inspired by <strong>concrete projects</strong> created for the Olympics.</p>`,
+    images: {
+      principal: '/video/JO2024-2.mp4',
+      main: '/img/jo2024/JO2024-4.webp',
+      secondary1: '/img/jo2024/JO2024-1.jpg',
+      secondary2: '/img/jo2024/JO2024-3.jpg',
+    },
+    myWork: ['Motion Design', 'Story-Boarding', 'Typography'],
+    softwareImages: [
+      // 🔥 Ajout de plusieurs images de logiciels utilisés
+      '/img/logiciel/Photoshop.webp',
+      '/img/logiciel/AfterEffect.png',
+      '/img/logiciel/figma.png',
+    ],
+  },
+  {
     id: 'xeesartist',
     titlebar: 'Xeesartist',
     title: 'XEES ARTIST',
@@ -48,6 +150,7 @@ const projects = [
       'The goal of the website is to resemble a <strong> museum</strong>: elements are placed in an apparently random yet structured way on the screen, mimicking an exhibition layout. The website’s background features the artist’s <strong>very first artistic style</strong>, dating back more than three years. Although he no longer practices this style, he <strong>remains deeply attached to it</strong> and appreciated the idea of incorporating a <strong>nod to his early works</strong> into his site.</p>',
     description3:
       'As for the content, I structured the homepage around his <strong>current artistic styles</strong>. First, <strong>Matière Vive</strong>, his most fully developed style, which he actively practices today and considers the core of his artistic journey. Next, <strong>Harmonie Chaotique</strong> represents an experimental phase—somewhere between <strong>exploration and refinement</strong>—aiming to add complexity to his work. Finally, <stroke>Connexions</stroke>, far more abstract than the others, can be compared to the work of<strong> Piet Mondrian</strong>.',
+
     images: {
       principal: '/img/xees/xees4.webp',
       main: '/img/xees/xees3.webp',
@@ -60,31 +163,6 @@ const projects = [
       '/img/logiciel/wordpress.png',
       '/img/logiciel/AfterEffect.png',
       '/img/logiciel/figma.png',
-    ],
-  },
-  {
-    id: 'watergirl',
-    titlebar: 'Watergirl',
-    title: 'WATER GIRL',
-    subtitle: 'VIEW PROJECT',
-    subtitleid: 'VISUAL MADE WITH AI',
-    imageSrc: '/img/femme/Femme7.webp',
-    imageAlt: 'Example Project',
-    category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-1',
-    description: `<p>This personal project is based on <strong>research</strong> and <strong>experimentation</strong>, with the goal of exploring Photoshop's generative AI in depth. Through <strong>trials</strong>, <strong>tests</strong>, <strong>failures</strong>, and <strong>refinements</strong>, this project has allowed me to sharpen my understanding of AI tools and master their use in my daily workflow.</p>`,
-    description2: `<p>The visual concept revolves around <strong>water</strong>. The main figure, as well as the surrounding environment, is set in a marine-inspired atmosphere, where various elements enhance the composition. Each visual was designed to <strong>create an immersive experience</strong>, playing with aquatic textures and lighting to emphasize depth and movement.</p>`,
-    description3: `<p>This work could seamlessly fit into an art exhibition or an advertising campaign, showcasing the creative possibilities offered by <strong>AI in visual design</strong>. It serves as a reflection on how these tools can be used not just for generating images, but also to <strong>enhance</strong> and <strong>push creative processes further</strong>.</p>`,
-    images: {
-      principal: '/img/femme/Femme2.webp',
-      main: '/img/femme/Femme7.webp',
-      secondary1: '/img/femme/Femme8.webp',
-      secondary2: '/img/femme/Femme4.webp',
-    },
-    myWork: ['Personal work', 'AI experiment'],
-    softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/Photoshop.webp',
     ],
   },
 
@@ -117,92 +195,6 @@ const projects = [
       '/img/logiciel/vscode.png',
       '/img/logiciel/vue3.png',
       '/img/logiciel/tailwind.png',
-      '/img/logiciel/figma.png',
-    ],
-  },
-
-  /* {
-    id: 'sae203',
-    title: 'SAE 203',
-    subtitle: 'VIEW PROJECT',
-    subtitleid: 'LINES & LIGHTS, EXHIBITION ON WALTER GROPIUS',
-    imageSrc: '/img/sae203/sae2.webp',
-    imageAlt: 'Example Project',
-    category: 'WEB SITE',
-    externalLink:
-      'https://www.figma.com/design/n3dBMuNfn7oQRcFvJi3iql/SAE-203---Nathan-Schwarz-MMI-C2?node-id=0-1&t=lFZbsztXa30Z7hyd-1',
-    externalLinktext: 'LINK TO THE FIGMA',
-    gridClass: 'lg:col-span-1',
-    description: 'An all-in-one design experience blending UX/UI and motion graphics.',
-    description2:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
-    description3:
-      'Designing a complete experience involves a strategic mix of creativity and technical execution.',
-    images: {
-      principal: '/video/sae4.mp4',
-      main: '/img/sae203/sae1.webp',
-      secondary1: '/img/sae203/sae2.webp',
-      secondary2: '/img/sae203/sae3.webp',
-    },
-    myWork: ['UI/UX', 'Prototype', 'Development'],
-    softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/vscode.png',
-      '/img/logiciel/vue3.png',
-      '/img/logiciel/tailwind.png',
-      '/img/logiciel/figma.png',
-    ],
-  }, */
-  {
-    id: 'eyeonme',
-    titlebar: 'Eyeonme',
-    title: 'EYE ON ME',
-    subtitle: 'VIEW PROJECT',
-    subtitleid: 'VISUAL MADE WITH AI',
-    imageSrc: '/img/eyeonme/eyeonme.png',
-    imageAlt: 'Example Project',
-    category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-1',
-    description:
-      '<p>This surreal image depicts a <strong>human eye</strong> in extreme close-up, but with an intriguing twist: at the center of the <strong>iris</strong>, where the pupil should be, stands a <strong>white human silhouette</strong> in an indoor environment.</p>',
-    description3:
-      '<p> The iris, radiating a vibrant pattern of <strong>blue, gold, and brown</strong>, gives the impression of a luminous vortex drawing toward the central figure. The silhouette appears to be standing in a <strong>corridor</strong> or a <strong>room</strong>, illuminated by an intense light. The overall effect of the image is both <strong>hypnotic</strong> and <strong>mysterious</strong>, blending organic elements (the eye) with <strong>dreamlike</strong> and <strong>symbolic</strong> components (the figure and the radiant light).</p>',
-    images: {
-      principal: '',
-      main: '/img/eyeonme/eyeonme2.webp',
-      secondary1: '/img/eyeonme/eyeonme1.webp',
-      secondary2: '/video/eyeonme.mp4',
-    },
-    myWork: ['Personal work', 'AI experiment'],
-    softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/Photoshop.webp',
-    ],
-  },
-  {
-    id: 'jo2024',
-    titlebar: 'JO2024',
-    title: 'JO 2024',
-    subtitle: 'VIEW PROJECT',
-    subtitleid: 'FINAL MOTION DESIGN PROJECT IN CANADA',
-    imageSrc: '/img/jo2024/JO2024-3.jpg',
-    imageAlt: 'Example Project',
-    category: 'GRAPHIC DESIGN',
-    gridClass: 'lg:col-span-1',
-    description: `<p>Created in After Effects, this animation explores a theme of my choosing: the <strong>visual identity</strong> of the <strong>Paris 2024 Olympic Games</strong>. This identity is not only <strong>powerful</strong> in its message but also deeply woven into the fabric of the city itself.</p>`,
-    description2: `<p>The animation, inspired by the <strong>dynamic promotional work</strong> done for the Olympics, showcases <strong>Paris</strong> in all its glory, highlighting three of its most iconic landmarks—the <strong>Pompidou Center</strong>, the <strong>Sacré-Cœur</strong>, and the <strong>Eiffel Tower</strong>—symbols of the <strong>City of Light</strong>'s rich heritage.</p>`,
-    description3: `<p>In this project, I dedicated significant time to enhancing my skills in <strong>After Effects</strong>. This deep dive allowed me to gain a more <strong>professional perspective</strong> on the software, inspired by <strong>concrete projects</strong> created for the Olympics.</p>`,
-    images: {
-      principal: '/video/JO2024-2.mp4',
-      main: '/img/jo2024/JO2024-4.webp',
-      secondary1: '/img/jo2024/JO2024-1.jpg',
-      secondary2: '/img/jo2024/JO2024-3.jpg',
-    },
-    myWork: ['Motion Design', 'Story-Boarding', 'Typography'],
-    softwareImages: [
-      // 🔥 Ajout de plusieurs images de logiciels utilisés
-      '/img/logiciel/Photoshop.webp',
-      '/img/logiciel/AfterEffect.png',
       '/img/logiciel/figma.png',
     ],
   },

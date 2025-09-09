@@ -1,39 +1,47 @@
-# portfolio-nat
+# Portfolio Nathan Schwarz
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfolio personnel développé avec React, Vite et Tailwind CSS.
 
-## Recommended IDE Setup
+## 🚀 Technologies utilisées
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **React 19** - Framework JavaScript
+- **Vite** - Build tool et serveur de développement
+- **Tailwind CSS** - Framework CSS
+- **GSAP** - Animations
+- **React Router** - Navigation
+- **EmailJS** - Formulaire de contact
 
-## Type Support for `.vue` Imports in TS
+## 📦 Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+```bash
+# Cloner le repository
+git clone https://github.com/[ton-username]/portfolio-nat.git
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+# Installer les dépendances
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Lancer le serveur de développement
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 🛠️ Scripts disponibles
 
-```sh
-npm run build
+- `npm run dev` - Serveur de développement
+- `npm run build` - Build de production
+- `npm run preview` - Prévisualisation du build
+- `npm run lint` - Linter ESLint
+- `npm run format` - Formatage Prettier
+
+## 📁 Structure du projet
+
+```
+src/
+├── components/     # Composants réutilisables
+├── pages/         # Pages de l'application
+├── data/          # Données des projets
+└── assets/        # Styles et ressources
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## 🌐 Déploiement
 
-```sh
-npm run lint
-```
+Le projet est configuré pour être déployé sur Netlify avec les redirections SPA.
