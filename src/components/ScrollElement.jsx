@@ -324,7 +324,7 @@ function ScrollElement() {
   return (
     <div
       ref={containerRef}
-      className="overflow-hidden mt-[18rem] pb-[30rem] md:mt-[30rem] md:mb-[15rem] lg:pb-[45rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[60vh] -mx-5"
+      className="overflow-hidden mt-[18rem] pb-[20rem] md:mt-[30rem] md:mb-[15rem] lg:pb-[30rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[60vh] -mx-5"
     >
       {/* Bloc du titre + description qui sera fixé */}
       <div className="intro-text">
