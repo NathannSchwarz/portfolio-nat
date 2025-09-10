@@ -37,7 +37,7 @@ function HeaderPage() {
       {/* Logo */}
       <Link
         to="/"
-        className="block border pt-1.5 pb-1 px-4 md:pt-1 md:pb-0.5 lg:p-2 lg:pb-1 lg:px-5 xl:p-3 xl:pb-2 xl:px-6 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
+        className="block border ml-1 md:ml-0 pt-1.5 pb-1 px-4 md:pt-1 md:pb-0.5 lg:p-2 lg:pb-1 lg:px-5 xl:p-3 xl:pb-2 xl:px-6 border-black bg-colowhite rounded-[10rem] md:hover:bg-black md:hover:text-colowhite transition-colors duration-500"
         onClick={scrollToTop}
       >
         <p className="font-lactos text-lg md:text-[1.8vw] xl:text-[1.3vw]">NATHAN SCHWARZ</p>

@@ -35,3 +35,29 @@ h4 {
     -webkit-text-stroke: 2px black;
   }
 }
+
+/* Icone menu (mobile) : 3 traits -> croix */
+@media (max-width: 768px) {
+  .menu-line {
+    transition: transform 300ms ease, opacity 300ms ease, stroke 300ms ease;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  /* Etat ouvert: top et middle forment une croix, bottom disparaît */
+  .menu-line.top.top-rotate {
+    /* Du y=5 vers le centre y=25, puis rotation */
+    transform: translateY(25px) rotate(45deg);
+  }
+
+  .menu-line.middle.middle-rotate {
+    /* Déjà au centre, on pivote dans l'autre sens */
+    transform: rotate(-45deg) translate(-5px);
+  }
+
+  .menu-line.bottom.bottom-fade {
+    /* Monte vers le centre et s'efface */
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
