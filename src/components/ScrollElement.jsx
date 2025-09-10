@@ -29,7 +29,7 @@ const LAYOUT_CONFIG = {
     maxWidth: 1023,
     columns: 2,
     spacing: { x: 140, y: 200 },
-    startOffset: { x: 10, y: -35 },
+    startOffset: { x: 10, y: 100 },
     alternanceOffset: 0.3,
     rowVariation: [0, 100], // Décalage entre les 2 colonnes
   },
@@ -206,7 +206,7 @@ function ScrollElement() {
     mm.add('(min-width: 641px) and (max-width: 1023px)', () => {
       const positions = calculateProjectPositions(1023)
       updateProjects(positions)
-      createTextPin(window.innerHeight * 2.5)
+      createTextPin(window.innerHeight * 2)
     })
 
     mm.add('(min-width: 1024px) and (max-width: 1280px)', () => {
@@ -324,7 +324,7 @@ function ScrollElement() {
   return (
     <div
       ref={containerRef}
-      className="overflow-hidden mt-[18rem] pb-[20rem] md:mt-[20rem] md:mb-[-15rem] lg:pb-[20rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[60vh] -mx-5"
+      className="overflow-hidden mt-[18rem] pb-[20rem] md:mt-[20rem] md:mb-[-10rem] lg:pb-[20rem] lg:mt-[20rem] lg:mb-[10rem] xl:mt-[35rem] xl:pb-[60vh] -mx-5"
     >
       {/* Bloc du titre + description qui sera fixé */}
       <div className="intro-text">
